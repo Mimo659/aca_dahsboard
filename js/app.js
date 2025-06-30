@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                  link.classList.add('active');
              }
         });
-        if(window.innerWidth <= 992) mainNav.classList.remove('active');
+        if(window.innerWidth <= 992) mainNav.parentElement.classList.remove('active'); // Target parent <nav>
         if(targetId === 'module') {
             renderModulesOverview();
         }
@@ -36,12 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.tagName === 'A') {
             e.preventDefault();
             const targetId = e.target.getAttribute('href').substring(1);
+            // When a link inside the nav is clicked, ensure the parent <nav> loses .active
+            if(window.innerWidth <= 992 && mainNav.parentElement.classList.contains('active')) {
+                mainNav.parentElement.classList.remove('active');
+            }
             showSection(targetId);
         }
     });
 
     burgerMenu.addEventListener('click', () => {
-        mainNav.classList.toggle('active');
+        mainNav.parentElement.classList.toggle('active'); // Target parent <nav>
     });
 
     // --- DASHBOARD RENDERING ---
@@ -103,9 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // examData.modules is now examData.moduleScores, and moduleData has the titles
         moduleOverview.innerHTML = `<h2>Module</h2>` + examData.moduleScores.map(modScore => {
             const modDetails = moduleData[modScore.id]; // Get details from moduleData
+            // Use modScore.name for the main heading as it includes "Modul X"
+            const titleText = modDetails ? (modDetails.title.includes("Modul " + modScore.id.slice(-1)) ? modDetails.title : `Modul ${modScore.id.slice(-1)}: ${modDetails.title}`) : modScore.name;
             return `
             <div class="module-card" data-module-id="${modScore.id}">
-                <h3>${modDetails ? modDetails.title : modScore.name}</h3>
+                <h3>${titleText}</h3>
                 <p>Klicken, um die Inhalte für Modul ${modScore.id.slice(-1)} anzuzeigen.</p>
                  <div class="progress-bar-container">
                     <div class="progress-bar" style="width: ${modScore.score}%; background-color: ${getScoreColor(modScore.score)};">
