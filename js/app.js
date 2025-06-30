@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizData = quizQuestions;
     const glossarData = {}; // Assuming no separate glossary file for now
     // --- DOM ELEMENT SELECTORS ---
-    const mainNav = document.getElementById('main-nav');
+    const mainNav = document.getElementById('main-nav'); // ul#main-nav
+    const navElement = document.querySelector('header nav'); // the <nav> tag itself
     const burgerMenu = document.getElementById('burger-menu');
     const contentSections = document.querySelectorAll('.content-section');
     const dashboardSection = document.getElementById('dashboard');
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                  link.classList.add('active');
              }
         });
-        if(window.innerWidth <= 992) mainNav.parentElement.classList.remove('active'); // Target parent <nav>
+        if(navElement && window.innerWidth <= 992) navElement.classList.remove('active');
         if(targetId === 'module') {
             renderModulesOverview();
         }
@@ -52,16 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = e.target.getAttribute('href').substring(1);
             // When a link inside the nav is clicked, ensure the parent <nav> loses .active
-            if(window.innerWidth <= 992 && mainNav.parentElement.classList.contains('active')) {
-                mainNav.parentElement.classList.remove('active');
+            if(navElement && window.innerWidth <= 992 && navElement.classList.contains('active')) {
+                navElement.classList.remove('active');
             }
             showSection(targetId);
         }
     });
 
-    burgerMenu.addEventListener('click', () => {
-        mainNav.parentElement.classList.toggle('active'); // Target parent <nav>
-    });
+    if (burgerMenu && navElement) {
+        burgerMenu.addEventListener('click', () => {
+            navElement.classList.toggle('active');
+        });
+    } else {
+        console.error('Burger menu or nav element not found for event listener attachment!');
+    }
 
     // --- DASHBOARD RENDERING ---
     function renderDashboard() {
@@ -107,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 showSection('module');
             });
         });
+
+        renderDashboardModules(); // Call to render module cards on the dashboard
     }
 
     function getScoreColor(score) {
@@ -116,15 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- MODULE RENDERING ---
-    function renderModulesOverview() {
-        moduleContent.classList.add('hidden');
-        moduleOverview.classList.remove('hidden');
-        // examData.modules is now examData.moduleScores, and moduleData has the titles
-        moduleOverview.innerHTML = `<h2>Module</h2>` + examData.moduleScores.map(modScore => {
-            const modDetails = moduleData[modScore.id]; // Get details from moduleData
-            // Use modScore.name for the main heading as it includes "Modul X"
-            const titleText = modDetails ? (modDetails.title.includes("Modul " + modScore.id.slice(-1)) ? modDetails.title : `Modul ${modScore.id.slice(-1)}: ${modDetails.title}`) : modScore.name;
-            return `
+    // Function to generate HTML for a single module card (reusable)
+    function createModuleCardHTML(modScore, modDetails) {
+        const titleText = modDetails ? (modDetails.title.includes("Modul " + modScore.id.slice(-1)) ? modDetails.title : `Modul ${modScore.id.slice(-1)}: ${modDetails.title}`) : modScore.name;
+        return `
             <div class="module-card" data-module-id="${modScore.id}">
                 <h3>${titleText}</h3>
                 <p>Klicken, um die Inhalte für Modul ${modScore.id.slice(-1)} anzuzeigen.</p>
@@ -134,11 +136,50 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
-        `}).join('');
+        `;
+    }
 
-        document.querySelectorAll('.module-card').forEach(card => {
+    // Function to render module cards in the dedicated "Module" section
+    function renderModulesOverview() {
+        moduleContent.classList.add('hidden');
+        moduleOverview.classList.remove('hidden');
+
+        let overviewHTML = `<h2>Alle Module</h2>`; // Changed title for clarity
+        overviewHTML += examData.moduleScores.map(modScore => {
+            const modDetails = moduleData[modScore.id];
+            return createModuleCardHTML(modScore, modDetails);
+        }).join('');
+        moduleOverview.innerHTML = overviewHTML;
+
+        // Attach event listeners specifically to cards in #module-overview
+        moduleOverview.querySelectorAll('.module-card').forEach(card => {
             card.addEventListener('click', (e) => {
                 renderModuleContent(e.currentTarget.dataset.moduleId);
+                showSection('module'); // Ensure the module section is shown
+            });
+        });
+    }
+
+    // Function to render module cards on the Dashboard
+    function renderDashboardModules() {
+        const dashboardModuleCardsContainer = document.getElementById('dashboard-module-cards');
+        if (!dashboardModuleCardsContainer) {
+            console.error('Dashboard module cards container not found!');
+            return;
+        }
+
+        let dashboardModulesHTML = `<h2>Schnellzugriff Module</h2>`; // Title for this section
+        dashboardModulesHTML += examData.moduleScores.map(modScore => {
+            const modDetails = moduleData[modScore.id];
+            return createModuleCardHTML(modScore, modDetails);
+        }).join('');
+        dashboardModuleCardsContainer.innerHTML = dashboardModulesHTML;
+
+        // Attach event listeners specifically to cards in #dashboard-module-cards
+        dashboardModuleCardsContainer.querySelectorAll('.module-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                renderModuleContent(e.currentTarget.dataset.moduleId);
+                showSection('module'); // Switch to the module section to show content
             });
         });
     }
