@@ -1,0 +1,13 @@
+{
+  "totalScore": 65,
+  "pointsScored": 52,
+  "pointsPossible": 80,
+  "passed": false,
+  "moduleScores": [
+    { "id": "modul1", "name": "ACA - Modul 1: Agile Foundations", "score": 83 },
+    { "id": "modul2", "name": "ACA - Modul 2: Agile Facilitation", "score": 90 },
+    { "id": "modul3", "name": "ACA - Modul 3: Agile Learning Guidance", "score": 50 },
+    { "id": "modul4", "name": "ACA - Modul 4: Coaching Habit", "score": 67 },
+    { "id": "modul5", "name": "ACA - Modul 5: Agile Transformation", "score": 47 }
+  ]
+}
