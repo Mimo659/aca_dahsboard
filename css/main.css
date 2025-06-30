@@ -1,0 +1,407 @@
+:root {
+    --primary-bg: #2c2f33;
+    --secondary-bg: #23272a;
+    --card-bg: #3a3e42;
+    --text-color: #ffffff;
+    --text-muted: #99aab5;
+    --accent-color-1: #00FFFF; /* Cyan */
+    --accent-color-2: #FF69B4; /* Pink */
+    --accent-color-3: #FFD700; /* Gelb */
+    --color-good: #4CAF50;
+    --color-medium: #FFC107;
+    --color-weak: #F44336;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-color-1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+}
+
+nav a:hover, nav a.active {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color-2);
+}
+
+.search-container input {
+    background: var(--primary-bg);
+    border: 1px solid var(--text-muted);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-left: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+h2 {
+    color: var(--accent-color-3);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--text-muted);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--accent-color-1);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-color-1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: var(--accent-color-3);
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+/* Dashboard Styles */
+#dashboard-header {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#dashboard-header h2 {
+    border: none;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: var(--primary-bg);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 20px;
+    color: var(--primary-bg);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.card a, button.action-btn, #back-to-modules {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color-2);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.card a:hover, button.action-btn:hover, #back-to-modules:hover {
+    background-color: #d84a96;
+}
+
+/* Module Styles */
+#module-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.module-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.module-card:hover {
+    transform: translateY(-5px);
+}
+.module-card h3 {
+    margin-top: 0;
+    color: var(--accent-color-3);
+}
+
+.module-content-container {
+    background-color: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.module-content-container ul, .module-content-container ol {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+.module-content-container li {
+    margin-bottom: 0.5rem;
+}
+
+.module-content-container blockquote {
+    border-left: 4px solid var(--accent-color-1);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+}
+.module-content-container .exercise {
+    background-color: var(--primary-bg);
+    border: 1px dashed var(--accent-color-3);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+}
+.module-content-container .exercise h4 {
+    color: var(--accent-color-3);
+}
+
+.glossar-term {
+    color: var(--accent-color-1);
+    font-weight: bold;
+    border-bottom: 1px dotted var(--accent-color-1);
+    cursor: pointer;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: #1a1c1e;
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color-2);
+    max-width: 300px;
+    z-index: 1001;
+    font-size: 0.9rem;
+    pointer-events: none; /* Important */
+}
+
+
+/* Glossar Styles */
+#glossar-filter {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--text-muted);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#glossar-list li {
+    background-color: var(--card-bg);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#glossar-list strong {
+    color: var(--accent-color-3);
+    font-size: 1.2rem;
+}
+
+/* Quiz Styles */
+#quiz-container {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#quiz-container button {
+    cursor: pointer;
+    background: var(--accent-color-2);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+#quiz-container button:hover {
+    background-color: #d84a96;
+}
+
+#question-container h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.answer-options {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.answer-options button {
+    width: 100%;
+    background: var(--primary-bg);
+    border: 1px solid var(--accent-color-1);
+    text-align: left;
+    padding: 1rem;
+}
+.answer-options button:hover {
+    background: var(--secondary-bg);
+}
+
+#quiz-feedback {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.feedback-correct {
+    background-color: var(--color-good);
+}
+.feedback-incorrect {
+    background-color: var(--color-weak);
+}
+
+.hidden {
+    display: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--secondary-bg);
+}
+
+/* Responsive Design */
+#burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+#burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+}
+
+
+@media (max-width: 992px) {
+    header {
+        flex-wrap: wrap;
+    }
+    nav {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    nav.active {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .search-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .search-container input {
+        margin-left: 0;
+        width: 80%;
+    }
+    #burger-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    main {
+        padding: 1rem;
+    }
+    header {
+        padding: 1rem;
+    }
+}

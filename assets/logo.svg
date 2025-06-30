@@ -1,0 +1,5 @@
+<svg width="40" height="40" viewBox="0 0 100 100">
+    <path d="M50 10 L90 90 L70 90 L50 45 L30 90 L10 90 Z" fill="none" stroke="#FFD700" stroke-width="8"/>
+    <path d="M50 10 L90 90 L70 90 L50 45 L30 90 L10 90 Z" transform="translate(5, 5) rotate(15 50 50)" fill="none" stroke="#FF69B4" stroke-width="8"/>
+    <path d="M50 10 L90 90 L70 90 L50 45 L30 90 L10 90 Z" transform="translate(-5, -5) rotate(-15 50 50)" fill="none" stroke="#00FFFF" stroke-width="8"/>
+</svg>
