@@ -1,0 +1,919 @@
+{
+  "examResults": {
+    "totalScore": 65,
+    "pointsScored": 52,
+    "pointsPossible": 80,
+    "passed": false,
+    "moduleScores": [
+      { "id": "modul1", "name": "ACA - Modul 1: Agile Foundations", "score": 83 },
+      { "id": "modul2", "name": "ACA - Modul 2: Agile Facilitation", "score": 90 },
+      { "id": "modul3", "name": "ACA - Modul 3: Agile Learning Guidance", "score": 50 },
+      { "id": "modul4", "name": "ACA - Modul 4: Coaching Habit", "score": 67 },
+      { "id": "modul5", "name": "ACA - Modul 5: Agile Transformation", "score": 47 }
+    ]
+  },
+  "modules": {
+    "modul1": {
+      "title": "Agile Fundamentals",
+      "chapters": [
+        {
+          "title": "1.1 Soziometrisches Stellen",
+          "content": [
+            { "type": "p", "data": "Soziometrisches Stellen ist eine Methode, um bestimmte Eigenschaften, Verhältnisse oder Beziehungen innerhalb einer größeren Gruppe sichtbar zu machen. Als Coaches oder Moderatoren gebt ihr Fragen und Werte vor." },
+            { "type": "h3", "data": "Beispiele:" },
+            { "type": "ul", "data": [
+              "Wer hat die längste Firmenzugehörigkeit in Jahren?",
+              "Bist du Vegetarier? (auch ja/nein-Fragen lassen sich abbilden)",
+              "Wie hoch schätzt du deine Coaching-Expertise auf einer Skala von 1-10 ein?",
+              "Wo in Deutschland lebt ihr? Legt fest, wo Norden ist und bildet die Landkarte durch eure Positionen ab."
+            ]},
+            { "type": "p", "data": "Eine Variante ist die Arbeit mit Bodenankern, z.B. die fünf Scrum-Werte Focus, Openness, Respect, Courage, Commitment - welcher Wert ist wem besonders wichtig? Stellt euch auf das jeweilige Papier. Der Phantasie sind hier kaum Grenzen gesetzt." },
+            { "type": "p", "data": "Soziometrisches Stellen fördert im agilen Sinne Selbstorganisation und Eigenverantwortlichkeit: Du stellst die Frage und lasst die Gruppe selbst festlegen, wie sie die Aufstellung organisiert. Außerdem kann das Stellen helfen, die Gruppendynamik besser zu verstehen und eventuelle Konflikte oder Bedürfnisse zu erkennen."}
+          ]
+        },
+        {
+            "title": "2.1 Wurzeln der Agilität (Taylorismus)",
+            "content": [
+              { "type": "p", "data": "Der Taylorismus ist eine wissenschaftliche Managementtheorie, die in den späten 1800er und frühen 1900er Jahren von Frederick Winslow Taylor entwickelt wurde. Sie ist nach ihm benannt und auch als „wissenschaftliche Betriebsführung“ bekannt. Der Taylorismus zielt darauf ab, die Effizienz und Produktivität von Arbeitsprozessen zu maximieren, indem er eine systematische Methode der Arbeitsorganisation und Kontrolle einführt." },
+              { "type": "p", "data": "Obwohl der Taylorismus und die Agilität als Ansätze zur Arbeitsorganisation und -führung unterschiedliche Philosophien und Ziele haben, gibt es einige Zusammenhänge zwischen ihnen. Hier sind einige Punkte, die die Verbindung zwischen dem Taylorismus und der Entstehung von Agilität verdeutlichen:" },
+              { "type": "ul", "data": [
+                "Kritik am traditionellen Managementansatz: Sowohl der Taylorismus als auch die Agilität sind als Reaktion auf die Unzulänglichkeiten und Einschränkungen traditioneller Managementansätze entstanden. Der Taylorismus wurde kritisiert, weil er die Arbeit in mechanistische und standardisierte Abläufe zerlegt hat, was zu Entfremdung, geringer Motivation und mangelnder Flexibilität führte. Agilität entstand als Antwort auf die Herausforderungen, die mit starren, hierarchischen Strukturen und unflexiblen Prozessen verbunden waren.",
+                "Fokus auf kontinuierliche Verbesserung: Beide Ansätze legen Wert auf kontinuierliche Verbesserung. Im Taylorismus werden Arbeitsabläufe und Prozesse durch wissenschaftliche Methoden analysiert und optimiert, um die Effizienz zu steigern. Agilität betont die kontinuierliche Anpassung und Verbesserung durch den Einsatz von Feedbackschleifen, retrospektiven Bewertungen und iterativer Entwicklung.",
+                "Menschenzentrierter Ansatz: Obwohl der Taylorismus in erster Linie auf die Steigerung der Effizienz und Produktivität abzielt, besitzen sowohl der Taylorismus als auch die Agilität eine Menschenzentrierung. Der Taylorismus setzt hier jedoch auf eine Steigerung der Arbeitsleistung durch möglichst kleinschrittige Aufgaben. Dem gegenüber steht in der Agilität die Wertschätzung der individuellen Fähigkeiten und die Förderung von Selbstorganisation und Teamarbeit als zentrale Prinzipien.",
+                "Flexibilität und Anpassungsfähigkeit: Sowohl der Taylorismus als auch die Agilität haben die Notwendigkeit erkannt, auf Veränderungen zu reagieren. Der Taylorismus konzentrierte sich auf die Effizienzsteigerung in stabilen und vorhersehbaren Umgebungen, während die Agilität eine flexible und anpassungsfähige Herangehensweise an Veränderungen betont, um Wert für Kunden zu schaffen."
+              ]}
+            ]
+        },
+        {
+          "title": "2.2 VUCA- und BANI-Welt",
+          "content": [
+            { "type": "h3", "data": "VUCA: Volatility, Uncertainty, Complexity, Ambiguity" },
+            { "type": "p", "data": "Der Begriff VUCA steht für Volatilität (Volatility), Unsicherheit (Uncertainty), Komplexität (Complexity) und Mehrdeutigkeit (Ambiguity). Er wurde in den 1990er Jahren vom US-amerikanischen Militär geprägt und beschreibt die Herausforderungen einer sich schnell verändernden und unvorhersehbaren Umwelt." },
+            { "type": "p", "data": "Als Agile Coach ist es wichtig, den Begriff VUCA zu verstehen und sich mit den damit verbundenen Konzepten auseinanderzusetzen, da er die Grundlage für die Notwendigkeit agiler Ansätze und Methoden schafft. Hier sind einige Gründe, warum VUCA für deine Arbeit als Agile Coach wichtig ist:"},
+            { "type": "ul", "data": [
+              "Bewusstsein für die Herausforderungen: VUCA verdeutlicht, dass wir in einer Welt leben, die von Unsicherheit und Veränderungen geprägt ist.",
+              "Agilität als Antwort auf VUCA: Die Agilität ist ein Ansatz, der entwickelt wurde, um mit den Herausforderungen von VUCA umzugehen.",
+              "Flexibilität und Anpassungsfähigkeit fördern: VUCA erfordert eine flexible und anpassungsfähige Herangehensweise.",
+              "Chancen in der Veränderung erkennen: VUCA bringt nicht nur Herausforderungen, sondern auch Chancen mit sich.",
+              "Strategische Ausrichtung: Die Kenntnis von VUCA ermöglicht es dir, Strategien zu entwickeln, die den sich ändernden Anforderungen gerecht werden."
+            ]},
+            { "type": "h3", "data": "Agile Antworten auf VUCA:" },
+            { "type": "ul", "data": [
+                "**Vision** entgegen der Volatilität.",
+                "**Understanding** (Verständnis) entgegen der Unsicherheit.",
+                "**Clarity** (Klarheit) entgegen der Komplexität.",
+                "**Agility** (Agilität) entgegen der Mehrdeutigkeit."
+            ]},
+            { "type": "h3", "data": "BANI: Brittleness, Anxiety, Nonlinearity, Incomprehensibility" },
+            { "type": "p", "data": "Das BANI-Modell reflektiert die zunehmend komplexen und dynamischen Rahmenbedingungen, unter denen heutige Projekte durchgeführt werden. Es spricht die Zerbrechlichkeit (Brittleness) von Systemen an, die emotionale Reaktion (Angst), die Nichtlinearität von Ursache und Wirkung und die Unbegreiflichkeit (Incomprehensibility) komplexer Systeme." }
+          ]
+        },
+        {
+          "title": "2.3 Was ist Agilität?",
+          "content": [
+            { "type": "p", "data": "Agilität ist ein Ansatz, der es Organisationen ermöglicht, sich an eine schnelllebige und sich verändernde Umgebung anzupassen. Sie betont die Flexibilität, die Zusammenarbeit und die Fähigkeit, rasch auf Veränderungen zu reagieren, um Wert für Kunden zu schaffen. Agilität wird in verschiedenen Bereichen wie Softwareentwicklung, Projektmanagement und Organisationsentwicklung angewendet." },
+            { "type": "p", "data": "Agilität hat ihre Wurzeln in der Softwareentwicklung der 1990er Jahre. Als Reaktion auf unflexible, planungsgesteuerte Ansätze entstanden alternative Methoden wie Extreme Programming (XP) und Scrum. Diese setzten auf iterative Entwicklung, Selbstorganisation und intensive Kundenzusammenarbeit." },
+            { "type": "p", "data": "Im Jahr 2001 wurde mit dem Agilen Manifest ein Meilenstein gesetzt. Es legte die grundlegenden Prinzipien fest und betonte Werte wie individuelle Personen, funktionierende Software, Zusammenarbeit mit dem Kunden und Reaktion auf Veränderungen." },
+            { "type": "p", "data": "Als Agile Coach ist es wichtig, den Begriff Agilität definieren zu können, da er das Fundament der Arbeit bildet. Eine klare Definition hilft, eine gemeinsame Sprache zu etablieren und Missverständnisse zu vermeiden."}
+          ]
+        },
+        {
+          "title": "2.4 Das agile Manifest und seine 12 Prinzipien",
+          "content": [
+            { "type": "h3", "data": "Die vier Wertepaare des Agilen Manifests" },
+            { "type": "p", "data": "Das Agile Manifest ist eine grundlegende Erklärung, die die Werte und Prinzipien des agilen Arbeitens festlegt. Es wurde im Jahr 2001 von einer Gruppe von Softwareentwicklern erstellt. Diese Werte stellen eine Priorisierung dar:" },
+            { "type": "ul", "data": [
+                "**Individuen und Interaktionen** MEHR ALS Prozesse und Werkzeuge",
+                "**Funktionierende Software** MEHR ALS umfassende Dokumentation",
+                "**Zusammenarbeit mit dem Kunden** MEHR ALS Vertragsverhandlung",
+                "**Reagieren auf Veränderung** MEHR ALS das Befolgen eines Plans"
+            ]},
+            { "type": "blockquote", "data": "Bitte beachte: Natürlich brauchen wir Prozesse und Werkzeuge, Dokumentation und Verträge und eine Form von Planung: die rechte Seite bleibt wichtig! Lediglich in Konfliktsituationen bzw. wenn Entscheidungen zu treffen sind, wird die linke Seite bevorzugt." },
+            { "type": "h3", "data": "Die 12 Prinzipien" },
+            { "type": "ol", data: [
+               "Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufriedenzustellen.",
+               "Heiße Anforderungsänderungen – selbst spät in der Entwicklung – willkommen. Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden.",
+               "Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne.",
+               "Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten.",
+               "Errichte Projekte rund um motivierte Individuen. Gib ihnen das Umfeld und die Unterstützung, die sie benötigen und vertraue darauf, dass sie die Aufgabe erledigen.",
+               "Die effizienteste und effektivste Methode, Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht.",
+               "Funktionierende Software ist das wichtigste Fortschrittsmaß.",
+               "Agile Prozesse fördern nachhaltige Entwicklung.",
+               "Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität.",
+               "Einfachheit – die Kunst, die Menge nicht getaner Arbeit zu maximieren – ist essenziell.",
+               "Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams.",
+               "In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an."
+            ]}
+          ]
+        },
+        {
+            "title": "2.5 Klassisches Projektmanagement (Wasserfall)",
+            "content": [
+                { "type": "p", "data": "Das klassische Projektmanagement, oft als 'Wasserfall' bezeichnet, ist eine traditionelle, planungsorientierte Herangehensweise. Es basiert auf strukturierten und vordefinierten Prozessen." },
+                { "type": "h3", "data": "Merkmale:"},
+                { "type": "ul", "data": [
+                    "**Phasenorientierte Struktur:** Projekte werden sequenziell in Phasen unterteilt (Initiierung, Planung, Ausführung, Überwachung, Abschluss).",
+                    "**Umfangs- und Terminplanung:** Der Umfang wird zu Beginn detailliert geplant.",
+                    "**Hierarchische Struktur:** Das Team ist hierarchisch organisiert mit klar definierten Rollen.",
+                    "**Dokumentation:** Es wird großer Wert auf umfassende Dokumentation gelegt.",
+                    "**Change Control:** Änderungen werden sorgfältig geprüft und formell genehmigt.",
+                    "**Risikomanagement:** Risiken werden identifiziert, analysiert und bewertet."
+                ]},
+                { "type": "p", "data": "Dieser Ansatz eignet sich gut für Projekte mit stabilen Anforderungen und hoher Vorhersagbarkeit, z.B. im Bauwesen oder Ingenieurwesen."}
+            ]
+        },
+        {
+            "title": "2.6 Agiles Projektmanagement",
+            "content": [
+                { "type": "p", "data": "Agiles Projektmanagement basiert auf den Prinzipien und Werten des Agilen Manifests und legt den Fokus auf Flexibilität, Zusammenarbeit und iterative Entwicklung." },
+                { "type": "h3", "data": "Merkmale:"},
+                { "type": "ul", "data": [
+                    "**Iterative und inkrementelle Entwicklung:** Projekte werden in kurzen Zyklen (Iterationen oder Sprints) durchgeführt.",
+                    "**Selbstorganisierte Teams:** Teams sind eigenverantwortlich und teilen sich die Verantwortung.",
+                    "**Kundenzentrierung:** Kundenfeedback wird aktiv eingeholt und in die Entwicklung einbezogen.",
+                    "**Anpassungsfähigkeit und Flexibilität:** Pläne werden flexibel an veränderte Anforderungen angepasst.",
+                    "**Kontinuierliches Lernen und Verbessern:** Nach jeder Iteration werden Rückmeldungen genutzt, um den Prozess zu verbessern.",
+                    "**Transparente Kommunikation:** Regelmäßige Events wie das Daily Scrum fördern den Austausch."
+                ]},
+                { "type": "p", "data": "Agiles Projektmanagement wird häufig in Umgebungen eingesetzt, in denen Anforderungen und Rahmenbedingungen unsicher sind oder sich häufig ändern."}
+            ]
+        },
+        {
+            "title": "2.7 Hybrides Projektmanagement",
+            "content": [
+                { "type": "p", "data": "Viele Projekte, die nach dem klassischen Wasserfall-Modell gemanagt werden, verwenden Elemente von Scrum. Dagegen ist grundsätzlich nichts einzuwenden. Hybrides Projektmanagement kombiniert Elemente aus klassischen und agilen Ansätzen." },
+                { "type": "p", "data": "Ein Beispiel ist PRINCE2 Agile, das die strukturierte Steuerung von PRINCE2 mit der Flexibilität von agilen Frameworks wie Scrum und Kanban verbindet." },
+                { "type": "p", "data": "Die Entscheidung für ein Modell (Wasserfall, Agil, Hybrid) hängt von den Projektmerkmalen ab, wie der Eindeutigkeit des Endprodukts (Vagueness), der Wahrscheinlichkeit von Anforderungsänderungen, der Möglichkeit zur Aufteilung des Produkts, dem Zeitdruck und dem transformationalen Einfluss."}
+            ]
+        },
+        {
+            "title": "2.8 Hyperwettbewerb",
+            "content": [
+                { "type": "p", "data": "Der Begriff „Hyperwettbewerb“, geprägt von Richard A. D'Aveni, bezieht sich auf eine extrem intensive und dynamische Wettbewerbssituation. Diese ist gekennzeichnet durch hohe Geschwindigkeit, zunehmende Komplexität und ständigen Innovationsdruck." },
+                { "type": "h3", "data": "Merkmale des Hyperwettbewerbs:"},
+                { "type": "ul", "data": [
+                    "**Hohe Geschwindigkeit:** Veränderungen treten schnell und in immer kürzeren Intervallen auf.",
+                    "**Technologischer Fortschritt:** Neue Technologien verändern Geschäftsmodelle und Marktdynamik grundlegend.",
+                    "**Globalisierung:** Unternehmen konkurrieren mit Wettbewerbern aus verschiedenen Ländern und Regionen.",
+                    "**Kundenorientierung:** Kundenanforderungen ändern sich schnell und müssen kontinuierlich bedient werden.",
+                    "**Innovationsdruck:** Unternehmen müssen kontinuierlich innovativ sein, um sich von der Konkurrenz abzuheben.",
+                    "**Kurze Produktlebenszyklen:** Produkte müssen schnell auf den Markt gebracht werden."
+                ]}
+            ]
+        },
+        {
+            "title": "2.9 Wertearbeit und Kultur",
+            "content": [
+                { "type": "p", "data": "Wertearbeit spielt für Agile Coaches und Teams eine entscheidende Rolle, da sie Klarheit, Ausrichtung und eine positive Teamkultur fördert." },
+                { "type": "h3", "data": "Bedeutung von Werten:"},
+                { "type": "ul", "data": [
+                    "**Klarheit und Ausrichtung:** Werte dienen als Leitlinien für Verhalten und Entscheidungen.",
+                    "**Teamkultur und Zusammenarbeit:** Werte formen die Kultur und beeinflussen, wie Teammitglieder miteinander umgehen.",
+                    "**Entscheidungsfindung:** Werte dienen als Grundlage für fundierte Entscheidungen.",
+                    "**Selbstreflexion und kontinuierliche Verbesserung:** Werte ermöglichen eine kontinuierliche Reflexion der Zusammenarbeit.",
+                    "**Motivation und Engagement:** Eine wertebasierte Arbeitsumgebung fördert die intrinsische Motivation.",
+                    "**Identitätsbildung und Selbstorganisation:** Werte fördern eine gemeinsame Identität und Selbstverantwortung."
+                ]},
+                { "type": "h3", "data": "Das Eisberg-Modell von Edgar Schein"},
+                { "type": "p", "data": "Dieses Modell visualisiert die verschiedenen Ebenen der Organisationskultur. Wie bei einem Eisberg ist nur ein kleiner Teil sichtbar, während der größte Teil verborgen ist:"},
+                { "type": "ul", "data": [
+                    "**Sichtbare Ebene (Spitze des Eisbergs):** Beobachtbares Verhalten, Kennzahlen, offizielle Leitsätze, Gestaltung von Räumlichkeiten.",
+                    "**Normative Ebene (direkt unter der Wasseroberfläche):** Implizite Spielregeln, Verhaltensmuster, Werte und Normen, Strukturen und Strategien.",
+                    "**Unsichtbare Ebene (tief unter Wasser):** Grundannahmen, unbewusste Überzeugungen und mentale Modelle. Diese tiefsten Schichten sind die eigentlichen Treiber der Kultur."
+                ]}
+            ]
+        },
+        {
+            "title": "2.10 Die 5 Scrum Werte",
+            "content": [
+                { "type": "p", "data": "Die Scrum-Werte sind fünf grundlegende Prinzipien, die im Scrum-Framework eine zentrale Rolle spielen. Sie wurden von Ken Schwaber und Jeff Sutherland, den Begründern von Scrum, festgelegt und sind Teil des Scrum Guide." },
+                { "type": "ol", "data": [
+                    "**Commitment (Verpflichtung):** Teammitglieder verpflichten sich gemeinsam zu den Zielen des Sprints und arbeiten aktiv an deren Umsetzung.",
+                    "**Courage (Mut):** Mut ist erforderlich, um Hindernisse zu überwinden, Risiken einzugehen und ehrliches Feedback zu geben und anzunehmen.",
+                    "**Focus (Fokus):** Das Team konzentriert sich auf die Arbeit, die während eines Sprints zu erledigen ist, und stellt sicher, dass die vereinbarten Ziele erreicht werden.",
+                    "**Openness (Offenheit):** Offene Kommunikation und Transparenz sind essentiell. Teammitglieder teilen ihr Wissen und ihre Erfahrungen und sprechen Herausforderungen offen an.",
+                    "**Respect (Respekt):** Respektvolles Miteinander ist grundlegend. Jeder im Team wird wertgeschätzt und respektiert, unabhängig von Position oder Hintergrund."
+                ]},
+                { "type": "h3", "data": "Wie Agile Coaches die Scrum-Werte fördern können:" },
+                { "type": "ul", "data": [
+                    "**Vorbild sein:** Die Werte selbst leben und vorleben.",
+                    "**Teamübungen durchführen:** Das Bewusstsein für die Werte durch Übungen und Aktivitäten schärfen.",
+                    "**Wertekonflikte ansprechen:** Das Team dabei unterstützen, Konflikte zwischen den Werten zu erkennen und zu lösen.",
+                    "**Feedbackkultur fördern:** Eine offene Feedbackkultur ist eng mit den Scrum-Werten verbunden."
+                ]}
+            ]
+        },
+        {
+          "title": "3.1 Definition eines Agile Coachs",
+          "content": [
+            { "type": "p", "data": "Es gibt gefühlt genauso viele Definitionen der Rolle „Agile Coach“ wie es auch Bücher dazu gibt. Das liegt auch daran, dass die Rolle je nach Kontext und Organisation unterschiedliche Schwerpunkte haben kann. Deshalb müsste es eigentlich „Agile eierlegende Wollmilchsau“ heißen." },
+            { "type": "blockquote", "data": "Unsere Definition lautet: Ein Agile Coach ist eine Person, die Teams und Organisationen dabei unterstützt, agile Praktiken und Prinzipien zu verstehen, zu implementieren und kontinuierlich zu verbessern. Der Agile Coach fungiert als Mentor, Trainer, Berater, Coach und Change Agent und trägt dazu bei, eine agile Kultur und Arbeitsweise in der Organisation zu etablieren."},
+            { "type": "p", "data": "Der Agile Coach arbeitet eng mit verschiedenen Teams, Führungskräften und anderen Stakeholdern zusammen, um sicherzustellen, dass agile Praktiken effektiv angewendet werden. Dazu gehört oft die Unterstützung bei der Einführung agiler Methoden wie Scrum, Kanban oder Extreme Programming sowie die Förderung von agilen Werten wie Zusammenarbeit, Transparenz, Anpassungsfähigkeit und kontinuierliche Verbesserung."}
+          ]
+        },
+        {
+            "title": "3.2 Rollen als Agile Coach",
+            "content": [
+                { "type": "p", "data": "Als Agile Coach kannst du verschiedene Rollen einnehmen, abhängig von den Bedürfnissen deiner Organisation und deiner Teams. Hier sind einige gängige Rollen:" },
+                { "type": "ol", "data": [
+                    "**Team- und Business-Coach:** Bietet Einzelcoaching für die persönliche Weiterentwicklung oder arbeitet mit agilen Teams zur Verbesserung der Dynamik.",
+                    "**Scrum Master:** Übernimmt (zeitweilig) die Rolle des Scrum Masters, um das Framework zu implementieren und Hindernisse zu beseitigen.",
+                    "**Agiler Organisationsberater:** Unterstützt die gesamte Organisation bei der agilen Transformation und arbeitet eng mit dem Management zusammen.",
+                    "**Agile Leadership Coach:** Arbeitet mit Führungskräften, um deren Führungsrolle im agilen Kontext zu stärken.",
+                    "**Agiler Trainer:** Führt Schulungen und Trainings zu agilen Methoden und Praktiken durch."
+                ]},
+                { "type": "p", "data": "Eine klare Rollenklärung ist entscheidend, um Missverständnisse zu vermeiden, Erwartungen zu definieren und effektiv arbeiten zu können."}
+            ]
+        },
+        {
+            "title": "3.4 Agile Coach Competency Framework",
+            "content": [
+              { "type": "p", "data": "Das von Lyssa Adkins und Michael Spayd entwickelte Modell dient als Referenz, um die verschiedenen Kompetenzbereiche eines Agile Coaches zu erkunden." },
+              { "type": "h3", "data": "Kernbereiche des Frameworks:" },
+              { "type": "ul", "data": [
+                 "**Agile-Lean Practitioner:** Lebt agile Werte und Praktiken.",
+                 "**Teaching (Lehren):** Fähigkeit, Wissen zur richtigen Zeit richtig zu vermitteln.",
+                 "**Mentoring:** Eigene Erfahrungen teilen, um andere wachsen zu lassen.",
+                 "**Professional Coaching:** Dem Klienten helfen, eigene Lösungen zu finden, ohne die Richtung vorzugeben.",
+                 "**Facilitating (Moderieren):** Neutrale Prozessbegleitung zur Lösungsfindung.",
+                 "**Technical Mastery:** Expertise in Software-Handwerkskunst.",
+                 "**Business Mastery:** Expertise in wertgetriebener Produktentwicklung.",
+                 "**Transformation Mastery:** Expertise in Organisationsentwicklung und Change Management."
+              ]},
+              { "type": "image_placeholder", "data": "Diagramm: Agile Coach Competency Framework" }
+            ]
+        },
+        {
+            "title": "4.1 Cynefin-Framework",
+            "content": [
+                { "type": "p", "data": "Das Cynefin-Framework (sprich: „Ke'ne'win“) ist ein Modell, das zur Analyse von Problemen und zur Entscheidungsfindung in komplexen Situationen verwendet wird. Es wurde von Dave Snowden entwickelt." },
+                { "type": "h3", "data": "Die fünf Domänen:"},
+                { "type": "ul", "data": [
+                    "**Einfach (Simple):** Klare Ursache-Wirkungs-Beziehungen. Lösung ist offensichtlich. Vorgehen: Sense-Categorise-Respond (Wahrnehmen, Kategorisieren, Reagieren).",
+                    "**Kompliziert (Complicated):** Klare Ursache-Wirkungs-Beziehung, aber nicht sofort offensichtlich. Expertenwissen ist erforderlich. Vorgehen: Sense-Analyse-Respond.",
+                    "**Komplex (Complex):** Ursache und Wirkung sind nicht vorhersehbar. Muster müssen erforscht werden. Vorgehen: Probe-Sense-Respond (Experimentieren, Wahrnehmen, Reagieren).",
+                    "**Chaotisch (Chaotic):** Keine klaren Zusammenhänge. Schnelles Handeln ist erforderlich. Vorgehen: Act-Sense-Respond.",
+                    "**Unbekannt (Disorder):** Unklarheit, in welcher Domäne sich das Problem befindet. Ziel ist, das Problem zu analysieren und einer Domäne zuzuordnen."
+                ]},
+                { "type": "blockquote", "data": "Merke: Echte Innovation liegt an der Grenze zum Chaos!"}
+            ]
+        },
+        {
+            "title": "4.2 Stacey-Matrix",
+            "content": [
+                { "type": "p", "data": "Die Stacey-Matrix ist ein Modell von Ralph Douglas Stacey zur Analyse der Komplexität von Problemen. Sie berücksichtigt die Unsicherheit/Klarheit der Anforderungen (WAS?) und die Sicherheit/Klarheit des Vorgehens (WIE?)."},
+                { "type": "ul", "data": [
+                    "**Einfach:** Anforderungen und Vorgehen sind klar. (z.B. WASSERFALL)",
+                    "**Kompliziert:** Anforderungen oder Vorgehen sind unklarer, erfordern Analyse und Expertise. (z.B. KANBAN)",
+                    "**Komplex:** Anforderungen und Vorgehen sind beide unklar und weit von der Sicherheit entfernt. Experimente und iterative Ansätze sind nötig. (z.B. SCRUM)",
+                    "**Chaotisch:** Weder Anforderungen noch Vorgehen sind bekannt. Es herrscht Instabilität. (z.B. DESIGN THINKING)"
+                ]},
+                { "type": "p", "data": "Die Matrix hilft bei der Problemanalyse und der Auswahl geeigneter Frameworks." }
+            ]
+        }
+      ]
+    },
+    "modul2": {
+        "title": "Agile Facilitation",
+        "chapters": [
+            {
+                "title": "1.1 Vorstellung als Agile Coach",
+                "content": [
+                    { "type": "p", "data": "Für eine vertrauensvolle Zusammenarbeit mit Teams und Individuen braucht es Offenheit und Transparenz. Dazu gehört, dass wir Agile Coaches uns und unsere Arbeit vorstellen und unsere Motivation klären. Eine gekonnte Vorstellung legitimiert uns, schafft Vertrauen und schärft das eigene Profil." },
+                    { "type": "h3", "data": "Hilfreich bei einer Vorstellung:" },
+                    { "type": "ul", "data": [
+                        "Wurde visualisiert? Wurden mehr Bilder und Zeichnungen eingesetzt?",
+                        "Wurde die eigene Körpersprache bewusst eingesetzt? War sie lebendig?",
+                        "Wurde mit der Stimme gespielt? War die Sprechgeschwindigkeit passend?",
+                        "War die Präsentation kurz und knackig?"
+                    ]}
+                ]
+            },
+            {
+                "title": "1.2 Arbeiten mit Workshop-Rollen",
+                "content": [
+                    { "type": "p", "data": "Als Agile Coach führen wir Organisationen, Teams und Individuen in die Selbstorganisation. Zur Förderung der Selbstwirksamkeit in Teams sind Workshop-Rollen ein probates Mittel, um Eigenverantwortung und Beteiligung zu fördern. Sie helfen, typische Hürden zu überwinden:" },
+                    { "type": "ul", "data": [
+                        "Ausufernde Diskussionen",
+                        "Langweilige Beiträge",
+                        "Einseitige Sichtweisen",
+                        "Mangelnde Konfliktbereitschaft",
+                        "Zeiten nicht einhalten",
+                        "Fehlende Transparenz"
+                    ]},
+                    { "type": "h3", "data": "Beispiele für agile Workshop-Rollen:" },
+                    { "type": "ul", "data": [
+                       "**Fokusbeschleuniger:** Achtet auf den vereinbarten Fokus und signalisiert, wenn eine Diskussion vom Ziel abweicht.",
+                       "**Querdenker:** Nimmt bewusst andere Sichtweisen ein und hinterfragt die Gruppenmeinung, um Einseitigkeit zu vermeiden.",
+                       "**Prinzipienwächter:** Achtet auf die Einhaltung der vereinbarten Werte und Arbeitsprinzipien.",
+                       "**Time Keeper:** Achtet auf die Einhaltung der Zeit (Timeboxing) und fordert diese ein."
+                    ]}
+                ]
+            },
+            {
+                "title": "1.3 Abgrenzung von Moderation",
+                "content": [
+                    { "type": "p", "data": "Moderation und Facilitation sind wesentliche Skills für Agile Coaches. Die Aktivitäten Moderation, Präsentation und Training haben unterschiedliche Aktivierungsgrade der Teilnehmer und verschiedene Ziele. Als Agile Coach wechselt man häufig zwischen diesen Rollen." },
+                    { "type": "h3", "data": "Was zeichnet eine gelungene Business-Moderation aus?" },
+                    { "type": "ul", "data": [
+                        "Ein motivierender Einstieg",
+                        "Klare Ziele, Aufgaben, Fragen und Themen",
+                        "Benötigte Zusatzinfos",
+                        "Klare Zeiteinteilungen und -anweisungen",
+                        "Klare TN-Zuordnung bei Übungen",
+                        "Ein nachhaltiger Ausstieg",
+                        "Eine ansprechende Visualisierung"
+                    ]}
+                ]
+            },
+            {
+                "title": "1.4 Moderatorenhaltung und -stile",
+                "content": [
+                    { "type": "p", "data": "Ähnlich wie sich unsere Arbeitswelt verändert, so verändert sich auch die Moderation an sich. Sie kann stark direktiver Natur sein oder auch viel Freiraum für die Teilnehmenden bieten. Mit der Freiheit im Agilen Arbeiten passt sich auch die Moderation von einem direktiven Stil zu einer freien Begleitung an (heute bekannt als „Facilitation”)." },
+                    { "type": "p", "data": "Business-Moderatoren unterstützen ein Team durch Dialog und das Streben nach Klarheit. Sie ermöglichen aktive Beteiligung, gewährleisten eine geeignete Teamstruktur und bieten einen sicheren Rahmen. Sie sind inhaltlich neutral (allparteilich) und besitzen hohe methodische Kompetenz."}
+                ]
+            },
+            {
+                "title": "2.1 Meta-Vereinbarungen",
+                "content": [
+                    { "type": "p", "data": "Akzeptierte Regeln sichern die Workshop-Effizienz. Meta-Vereinbarungen sind allgemein-verbindliche Regeln, die für die gesamte Dauer der Zusammenarbeit gelten." },
+                    { "type": "h3", "data": "Bekannte Meta-Vereinbarungen:" },
+                    { "type": "ul", "data": [
+                       "**VEGAS-Regel:** 'What happens in Vegas, stays in Vegas...' für Vertrauen und Verschwiegenheit.",
+                       "**Die 'Oberste Direktive' (nach Norman L. Kerth):** 'Unabhängig davon, was wir herausfinden, müssen wir verstehen und wirklich glauben, dass jeder das Beste getan hat, was er mit seinem damaligen Wissen, seinen Fähigkeiten und Fertigkeiten, den verfügbaren Ressourcen und der gegebenen Situation tun konnte.'",
+                       "**Workshop-Erfolg:** 'Wir sind alle im hier und jetzt, weil der Workshop Erfolg uns braucht!'"
+                    ]},
+                    { "type": "p", "data": "Meta-Vereinbarungen können vom Moderator vorgegeben, vorgeschlagen oder von der Gruppe selbst erarbeitet werden. Sie sollten sichtbar sein und leben, d.h. sich auch verändern dürfen." }
+                ]
+            },
+            {
+                "title": "2.2 Adhoc-Absprachen",
+                "content": [
+                    { "type": "p", "data": "Ad-Hoc-Absprachen fördern die Selbstorganisation der Gruppe. Sie skizzieren das Vorgehen und werden am Anfang einer Aufgabe bzw. eines Meetings mit der Gruppe gemeinsam – meist nur mündlich – geklärt." },
+                    { "type": "h3", "data": "Beispiele für Adhoc-Fragen:" },
+                    { "type": "ul", "data": [
+                        "Wie gehen wir jetzt bei dieser Aufgabe vor?",
+                        "Wer moderiert und visualisiert jetzt? Wer hat jetzt welche Rolle?",
+                        "Wie viel Zeit wollen wir uns jetzt wofür nehmen? Wann enden wir?",
+                        "Was ist jetzt unser Ziel? Woran wollen wir jetzt arbeiten?",
+                        "Wie treffen wir jetzt diese Entscheidung?"
+                    ]}
+                ]
+            },
+            {
+                "title": "2.3 Anlässe für agile Moderation",
+                "content": [
+                    { "type": "p", "data": "Als Agile Coach gibt es neben den Events aus den Frameworks noch weitere Anlässe, um moderierend aktiv zu werden:" },
+                    { "type": "ul", "data": [
+                        "Kick-Offs für Transformations-Vorhaben",
+                        "Agile Workshops, wie: Team-Set-Ups, Rollen-Set-Ups, Ausgestaltung eines agilen Mindsets, etc.",
+                        "Schulungen zu agilen Frameworks und Praktiken",
+                        "Agile Lernbegleitung",
+                        "Die agilen Events der Frameworks, hier nach dem Beispiel Scrum: Planning, Daily, Review, Retrospektive"
+                    ]}
+                ]
+            },
+            {
+                "title": "2.4 Phasen eines agilen Events",
+                "content": [
+                    { "type": "p", "data": "Analog einer Retrospektive besitzen viele agile Events Phasen, die aufeinander aufbauen. Mit dem „Meetingboard Canvas“ kann man agile Meetings strukturiert planen:"},
+                    { "type": "ol", "data": [
+                        "**Phase 1 - Vorbereitung:** Anlass und Ziele, Teilnehmende, Rollen, Zeit, Ort, Ausstattung klären.",
+                        "**Phase 2 - Check-In:** Jede Besprechung beginnt mit dem Einloggen. Der Moderator stellt sich vor, die Teilnehmer kommen emotional an (z.B. durch Ice Breaker).",
+                        "**Phase 3 - Themen bearbeiten:** Themen erheben (sammeln, priorisieren), bewerten (Soll/Ist, gut/schlecht) und Lösungen entwickeln.",
+                        "**Phase 4 - Entscheiden und planen:** Ideen und Vorschläge priorisieren und Entscheidungen treffen. Selbstorganisation hängt eng mit Entscheidungskompetenz zusammen.",
+                        "**Phase 5 - Check-out:** Wie beim Einloggen erfolgt auch ein Ausloggen. Offene Fragen klären, offene Themen zuordnen, Feedback zur Moderation geben."
+                    ]}
+                ]
+            },
+            {
+                "title": "3.1 Auftragsklärung",
+                "content": [
+                    { "type": "p", "data": "Eine saubere und gute Auftragsklärung ist das A & O für uns Agile Coaches. Über diese erhalten wir ein Mandat zur Durchführung der oben genannten Vorhaben, da wir keine „Führungsmacht”, also keine direktive Führung ausüben können." },
+                    { "type": "p", "data": "Ein vorbereiteter Fragenkatalog hilft, in einem ca. 30-45 minütigen Termin die wichtigsten Punkte zu klären." },
+                    { "type": "h3", "data": "Beispiele aus dem Fragenkatalog:" },
+                    { "type": "ul", "data": [
+                        "Welches ist das Ziel? Was möchten die Auftraggeber idealerweise erreichen?",
+                        "Wer ist noch beteiligt und wie sind deren Ziele?",
+                        "In welchem Zeitraum wollen Sie das Ziel erreichen?",
+                        "Woran werden Sie den Erfolg messen?",
+                        "Welche verdeckten Ziele oder Anliegen sind denkbar?",
+                        "Welches sind die vorgegebenen und feststehenden Rahmenbedingungen, die im Workshop nicht verändert werden dürfen?",
+                        "Welchen Spielraum haben wir im Workshop? Was darf neu entschieden oder gestaltet werden?",
+                        "Welche Art der Dokumentation wird vereinbart?"
+                    ]}
+                ]
+            },
+            {
+                "title": "3.2 Moderationsmethoden",
+                "content": [
+                    { "type": "p", "data": "Folgend eine Übersicht zu gängigen Moderationsmethoden, mit denen Du Teilnehmende abholen, Themen sicht- und bearbeitbar machst und das Team bei Entscheidungsfindung unterstützt." },
+                    { "type": "h3", "data": "Methoden für Check-In" },
+                    { "type": "ul", "data": ["**Gefühls-Check:** Teilnehmer auf emotionaler Ebene abholen, z.B. mit Bildkarten oder Smileys.", "**Skalierungen (soziometrische Aufstellungen):** Tendenzen und Meinungen in einer Gruppe sichtbar machen, indem sich Teilnehmer auf einer Skala positionieren."] },
+                    { "type": "h3", "data": "Methoden zum Bearbeiten von Themen" },
+                    { "type": "ul", "data": ["**Englische Debatte:** Lädt zum Perspektivwechsel ein, indem Teilnehmer Argumente für eine zugewiesene Position finden müssen.", "**Kopfstandmethode:** Fördert kreatives Denken, indem eine Aufgabe umgekehrt wird (z.B. 'Was können wir tun, um das Projekt garantiert scheitern zu lassen?').", "**Disney-Strategie:** Betrachtet ein Thema aus drei Perspektiven: dem Träumer, dem Realisten und dem Kritiker."] },
+                    { "type": "h3", "data": "Methoden zum Entscheiden und planen" },
+                    { "type": "ul", "data": ["**Punkteabfragen (Voting):** Macht Stimmungsbilder sichtbar, indem Teilnehmer Klebepunkte auf Themen oder Argumente verteilen.", "**Aufwand-Wirkung-Diagramm:** Priorisiert Themen, indem die Gruppe gemeinsam den erwarteten Aufwand und die Wirkung bewertet."] },
+                    { "type": "h3", "data": "Methoden zum Check-out" },
+                    { "type": "ul", "data": ["**Hashtag-Feedback:** Gibt einen schnellen Überblick zur Zufriedenheit mittels kurzer, prägnanter Hashtags (#wertvoll).", "**Keep-Drop-Try:** Benennt konkrete Themen, die beibehalten (Keep), verworfen (Drop) oder ausprobiert (Try) werden sollen.", "**Baum der Erkenntnis:** Reflektiert das Meeting mittels vorgegebener Fragen (z.B. 'Was war der Gewinn des Meetings?')."] }
+                ]
+            },
+            {
+                "title": "4.1 Konflikte im Workshop",
+                "content": [
+                    { "type": "p", "data": "Agile Frameworks machen verschiedene Spannungen und Dysfunktionen innerhalb von Organisationen sichtbar. Nicht selten führt dies zu Konflikten, versteckten wie offenen." },
+                    { "type": "h3", "data": "Umgang mit Killerphrasen" },
+                    { "type": "p", "data": "Killerphrasen sind verallgemeinernde, abwertende Äußerungen, die eine Diskussion im Keim ersticken sollen. Sie werden oft aus Unsicherheit, Angst oder zur Statusverteidigung genutzt." },
+                    { "type": "h3", "data": "Top 5 der agilen Facilitator-Fragen als Reaktion:" },
+                    { "type": "ul", "data": [
+                        "**Detail-konkretisierend:** 'Was genau meinen Sie damit?'",
+                        "**Ergebnis-fokussierend:** 'Was wäre eine bessere Lösung?'",
+                        "**Systemische Coaching-Fragen:** 'Was würde passieren, wenn wir es doch täten?'",
+                        "**Zielhütend:** 'Wie hilft uns diese Aussage, unser gemeinsames Ziel zu erreichen?'",
+                        "**Bedürfnis-orientiert:** 'Welches Bedürfnis oder welche Sorge steckt hinter dieser Aussage?'"
+                    ]},
+                    { "type": "h3", "data": "Umgang mit Emotionen im Workshop"},
+                    { "type": "p", "data": "Wenn Emotionen hochkochen, ist es wichtig, als Moderator handlungsfähig zu bleiben. Eine verbale Attacke sollte nie ignoriert werden. "},
+                    { "type": "h3", "data": "Top-Tipps bei verbalen Angriffen"},
+                    { "type": "ul", "data": [
+                        "**Einatmen und bis 3 zählen:** Schafft eine kurze Pause, um nicht impulsiv zu reagieren.",
+                        "**Auf die Person zugehen:** Körperliche Nähe kann deeskalierend wirken (im respektvollen Rahmen).",
+                        "**Fragen 'Was genau meinst Du damit?':** Führt die Diskussion zurück auf eine sachliche Ebene und zwingt den Angreifer zur Konkretisierung."
+                    ]}
+                ]
+            }
+        ]
+    },
+    "modul3": {
+      "title": "Agile Lernbegleitung",
+      "chapters": [
+        {
+            "title": "1. Agiles Lernen / Agile Lernbegleitung – Was ist das?",
+            "content": [
+                { "type": "h3", "data": "Wie ist „Agiles Lernen“ definiert?"},
+                { "type": "p", "data": "Agiles Lernen zielt auf die lebenslange Anpassungs- und Innovationsfähigkeit ab. Agiles Lernen bedarf eines passenden Mindsets, Lernkompetenzen und einer Fehler- und Lernkultur. Beim Agilen Lernen stehen Zielorientierung, Selbststeuerung und Reflexion im Vordergrund." },
+                { "type": "p", "data": "Agiles Lernen kann auf zwei Arten verstanden werden: 1. Die Vorbereitung auf agile Welten -> Qualifizierung für Agil. 2. In agilen Welten lernen -> Agil entwickeln." },
+                { "type": "h3", "data": "Was unterscheidet Lehr- von Lernzielen?"},
+                { "type": "p", "data": "Lehrziele kommen vom Trainer bzw. Kursanbieter, Lernziele kommen vom einzelnen Teilnehmer. Gute Lehrziele orientieren sich am Bedarf des Lernenden für die Erfüllung seiner Rolle. Gute Lernziele kommen vom Lernenden selbst. Sie korrelieren mit seinen Interessen, sind für ihn motivierend und können selbstständig oder mit Unterstützung erreicht werden."}
+            ]
+        },
+        {
+            "title": "1.1 Voraussetzungen für agiles Lernen",
+            "content": [
+                { "type": "p", "data": "Was agiles Lernen in der Praxis bedeutet und welche Voraussetzungen gegeben sein oder geschaffen werden müssen:" },
+                { "type": "ul", "data": [
+                    "Der Lernende steht mit seinen Lernzielen im Vordergrund",
+                    "Lernen ist individualisiert, bedarfsorientiert und praxisnah",
+                    "Der agile Lerner braucht Zeit und Raum, um selbstorganisiert Lernen zu können",
+                    "Lernen, Übung und Praxis sind eng miteinander verbunden",
+                    "Kollaboratives und kooperatives Lernen sind wichtige Bestandteile",
+                    "Das Lernen erfolgt co-kreativ als gemeinsamer Schaffensprozess",
+                    "Die Teilnehmer werden zu Teilgebern und liefern aktiv Beiträge zum gemeinsamen Lernerfolg",
+                    "Die Teilnehmer übernehmen Verantwortung für das eigene Lernen"
+                ]}
+            ]
+        },
+        {
+            "title": "1.2 Lernen in agilen Umgebungen",
+            "content": [
+                { "type": "p", "data": "Um die (nicht vorhersehbare) Lernzukunft in einer agilen Umgebung zu entwickeln, betrachten wir drei Ebenen des Lernens:" },
+                { "type": "ul", "data": [
+                    "**Person/Individuum:** Haltung, Fähigkeiten, Motivation, Kompetenzen usw.",
+                    "**Organisation:** Lernkultur, Lernorganisation, Rollen usw.",
+                    "**Umfeld:** Sozialstruktur, Institutionen usw."
+                ]},
+                { "type": "p", "data": "Lernen ist dann besonders erfolgversprechend, wenn die Bedürfnisse des Lernenden (Person), der Organisation und des Umfeldes, in dem beide stehen, Überschneidungen aufweisen. Diesen Bereich nennen wir den „Sweet Spot“ des Lernens. Je größer der Sweet Spot ist, desto professioneller und wirksamer wird das Lernen in einer Organisation erfolgen." }
+            ]
+        },
+        {
+            "title": "1.3 Agile Lernkultur",
+            "content": [
+                { "type": "p", "data": "Eine agile Lernkultur fördert kontinuierliches Lernen und Anpassungsfähigkeit in einem dynamischen Umfeld. Sie basiert auf Werten wie Flexibilität, Offenheit und Zusammenarbeit. In einer solchen Kultur sind Mitarbeiter ermächtigt, selbstständig Wissen zu erwerben und zu teilen. Fehler werden als Lernchancen gesehen, und experimentelles Vorgehen wird unterstützt." },
+                { "type": "h3", "data": "Bestandteile eines Lernkulturinventars:" },
+                { "type": "ul", "data": [
+                    "**Lernen als Teil der Unternehmensphilosophie:** Lernorientierte Leitlinien, kommunizierte Erwartungen.",
+                    "**Organisationale Rahmenbedingungen:** Arbeitszeitregelungen, Lernen durch Veränderungen.",
+                    "**Aspekte der Personalentwicklung:** Stellenwert und strategische Ausrichtung.",
+                    "**Kompetenzentwicklung der Mitarbeiter:** Entwicklung und Messung.",
+                    "**Lern- und Entwicklungsmöglichkeiten:** Gruppenbezogenes, informelles und selbstorganisiertes Lernen.",
+                    "**Information und Partizipation:** Lernen durch Wissensaustausch, Mitgestaltung.",
+                    "**Lernkontakte mit der Umwelt:** Aufbau von Netzwerken und Kontakten.",
+                    "**Lernatmosphäre und Unterstützung:** Informelle Lernräume, Unterstützung durch Kollegen."
+                ]}
+            ]
+        },
+        {
+            "title": "2. Gehirngerechtes Lernen",
+            "content": [
+                { "type": "p", "data": "Das menschliche Gehirn ist ein äußerst komplexes Organ. In der Kurzfassung lernt unser Hirn dann am liebsten, wenn etwas:" },
+                { "type": "ul", "data": [
+                    "neu und interessant ist",
+                    "Spaß macht, z.B. Spielen",
+                    "oder lebensnotwendig ist"
+                ]},
+                { "type": "h3", "data": "Allgemeine Prinzipien, die das Lernen erleichtern:" },
+                { "type": "ul", "data": [
+                    "**Aktives Lernen:** Aktives Engagement mit dem Lernmaterial.",
+                    "**Mehrsinniges Lernen:** Informationen über mehrere Sinne aufnehmen (visuell, auditiv, taktil).",
+                    "**Wiederholung und Verteiltes Lernen:** Wiederholte Überprüfung über längere Zeiträume („Spaced Repetition“).",
+                    "**Relevanz:** Informationen, die als relevant oder bedeutungsvoll wahrgenommen werden.",
+                    "**Emotionale Verbindung:** Emotional geladene Erfahrungen oder Informationen werden besser erinnert.",
+                    "**Kontext:** Informationen werden besser erinnert, wenn sie in einem Kontext oder einer Geschichte präsentiert werden.",
+                    "**Selbstbestimmung:** Die Möglichkeit, die eigene Lernrichtung und -methoden zu wählen.",
+                    "**Feedback:** Unmittelbares und konstruktives Feedback.",
+                    "**Variation:** Abwechslungsreiches Lernen.",
+                    "**Ruhe und Schlaf:** Das Gehirn verarbeitet und konsolidiert Informationen während des Schlafs.",
+                    "**Soziales Lernen:** Lernen in Gruppen oder durch soziale Interaktion."
+                ]}
+            ]
+        },
+        {
+            "title": "3. Lernmethoden",
+            "content": [
+                { "type": "h3", "data": "Training from the back of the room (TBR)"},
+                { "type": "p", "data": "Die Methode von Sharon L. Bowman zielt darauf ab, aktives und kollaboratives Lernen zu fördern. Dabei stehen nicht der Lehrer und seine Präsentation, sondern die Teilnehmer und ihre aktive Einbindung im Mittelpunkt. Die Methode setzt auf interaktive Übungen, Gruppenarbeit, Visualisierung und Feedback." },
+                { "type": "p", "data": "Die 4C sind eine praktische Anleitung: **Connecting** (Verbindung schaffen), **Concept** (kurze, klare Konzepte vermitteln), **Concrete Practice** (konkretes Anwenden), **Conclusion** (Zusammenfassen und anwendbar machen)." },
+                { "type": "h3", "data": "Liberating Structures"},
+                { "type": "p", "data": "Liberating Structures sind eine Sammlung von 33 Mikrostrukturen, die konzipiert wurden, um die Art und Weise zu verändern, wie Menschen zusammenarbeiten und kommunizieren. Sie ermöglichen es, Meetings so zu gestalten, dass alle Beteiligten gleichberechtigt einbezogen werden. Beispiele sind „1-2-4-All“ und „Troika Consulting“." },
+                { "type": "h3", "data": "Reflexion" },
+                { "type": "p", "data": "Kein Lernen ohne Reflexion. Reflexion ist ein zentraler Bestandteil des agilen Lernens, da sie kontinuierliche Verbesserung ermöglicht. Sie dient dazu, Erkenntnisse zu gewinnen, Verhaltensweisen zu verbessern und kontinuierlich zu lernen. Reflexion braucht Gelegenheit, Zeit & Raum, Führung durch Fragen und eine Atmosphäre von Vertrauen."}
+            ]
+        },
+        {
+            "title": "4. Agile Lernformate",
+            "content": [
+                { "type": "p", "data": "Agile Lernformate sind flexible und oft iterative Ansätze zum Lernen und zur Wissensvermittlung, die sich an den Prinzipien der Agilität orientieren." },
+                { "type": "h3", "data": "Beispiele für agile Lernformate:"},
+                { "type": "ul", "data": [
+                    "**BarCamp:** Ein partizipatives Konferenzformat, bei dem die Teilnehmer selbst die Agenda gestalten.",
+                    "**Blended Learning:** Eine Kombination aus Online- und Präsenzlernen.",
+                    "**Brown Bag Meeting:** Informelle, oft während der Mittagspause abgehaltene Meetings.",
+                    "**Community of Practice (CoP):** Eine Gruppe von Menschen, die ein gemeinsames Interesse teilen und sich regelmäßig austauschen.",
+                    "**Fishbowl:** Ein diskussionsförderndes Format mit innerem und äußerem Diskussionskreis.",
+                    "**FuckUp-Night:** Eine Veranstaltung, bei der Personen über ihre beruflichen Misserfolge sprechen.",
+                    "**Hackathons:** Veranstaltungen, bei denen Teilnehmer in Teams an spezifischen Problemen arbeiten.",
+                    "**Kollegiale Fallberatung:** Ein strukturiertes Peer-Coaching-Format.",
+                    "**Lean Coffee:** Ein strukturiertes, aber agenda-loses Meetingformat.",
+                    "**Learning Sprints:** Kurze, intensive Lernphasen.",
+                    "**OpenSpace:** Eine Methode zur Selbstorganisation von Großgruppen.",
+                    "**Peer Learning:** Kollegen lernen voneinander durch Austausch und Zusammenarbeit.",
+                    "**Reflecting Teams:** Ein Beratungsformat, bei dem ein Team beobachtend und reflektierend einer anderen Gruppe zuhört.",
+                    "**Rotation Days:** Ein Programm, bei dem Mitarbeiter für einen begrenzten Zeitraum in verschiedenen Abteilungen oder Rollen arbeiten.",
+                    "**Working out Loud:** Eine Methode zur Vernetzung und persönlichen Entwicklung."
+                ]}
+            ]
+        },
+        {
+            "title": "5. Rolle des Lernbegleiters und der Führungskraft",
+            "content": [
+                { "type": "p", "data": "Die Rolle der Führungskraft als agilem Lernbegleiter ist essenziell für den Erfolg agiler Methoden und Lernprozesse. In dieser Rolle fungiert die Führungskraft nicht nur als Manager, sondern als Mentor und Unterstützer. Ein Agile Coach kann die Führungskraft in ihrer Entwicklung auf drei Ebenen unterstützen: methodisch, organisationell und individuell." },
+                { "type": "h3", "data": "Die Führungskraft als..."},
+                { "type": "ul", "data": [
+                    "**Lernkulturbotschafter:** Bietet Tools zum Austausch, schafft Freiräume und hält lebenslanges Lernen hoch.",
+                    "**Teamentwickler:** Erkennt, was das Team an Kompetenzen, Tools & Methoden braucht.",
+                    "**Gestalter von Lernsituationen:** Schafft formelle (z.B. Community of Practice, Lean Coffee) und informelle Lernräume.",
+                    "**Lernbegleiter:** Vertraut in Mitarbeiter, führt Vor- und Nachbesprechungen von Lernen und feiert Entwicklung.",
+                    "**Vorbild:** Zeigt eigene Lernbereitschaft, hat eine eigene sichtbare Lernkurve und macht Lernpfade transparent."
+                ]}
+            ]
+        }
+      ]
+    },
+    "modul4": {
+      "title": "Coaching Habit",
+      "chapters": [
+        {
+            "title": "Systemtheorie bzw. systemischer Gedanke im Coaching",
+            "content": [
+                { "type": "p", "data": "Die Systemtheorie betrachtet Individuen nicht isoliert, sondern als Teil größerer Systeme (z.B. Teams, Organisationen, Familien). Alles ist miteinander verbunden und beeinflusst sich gegenseitig. Veränderungen in einem Teil des Systems wirken sich auf das gesamte System aus. Im systemischen Coaching geht es darum, diese Verbindungen und Wechselwirkungen zu erkennen und zu nutzen, um nachhaltige Veränderungen zu bewirken. Statt Probleme isoliert zu betrachten, werden sie im Kontext des gesamten Systems verstanden und angegangen." },
+                { "type": "blockquote", "data": "Heißt auch: Wenn der Coachee beginnt, sich zu verändern, verändert er sein Umfeld automatisch in weiten Teilen mit. Das Bild vom Haufen Kieselsteine ist hier eine beliebte Metapher."}
+            ]
+        },
+        {
+            "title": "Begriffsklärung & Abgrenzung Coaching",
+            "content": [
+                { "type": "p", "data": "Ebenso wie das Wort „Agil“ wird der Begriff „Coaching“ vielfach unterschiedlich verwendet. Hier kann es helfen, vorher ein allgemeines Verständnis zu schaffen. Coaching grenzt sich von anderen Formaten ab:" },
+                { "type": "ul", "data": [
+                    "**Berater:** gibt inhaltliche Lösungen und Empfehlungen an die Hand und ist sowohl für den Prozess als auch für den Inhalt verantwortlich.",
+                    "**Trainer:** verfolgen Lehrpläne, definieren Lehrziele und vermitteln Wissen und Erfahrungen.",
+                    "**Mentor:** agiert als Ratgeber, arbeitet in einem ähnlichen Beruf und teilt seine Erfahrungen und sein Wissen.",
+                    "**Therapeuten:** stellen Diagnosen, behandeln psychische Erkrankungen und fokussieren (klassisch) auf Defizite und Probleme."
+                ]},
+                { "type": "blockquote", "data": "Definition gemäß der International Coaching Federation (ICF): Coaching ist „ein partnerschaftlicher und zum Nachdenken anregender Prozess, der Menschen und Organisationen kreativ dabei unterstützt, ihr persönliches und professionelles Potential zu steigern.“" }
+            ]
+        },
+        {
+            "title": "Konstruktivismus",
+            "content": [
+                { "type": "p", "data": "Die Theorie des Kontruktivismus unterstützt uns Agile Coaches in der Zusammenarbeit mit verschiedenen Schnittstellen und Menschen. Es bietet als Menschenbild eine Grundhaltung, mit der wir anderen gegenüber treten." },
+                { "type": "p", "data": "Der Konstruktivismus beschreibt die Wahrnehmung der Menschen als aktiven Konstruktionsprozess. Sie nehmen also nicht die objektive Wirklichkeit wahr, sondern erschaffen sich aus dieser ihre eigene Realität. Daraus folgt, dass es „die eine Wahrheit“ nicht gibt - jeder Mensch konstruiert sich seine eigene Wahrheit. Die Chance in diesem Modell liegt darin, dass wir uns eine gemeinsame „Wahrheit” oder Wirklichkeit gemeinsam konstruieren können." },
+                { "type": "h3", "data": "Oberste Direktive"},
+                { "type": "p", "data": "Da agiles Arbeiten bedeutet, immer wieder mutig Neues auszuprobieren und Erfahrungen zu machen – auch Fehler –, um dann gemeinsam zu reflektieren, was das Team und jeder Einzelne verbessern kann, gilt es ein Mindset zu entwickeln, das davon ausgeht, dass jeder immer sein Bestes gibt und dass es nicht um Schuldzuweisungen geht, wenn etwas schiefgelaufen ist, sondern darum, daraus zu lernen und Verbesserungen zu initiieren." },
+                { "type": "blockquote", "data": "Unabhängig davon, was wir entdecken, verstehen wir und glauben wahrhaft daran, dass jeder das Beste gegeben hat, was er konnte, basierend auf seinem Wissen zu dem Zeitpunkt, seinen Fähigkeiten und Fertigkeiten, den vorhandenen Ressourcen und der gegebenen Situation." }
+            ]
+        },
+        {
+            "title": "Veränderungsprozesse coachen",
+            "content": [
+                { "type": "p", "data": "Veränderung ist eine Konstante im Leben und in der Geschäftswelt. Ein Coach kann hierbei unterstützen, diese Prozesse bewusst und effektiv zu gestalten. Jegliche Form von Coaching adressiert einen Veränderungsprozess: Menschen wollen von etwas weg und/oder zu etwas hin." },
+                { "type": "p", "data": "Kunden suchen sich einen Coach, wenn sie alleine nicht weiterkommen. Auf dem Scheitelpunkt des Berges (Moment der höchsten Unsicherheit) fällt die Entscheidung: rollen wir zurück oder geht es weiter ins neue Unbekannte? Dieser Punkt ist der Moment größter Instabilität." },
+                { "type": "h3", "data": "Die sieben Phasen der Veränderung:" },
+                { "type": "ol", "data": [
+                    "**Schock:** Die erste Reaktion auf eine unerwartete Veränderung.",
+                    "**Ablehnung/Verneinung:** Weigerung, die Realität der Veränderung zu akzeptieren.",
+                    "**Tal der Tränen (Wendepunkt):** Emotionale Akzeptanz beginnt, Ressourcen werden wichtig.",
+                    "**Rationale Einsicht:** Verstandesmäßige Akzeptanz.",
+                    "**Emotionale Akzeptanz:** Die Veränderung wird auch gefühlsmäßig angenommen.",
+                    "**Ausprobieren/Lernen:** Neue Verhaltensweisen werden getestet.",
+                    "**Integration:** Neue Verhaltensweisen werden Teil des Alltags."
+                ]}
+            ]
+        },
+        {
+            "title": "Das Herdplattenmodell",
+            "content": [
+                { "type": "p", "data": "Eine bewährte Coaching-Anleitung für Einsteiger, die den Prozess in vier Phasen (Herdplatten) aufteilt:" },
+                { "type": "ol", "data": [
+                    "**Problem/Thema (P/T):** In Kontakt kommen, Rapport aufbauen, Thema verstehen. Übergang mit Fragen wie 'Wie wäre es denn schön?'.",
+                    "**Ziel (Z):** Das Ziel so konkret wie möglich gestalten. Was ist daran attraktiv? Das Ziel muss vom Coachee selbst kommen (selbstinitiiert).",
+                    "**Ressourcen (R):** Was ist schon da? Was braucht es noch? (Geld, Zeit, Fähigkeiten, Hilfe, Stärken). Wer kann helfen?",
+                    "**Strategie (S):** Die Marschroute, das Wie. Hier darf auf Wunsch des Coachees auch Expertenwissen einfließen. Selbstwirksamkeit des Coachees fördern."
+                ]}
+            ]
+        },
+        {
+            "title": "Systemisches Fragen",
+            "content": [
+                { "type": "p", "data": "Bei systemischen Fragen fragt der Coach den Coachee nach etwas, was der Coachee selbst und zumindest unbewusst noch nicht weiß. Systemische Fragen haben die Funktion, neue Informationen zu entwickeln, indem sie zum Nachdenken anregen." },
+                { "type": "h3", "data": "Beispiele für systemische Fragetypen:" },
+                { "type": "ul", "data": [
+                    "**Reality Check:** 'Ist das überhaupt ein Thema, was Du aus eigener Kraft lösen kannst?'",
+                    "**Zirkuläre Frage:** 'Was denken andere aus Deinem Umfeld über dieses Thema?'",
+                    "**Ausnahme-Frage:** 'Lief es schon mal besser als jetzt? Was war da anders (bei Dir)?'",
+                    "**Driver's Question:** 'Stell Dir vor, ich würde das Problem auch haben wollen, was müsste ich dafür tun?'",
+                    "**Reframing-Frage:** 'Was ist das Gute an dem Problem?'",
+                    "**Auswirkungs-Frage:** 'Welche Auswirkungen hat es, wenn Du an dem Thema nicht arbeitest?'",
+                    "**Hypothetische Frage:** 'Angenommen, Du wärst frei von allen Einschränkungen, wie würdest Du das Thema lösen?'",
+                    "**Paradoxe Frage:** 'Wie könntest Du Dein Thema noch viel schlimmer machen?'",
+                    "**Unterschiedsbildende Frage:** Nutzung von Skalenfragen ('Auf einer Skala von 1-10, wo stehst du?')."
+                ]}
+            ]
+        },
+        {
+            "title": "Team-Coaching & Psychologische Sicherheit",
+            "content": [
+                { "type": "p", "data": "Ein Team ist eine kleine Gruppe von Menschen (ca. neun Personen), die sich ergänzen und aufeinander bezogen zusammenarbeiten, um ein gemeinsames Ziel zu erreichen. Ob aus einem Team ein erfolgreiches Team wird, hängt von der Zusammensetzung, der Interaktion, der Führung und Entwicklung ab." },
+                { "type": "h3", "data": "Psychologische Sicherheit als agiler Coach aufbauen:"},
+                { "type": "p", "data": "Psychologische Sicherheit in Teams ist ein entscheidendes Element. Sie bezieht sich darauf, ob Teammitglieder sich sicher fühlen, ihre Gedanken, Meinungen und Ideen frei zu äußern, ohne Angst vor negativen Konsequenzen oder sozialem Urteil."},
+                { "type": "ul", "data": [
+                    "**Vertrauensvolle Atmosphäre schaffen:** Zeige Empathie, Verständnis und Wertschätzung.",
+                    "**Offene Kommunikation fördern:** Ermutige zum Ausdruck von Meinungen ohne Angst.",
+                    "**Fehlerkultur entwickeln:** Betone, dass Fehler Lernchancen und nicht Versagen sind.",
+                    "**Schutz bieten:** Stehe dem Team bei Konflikten oder externem Druck bei."
+                ]}
+            ]
+        },
+        {
+            "title": "SCARF-Modell",
+            "content": [
+                { "type": "p", "data": "Das SCARF-Modell von Dave Rock beschreibt basierend auf den Erkenntnissen der modernen Hirnforschung elementare Grundbedürfnisse des Menschen. Werden diese Grundbedürfnisse erfüllt, können Menschen kooperativ und vertrauensvoll miteinander arbeiten." },
+                { "type": "ol", "data": [
+                    "**Status:** Wenn Führungskräfte den Status eines Mitarbeiters erheblich senken, aktiviert das unser Schmerzzentrum wie bei körperlichen Schmerzen.",
+                    "**Certainty (Sicherheit):** Unser Gehirn sucht nach Sicherheit. Wenn wir uns sicher fühlen, steigt unser Serotonin-Spiegel.",
+                    "**Autonomy (Autonomie):** Wenn wir erleben, dass wir Dinge selbst entscheiden können, sind wir motiviert und unser Gehirn schüttet Dopamin aus.",
+                    "**Relatedness (Zugehörigkeit):** Teil einer Gruppe zu sein, dazuzugehören und geschätzt zu werden, ist einer unserer stärksten Motivatoren.",
+                    "**Fairness:** Ob Mitarbeiter eine Führungskraft gut oder schlecht finden, hängt häufig damit zusammen, ob sie deren Verhalten als fair empfinden."
+                ]}
+            ]
+        },
+        {
+            "title": "Teamphasen (Tuckman)",
+            "content": [
+                { "type": "p", "data": "Ein bekanntes Modell der Teamentwicklung von Bruce Tuckmann beschreibt den Prozess in Phasen:" },
+                { "type": "ol", "data": [
+                    "**Forming (Einstiegs- und Findungsphase):** Suche nach Orientierung, Abchecken. Unterstützung: Rollen und Werte offenlegen, Vereinbarungen treffen.",
+                    "**Storming (Auseinandersetzungsphase):** Unstimmigkeiten, Unterschiede werden sichtbar, Konflikte entstehen. Unterstützung: Rollendefinitionen überprüfen, Konflikte lösungsorientiert moderieren.",
+                    "**Norming (Regelungs- und Vereinbarungsphase):** Normen und Regeln werden diskutiert und definiert. Unterstützung: Wertearbeit, gezielte Retrospektiven.",
+                    "**Performing (Arbeits- und Leistungsphase):** Hohes Leistungsniveau, Atmosphäre der Akzeptanz. Unterstützung: Regelmäßige Retrospektiven, mittels Facilitation zügig zu Lösungen führen.",
+                    "**Adjourning (Auflösungsphase):** Auflösung des Teams nach Abschluss des Auftrags. Unterstützung: Erfolge würdigen, Lessons Learned anbieten."
+                ]}
+            ]
+        },
+        {
+            "title": "Teamrollen (Belbin)",
+            "content": [
+                { "type": "p", "data": "Der Psychologe Meredith Belbin entwickelte ein Modell unterschiedlicher Rollen, die in erfolgreichen Teams zu finden sind. Teams arbeiten dann effektiv, wenn sie aus einer Vielzahl heterogener Rollen bestehen. Das Team sollte immer wieder reflektieren, ob alle nötigen Rollen vorhanden sind." },
+                { "type": "h3", "data": "Einige der Belbin-Rollen:"},
+                { "type": "ul", "data": [
+                    "**Koordinator:** Sorgt für Organisation.",
+                    "**Teamer:** Fördert den Zusammenhalt.",
+                    "**Pragmatiker:** Setzt Ideen praktisch um.",
+                    "**Perfektionist:** Achtet auf Details und Qualität.",
+                    "**Kreativer:** Bringt neue Ideen ein.",
+                    "**Spezialist:** Bringt Fachexpertise ein.",
+                    "**Macher:** Treibt das Team an.",
+                    "**Warner/Beobachter:** Analysiert kritisch und bewahrt vor Fehlern."
+                ]}
+            ]
+        },
+        {
+            "title": "Methode „RE-gnose“ nach Matthias Horx",
+            "content": [
+                { "type": "p", "data": "Diese Methode ist ähnlich der Kopfstandmethode und eine Weiterentwicklung der systemischen Fragen. Bei der RE-gnose schauen wir im Gegensatz zur PROgnose nicht in die Zukunft, sondern von der Zukunft aus zurück ins Heute." },
+                { "type": "ol", "data": [
+                    "**1. Wir stellen uns einen konkreten Zeitpunkt in der Zukunft vor:** Beispielsweise heute in einem Jahr, nach dem großen Change-Prozess. Wir stellen uns vor, wie es sein wird, wenn wir an diesem Tag als Team zusammenkommen.",
+                    "**2. Wir staunen rückwärts:** Wie haben wir das geschafft? Welche Kompetenzen, Eigenschaften, Beziehungen, Besonderheiten etc. haben uns dabei geholfen?",
+                    "**3. Wir betrachten rückblickend:** Was war uns dabei besonders wichtig?"
+                ]},
+                { "type": "p", "data": "Daraus können wir für das Heute Werte und Richtungen sowie Kompetenzen ableiten. RE-Gnosen bilden eine Erkenntnis-Schleife, die unseren inneren Wandel einbezieht und eine Brücke zwischen Heute und Morgen schafft."}
+            ]
+        },
+        {
+            "title": "Agil Führen",
+            "content": [
+                { "type": "h3", "data": "Agiles Führen – die Definition"},
+                { "type": "p", "data": "Agiles Führen bedeutet, Rahmen zu schaffen, in denen Führungskräfte und Mitarbeiter so verantwortungsvoll, selbstorganisiert und motiviert zusammenarbeiten können, dass sie ihre Fähigkeiten entwickeln und ihr Bestes für innovative Lösungen einbringen können."},
+                { "type": "h3", "data": "Beim agilen Führen geht es um:"},
+                { "type": "ol", "data": [
+                    "Die Selbstführung als Voraussetzung.",
+                    "Kundenorientierung und die Fähigkeit, unmittelbar auf die Bedürfnisse der Kunden einzugehen.",
+                    "Die Einbindung der Mitarbeiter, um deren individuelle Fähigkeiten, Motivationen und Ideen zu nutzen.",
+                    "Die Entwicklung der Organisation, also der Strukturen und der Kultur."
+                ]}
+            ]
+        },
+        {
+            "title": "Dysfunktionale Teams und die Arbeit mit dem inneren Erwachsenen",
+            "content": [
+                { "type": "p", "data": "Merkmale dysfunktionaler Teams: Mangelndes Vertrauen, Angst vor Konflikten, fehlendes Engagement, Vermeidung von Rechenschaftspflicht, Unklarheit über Ergebnisse. In solchen Situationen rutschen Menschen oft in Zustände, die in der Transaktionsanalyse als Kind-Ich oder Eltern-Ich bezeichnet werden." },
+                { "type": "h3", "data": "Die drei Ich-Zustände:" },
+                { "type": "ul", "data": [
+                    "**Kind-Ich:** Gefühle von Ohnmacht, Verlust der Würde und des Selbstwerts. Verhaltensweisen: a) hilflos, überfordert, schreit nach Mama, b) gehorsam, funktioniert, macht sich klein, c) trotzig, frech, aggressiv.",
+                    "**Eltern-Ich:** Gefühl von (All-)Macht, Quelle unserer inneren Antreiber. Verhaltensweisen: a) fürsorglich, b) bestrafend-belehrend (dominant, bewertend, beschuldigend).",
+                    "**Erwachsenen-Ich:** Gefühl von Klarheit, Stabilität, Selbstwirksamkeit. In Balance von Gefühl und Verstand. Es bildet den Gipfel, die Spitze, denn da wollen wir hin!"
+                ]},
+                { "type": "blockquote", "data": "Wichtig: In jeder Situation kannst du in jedem Zustand handeln! Doch das Erwachsenen-Ich ist der einzige Zustand, in dem du dein Leben wirklich in der Hand hast."}
+            ]
+        },
+        {
+            "title": "Glaubenssätze & Antreiber",
+            "content": [
+                { "type": "p", "data": "Glaubenssätze sind Verallgemeinerungen, die wir über uns selbst, über andere Menschen und unsere Umwelt in prägenden Lebenssituationen treffen. Sie entstehen oft in der frühen Kindheit und werden unbewusst als „Wahrheit“ akzeptiert." },
+                { "type": "h3", "data": "Typische Glaubenssätze:"},
+                { "type": "ul", "data": [ "Man hat im Leben eh keine Wahl", "Frauen sind keine guten Chefs", "Alle Männer sind unzuverlässig", "Ich kann nicht gut mit Geld umgehen", "Ich bin es nicht wert, geliebt zu werden" ]},
+                { "type": "h3", "data": "Typische Antreiber in unserer Kultur:"},
+                { "type": "ul", "data": [ "Gib dir Mühe!", "Streng dich an!", "Beeile dich!", "Mach es jedem Recht! Sei stark!", "Mach keinen Fehler! Sei perfekt!" ]},
+                { "type": "p", "data": "Die Antreiber sind einerseits von außen eingegeben und verinnerlicht (Eltern-Ich), andererseits sind sie wie die Antwort auf unsere Glaubenssätze."}
+            ]
+        }
+      ]
+    },
+    "modul5": {
+      "title": "Agile Transformation",
+      "chapters": [
+        {
+            "title": "Agile Transformation Stufenmodell (angelehnt an Denning)",
+            "content": [
+                { "type": "p", "data": "Dieses Modell beschreibt die Phasen, die eine Organisation während einer agilen Transformation durchläuft." },
+                { "type": "ul", "data": [
+                    "**Exploring (Erkunden):** Beginnt mit einer Bestandsaufnahme (1), der Gründung eines Transformationsteams (2), der Entwicklung einer Vision & Vorbereitung (3) und dem Starten von agilen Piloten (4).",
+                    "**Progressing (Fortschreiten):** Hier wird die Agilität erweitert und Erfolge werden gefeiert (5). Gleichzeitig ist es wichtig, 'Fake Agile' zu vermeiden (6) und Rückschläge auszuhalten (7).",
+                    "**Mastering (Meistern):** In dieser Phase findet die operative Skalierung der Agilität statt (8) und es wird eine nachhaltige, strategische Agilität im gesamten Unternehmen etabliert (9)."
+                ]},
+                { "type": "image_placeholder", "data": "Diagramm: Business Agility über Zeit, mit den Stufen Exploring, Progressing, Mastering und den 9 Schritten." }
+            ]
+        },
+        {
+            "title": "Agile Reifegrad Checks",
+            "content": [
+                { "type": "p", "data": "Es gibt verschiedene web-basierte Werkzeuge und Modelle, um den Reifegrad und die Gesundheit einer agilen Organisation oder eines Teams zu überprüfen:" },
+                { "type": "ul", "data": [
+                    "**Comparative Agility:** Eine umfassende Analyseplattform zur Messung agiler Fähigkeiten über verschiedene Bereiche hinweg.",
+                    "**Scrum Team Survey:** Ein wissenschaftlich fundiertes Modell, das Faktoren für die Effektivität von Scrum Teams misst, wie psychologische Sicherheit, Teamautonomie und Stakeholder-Einbindung.",
+                    "**SAFe Business Agility Assessment:** Ein spezifisches Tool aus dem Scaled Agile Framework, das den Reifegrad entlang der sieben Kernkompetenzen von Business Agility misst (z.B. Team and Technical Agility, Lean Portfolio Management).",
+                    "**Spotify Squad Health Check:** Ein einfaches, visuelles Ampelsystem (grün, gelb, rot), bei dem Teams sich selbst anhand von Kriterien wie 'Delivering Value', 'Fun' oder 'Easy to release' bewerten."
+                ]}
+            ]
+        },
+        {
+            "title": "Das Transformationsteam",
+            "content": [
+                { "type": "p", "data": "Das agile Transformationsteam bildet die Anfangsphase des Transformationsprozesses. Es ist der Motor des Wandels."},
+                { "type": "h3", "data": "Wichtige Merkmale:"},
+                { "type": "ul", "data": [
+                    "Es sollte durch C-Level-Executives unterstützt werden.",
+                    "Es sollte Agile Champions aus verschiedenen Ebenen und Bereichen des Unternehmens umfassen.",
+                    "Es sollte nicht nur aus leitenden Angestellten bestehen.",
+                    "Externe Berater können hilfreich sein, aber die Hauptverantwortung liegt bei internen Mitgliedern.",
+                    "Das Team besteht idealerweise aus 3 bis 9 Personen.",
+                    "Ein Scrum Master unterstützt den Prozess und beseitigt Hindernisse.",
+                    "Ein Product Owner arbeitet mit Stakeholdern zusammen, um den Transformations-Backlog zu priorisieren."
+                ]}
+            ]
+        },
+        {
+            "title": "Methoden zur Scrum-Einführung",
+            "content": [
+                { "type": "p", "data": "Die Einführung von Scrum in einem Pilotprojekt ist ein strukturierter Prozess, der mehrere Schritte umfasst:" },
+                { "type": "ol", "data": [
+                    "**Methodik-Verständnis schaffen:** Sicherstellen, dass alle Beteiligten den Scrum Guide, die Rollen, Events und Artefakte verstehen.",
+                    "**Produktvision erstellen:** Kreative Methoden wie 'Design the Box' oder 'Lego Serious Play' nutzen, um eine greifbare, gemeinsame Vision zu entwickeln.",
+                    "**Initiales Refinement:** Den Product Backlog mit ersten User Stories füllen. Methoden wie 'Magic Estimation' oder 'User Story Mapping' helfen bei der Priorisierung.",
+                    "**Selbstorganisierte Teamzusammenstellung:** Den Entwicklern ermöglichen, sich basierend auf den Anforderungen eigenständig zu Teams zusammenzufinden.",
+                    "**Definition of Ready & Definition of Done erstellen:** Klare Kriterien festlegen, wann eine Anforderung bereit für den Sprint ist (DoR) und wann sie als fertig gilt (DoD).",
+                    "**Refinement & Sprint Planning:** Regelmäßige Verfeinerung des Backlogs und Planung des ersten Sprints mit den entsprechenden Planning Poker Karten."
+                ]}
+            ]
+        },
+        {
+            "title": "Skalierte Frameworks: Spotify vs. SAFe",
+            "content": [
+                { "type": "h3", "data": "Spotify-Modell (ist kein Framework!)"},
+                { "type": "p", "data": "Es ist ein agiles Organisationsmodell, das auf Autonomie und dezentraler Entscheidungsfindung basiert. Es ist flexibel, aber weniger preskriptiv als SAFe."},
+                { "type": "ul", "data": [
+                    "**Squad:** Ein kleines, multidisziplinäres und autonomes Team, das für ein bestimmtes Feature verantwortlich ist. Wie ein Mini-Startup.",
+                    "**Tribe:** Eine Sammlung von Squads, die in einem verwandten Bereich arbeiten.",
+                    "**Chapter:** Eine Gruppe von Personen mit ähnlichen Fähigkeiten (z.B. alle Frontend-Entwickler) über verschiedene Squads hinweg, um den Wissensaustausch zu fördern.",
+                    "**Guild:** Eine interessenbasierte Gemeinschaft, die sich über das gesamte Unternehmen erstrecken kann (z.B. eine 'Web-Performance-Gilde')."
+                ]},
+                { "type": "h3", "data": "SAFe (Scaled Agile Framework)"},
+                { "type": "p", "data": "Ein umfassendes und preskriptives Framework für die Implementierung von Agile in großen Unternehmen. Es bietet detaillierte Prozesse, Rollen und Strukturen."},
+                { "type": "p", "data": "Das Herzstück von SAFe ist der **Agile Release Train (ART)**, ein langlebiges Team von agilen Teams, das in einem gemeinsamen Rhythmus (dem Program Increment, PI) Wert liefert. Der ART plant seine Arbeit gemeinsam in einem PI Planning Event."}
+            ]
+        },
+        {
+            "title": "Strategische Agilität",
+            "content": [
+                { "type": "p", "data": "Strategische Agilität geht über die operative Ebene hinaus und bedeutet, dass die gesamte Organisation in der Lage ist, flexibel auf Marktveränderungen zu reagieren und Chancen zu ergreifen." },
+                { "type": "h3", "data": "Schlüsselkonzepte der strategischen Agilität:" },
+                { "type": "ol", "data": [
+                    "**Kundenzentrierung:** Produkte und Dienstleistungen kontinuierlich an den Marktanforderungen ausrichten.",
+                    "**Technologieeinsatz:** Technologie nutzen, um Betriebsabläufe zu optimieren und schnell zu reagieren.",
+                    "**Kontinuierliches Lernen und Verbessern:** Die Organisation lernt ständig auf Basis von Feedback und Leistungskennzahlen.",
+                    "**Agile Budgetierung:** Ein flexibler Ansatz in der Finanzplanung, der agile Arbeitsmethoden unterstützt.",
+                    "**From Project to Products:** Ein Übergang von projektorientierter zu produktorientierter Arbeitsweise, bei der Teams kontinuierlich an Produkten arbeiten und diese weiterentwickeln.",
+                    "**Agile HR:** Anwendung agiler Prinzipien im Bereich Human Resources, um Prozesse wie Rekrutierung, Talentmanagement und Mitarbeiterentwicklung flexibler zu gestalten."
+                ]}
+            ]
+        },
+        {
+            "title": "Die drei Strukturen einer Organisation (nach Douglas McGregor)",
+            "content": [
+                { "type": "p", "data": "Jede Organisation hat drei verschiedene, gleichzeitig existierende Strukturen:"},
+                { "type": "ul", "data": [
+                    "**Formale Struktur:** Die offizielle Hierarchie, meist als Organigramm dargestellt. Sie legt Berichtswege und rechtliche Rahmenbedingungen fest.",
+                    "**Soziale Struktur (Informell):** Das Netzwerk sozialer Beziehungen und Kommunikationswege innerhalb der Organisation. Hier geht es darum, wer mit wem spricht und wie Informationen wirklich fließen.",
+                    "**Wertschöpfungsstruktur:** Die Struktur, in der die eigentliche Wertschöpfung stattfindet. Hier geht es darum, welche Kompetenzen wo gebündelt sind und wie diese zusammenarbeiten, um Mehrwert zu schaffen. Dies ist die Ebene, auf der Agilität ihre größte Wirkung entfaltet."
+                ]}
+            ]
+        },
+        {
+            "title": "Flight Levels (nach Klaus Leopold)",
+            "content": [
+                { "type": "p", "data": "Das Flight Levels-Modell hilft dabei, die verschiedenen Arbeitsebenen in einer Organisation zu verstehen und zu verbinden, um eine durchgehende Agilität zu erreichen." },
+                { "type": "ul", "data": [
+                   "**Flight Level 1 – Operative Ebene:** Die Ebene der Umsetzungsteams, wo die eigentliche Arbeit stattfindet (die 'Werkbank'). Hier werden agile Methoden wie Scrum oder Kanban angewendet. Fokus liegt auf: Arbeit visualisieren, WIP-Limits, Feedbackschleifen.",
+                   "**Flight Level 2 – Koordination:** Die Ebene der Koordination zwischen Teams entlang eines Wertstroms. Hier wird sichergestellt, dass der Prozess von Anfang bis Ende funktioniert und Abhängigkeiten gemanagt werden. Fokus liegt auf: Abhängigkeiten sichtbar machen, End-zu-End-Fluss sicherstellen.",
+                   "**Flight Level 3 – Strategische Ebene:** Die oberste Flughöhe, die sich mit der strategischen Ausrichtung der gesamten Organisation befasst. Hier werden Portfolio-Entscheidungen getroffen (welche Initiativen werden gestartet, welche nicht?). Fokus liegt auf: Priorisierung von strategischen Initiativen, Visualisierung mit Strategieboards."
+                ]}
+            ]
+        }
+      ]
+    }
+  },
+  "quizQuestions": [
+    { "id": 1, "questionText": "Welche Organisationsstruktur ist am weitesten von einer agilen Organisationsstruktur entfernt?", "options": ["Hierarchische Struktur", "Wertstromorganisierte Struktur", "Matrix-Struktur", "Netzwerk-Struktur"], "userAnswer": "Hierarchische Struktur", "pointsScored": 1, "isCorrect": true },
+    { "id": 2, "questionText": "Was sind die 'Liberating Structures'?", "options": ["Eine Prozess-Guideline für Moderor:innen", "Ein Leitfaden, damit Moderator:innen mit Führungskräften die Inhalte abstimmen können", "Methode zur Gruppenfindung", "Moderationsmethoden, um möglichst viele Teilnehmende gleichzeitig einzubinden"], "userAnswer": "Moderationsmethoden, um möglichst viele Teilnehmende gleichzeitig einzubinden", "pointsScored": 1, "isCorrect": true },
+    { "id": 3, "questionText": "Was sind die wesentlichen Unterschiede von einer Moderation zu einer Präsentation?", "options": ["Vernetzung der Teilnehmer durch Moderator, hoher Anteil an Partizipation, geringere inhaltliche Arbeit des Moderierenden", "Teilnehmer partizipieren wenig, Moderator übernimmt Verantwortung für Inhalte", "Ergebnisoffenheit des zu moderierenden Events, Teilnehmer bestimmen Inhalte stets völlig selbst", "Moderator arbeitet mit einer Agenda, Ergebnisse werden in Absprache mit der Führungskraft vorher festgelegt"], "userAnswer": "Vernetzung der Teilnehmer durch Moderator, hoher Anteil an Partizipation, geringere inhaltliche Arbeit des Moderierenden", "pointsScored": 1, "isCorrect": true },
+    { "id": 4, "questionText": "Was unterscheidet Trainer und Berater von Coaches?", "options": ["Nichts: Coach ist einfach nur ein modernes Wort für Trainer/Berater", "Coaches sind auch Therapeuten, Trainer und Berater nicht", "Trainer und Berater vermitteln Wissen und Erfahrungen, sind Fachexperten, geben Tipps und verfolgen inhaltliche Ziele", "Trainer und Berater agieren auf Augenhöhe, Coaches nicht"], "userAnswer": "Trainer und Berater vermitteln Wissen und Erfahrungen, sind Fachexperten, geben Tipps und verfolgen inhaltliche Ziele", "pointsScored": 1, "isCorrect": true },
+    { "id": 5, "questionText": "Welche Zielsetzung widerspricht Agilität?", "options": ["Reaktionsfähigkeit auf Veränderung", "Zentrierung auf den Kunden und seine Bedürfnisse", "Starre Prozesse und Vorgehensweisen", "Entwicklung einer lernenden Organisation"], "userAnswer": "Starre Prozesse und Vorgehensweisen", "pointsScored": 1, "isCorrect": true },
+    { "id": 6, "questionText": "Welche Regeln gelten bei der Methode 'Open Space' nicht?", "options": ["Die Selbstverantwortung der Teilnehmenden für die Dokumentation", "Wer auch immer kommt, es sind die richtigen Leute", "Es gibt eine organisierte Dokumentation", "Das Gesetz der zwei Füße"], "userAnswer": "Das Gesetz der zwei Füße", "pointsScored": 0, "isCorrect": false },
+    { "id": 10, "questionText": "Für welche Art von Projekten eignet sich das Projekt-Framework 'Scrum' am ehesten?", "options": ["Projekte, bei denen neue Produkte oder Dienstleistungen entwickelt werden", "Projekte zur kontinuierlichen Verbesserung", "Projekte, bei denen Zielsetzung und Vorgehensweise von Beginn an klar sind", "Projekte, die sich mit dem Betrieb und der Wartung von Produkten befassen"], "userAnswer": "Projekte zur kontinuierlichen Verbesserung", "pointsScored": 0, "isCorrect": false },
+    { "id": 12, "questionText": "Welche Aussage trifft auf das Thema Auftragsklärung zu?", "options": ["Mehr als drei Mal sollte man nicht mit dem Kunden über den Auftrag reden", "Die Auftragsklärung muss vor der Beauftragung vollumfänglich erledigt sein", "Auftragsklärung ist ein fortlaufender Prozess", "Auftragsklärung erfolgt nur einmal zu Beginn des Auftrags"], "userAnswer": "Die Auftragsklärung muss vor der Beauftragung vollumfänglich erledigt sein", "pointsScored": 0, "isCorrect": false },
+    { "id": 13, "questionText": "Welcher Zweck (Purpose) spricht nicht für eine agile Transformation?", "options": ["Agiles Arbeiten in einem dynamisches Arbeitsumfeld", "Ohne Agilität geht heute nichts mehr", "Eine agile Ausrichtung sichert unser Bestehen in der VUCA Welt", "Mehr Kundenzentrierung durch agiles Arbeiten"], "userAnswer": "Mehr Kundenzentrierung durch agiles Arbeiten", "pointsScored": 0, "isCorrect": false },
+    { "id": 16, "questionText": "Welches Format ist eher kein agiles Lernformat?", "options": ["FedEx Day", "Hackathon", "Web Based Training", "Brown Bag Meeting"], "userAnswer": "Hackathon", "pointsScored": 0, "isCorrect": false },
+    { "id": 21, "questionText": "In der Transformationsphase Progressive: Was gehört nicht dazu?", "options": ["Fake Agile vermeiden", "Agilen Pilot starten", "Rückschläge aushalten", "Agilität erweitern & Erfolge feiern"], "userAnswer": "Agilität erweitern & Erfolge feiern", "pointsScored": 0, "isCorrect": false },
+    { "id": 29, "questionText": "Was bedeutet Pacing im Zusammenhang mit Coaching?", "options": ["Pacing beinhaltet z.B. aktives Zuhören, verbale und nonverbale Signale spiegeln", "Pacing kommt aus dem Neurolinguistischen Programmieren", "Pacing bedeutet, den Coachee auszubremsen, wenn er ein zu hohes Arbeitstempo hat", "Pacing bedeutet, dem Coachee den Weg zum Ziel zu zeigen"], "userAnswer": "Pacing bedeutet, den Coachee auszubremsen, wenn er ein zu hohes Arbeitstempo hat", "pointsScored": 0, "isCorrect": false },
+    { "id": 34, "questionText": "Welche Aussage zur Veränderung von Organisationskultur ist korrekt?", "options": ["Die Organisationskultur lässt sich direkt durch Interventionen verändern", "Die Vision wird jedes Jahr an die Organisationskultur angepasst", "Organisationskultur ist in Jahren gewachsen und daher auch nur sehr langfristig zu verändern", "Organisationskultur verändert sich durch das Handeln der in ihr tätigen Personen"], "userAnswer": "Organisationskultur ist in Jahren gewachsen und daher auch nur sehr langfristig zu verändern", "pointsScored": 0, "isCorrect": false },
+    { "id": 37, "questionText": "Auf welche Voraussetzung kann bei einer Agilen Transformation am ehesten verzichtet werden?", "options": ["Eine klare Vision", "Die 'passende Agilität' für die Organisation", "Das Mitwirken aller Betroffenen", "Ein gemeinsames Verständnis der angestrebten Ziele"], "userAnswer": "Eine klare Vision", "pointsScored": 0, "isCorrect": false },
+    { "id": 42, "questionText": "Welche der folgenden Fragen ist eine zirkuläre Frage?", "options": ["Welche weiteren Möglichkeiten siehst Du?", "Wie siehst Du das?", "Wie würde jemand aus Deinem Umfeld das sehen?", "Wie kam es dazu?"], "userAnswer": "Welche weiteren Möglichkeiten siehst Du?", "pointsScored": 0, "isCorrect": false },
+    { "id": 46, "questionText": "Was ist keine Teamphase nach Tuckman?", "options": ["Learning", "Adjourning", "Storming", "Norming"], "userAnswer": "Adjourning", "pointsScored": 0, "isCorrect": false },
+    { "id": 48, "questionText": "Was steht einer erfolgreichen Veränderung am ehesten im Weg?", "options": ["Veränderung geschieht um der Veränderung willen", "Veränderung ist zielgerichtet und durchdacht", "Veränderung wird geplant und gesteuert", "Veränderung wird gemeinsam getragen"], "userAnswer": "Veränderung wird geplant und gesteuert", "pointsScored": 0, "isCorrect": false },
+    { "id": 50, "questionText": "Welche Bedeutung hat das agile Mindset?", "options": ["Wenn mit agilen Frameworks gearbeitet wird ist das Mindset automatisch gegeben", "Wer nicht agil denkt, kann auch nicht agil arbeiten", "Die Geisteshaltung bestimmt über den Erfolg der Agilen Transformation", "Agilität wirkt im besonderen Maße über die entsprechende Geisteshaltung"], "userAnswer": "Wer nicht agil denkt, kann auch nicht agil arbeiten", "pointsScored": 0, "isCorrect": false },
+    { "id": 51, "questionText": "Was ist kein Kernpunkt Agilen Lernes?", "options": ["Lernziele, -formate und -settings werden vorgegeben", "Lernen, Übung und Praxis sind eng miteinander verbunden", "Lernen ist individualisiert, bedarfsorientiert und praxisnah", "Kollaborative und kooperatives Lernen sind wichtige Bestandteile"], "userAnswer": "Lernen ist individualisiert, bedarfsorientiert und praxisnah", "pointsScored": 0, "isCorrect": false },
+    { "id": 52, "questionText": "Was unterscheidet ein Team von einer Gruppe?", "options": ["Ein Team arbeitet zusammen und strebt auch Weiterentwicklung an, um ein gemeinsames Ziel zu erreichen", "Alle Antworten sind korrekt", "Ein Team ist eine Gruppe, aber eine Gruppe nicht automatisch ein Team", "Ein Team ist eine kleine Gruppe von ca. 9 Personen"], "userAnswer": "Ein Team arbeitet zusammen und strebt auch Weiterentwicklung an, um ein gemeinsames Ziel zu erreichen", "pointsScored": 0, "isCorrect": false },
+    { "id": 53, "questionText": "Welchen Einfluss haben die Ziele des Managements für die Agile Transformation?", "options": ["Alle Antworten sind falsch", "Die Ziele des Managements sind unabhängig von der Agilen Transformation zu sehen", "Konkurrierende Ziele erschweren den Fokus auf die Ziele der Agilen Transformation", "Die Ziele des Managements müssen 1:1 mit der Vision der Agilen Transformation übereinstimmen"], "userAnswer": "Die Ziele des Managements müssen 1:1 mit der Vision der Agilen Transformation übereinstimmen", "pointsScored": 0, "isCorrect": false },
+    { "id": 54, "questionText": "Welcher Fokus ist nicht Bestandteil des Competing Values Framework?", "options": ["Calibration / Kalibrierung", "Control / Kontrolle", "Competition / Wettbewerb", "Collaboration / Kollaboration"], "userAnswer": "Control / Kontrolle", "pointsScored": 0, "isCorrect": false },
+    { "id": 55, "questionText": "Was soll die Wunderfrage bewirken?", "options": ["Der Coachee versetzt sich gedanklich in eine Situation, in der sein Anliegen gelöst ist", "Das Anliegen des Coachee löst sich von alleine", "Denk- und Handlungsprozesse zu beleuchten, die zur Entstehung des Problems beitragen", "Der Coachee kann die Situation aus der Zukunft betrachten"], "userAnswer": "Denk- und Handlungsprozesse zu beleuchten, die zur Entstehung des Problems beitragen", "pointsScored": 0, "isCorrect": false },
+    { "id": 56, "questionText": "Warum ersetzt SAFe die Linienorganisation?", "options": ["SAFe ersetzt die Linienorganisation nicht, sondern ergänzt sie", "Weil SAFe die Linienorganisation durch eine vollständig agile Struktur ersetzt", "SAFe ersetzt die traditionelle Linienorganisation durch ein Netzwerk", "SAFe ersetzt die Linienorganisation durch eine flache Hierarchie"], "userAnswer": "SAFe ersetzt die Linienorganisation durch eine flache Hierarchie", "pointsScored": 0, "isCorrect": false },
+    { "id": 57, "questionText": "Worin liegt die Bedeutung von 'Connect' im Rahmen des Modells 'Training from the Back of the Room'?", "options": ["Alle Antworten sind richtig", "Die Lernenden kommen untereinander, mit ihren Lernzielen und dem Inhalt in Kontakt", "Die Lernenden kommen mit sich selbst, den anderen und ihren privaten Themen in Kontakt", "Die Lernenden kommen untereinander, mit dem Trainierenden und der Trainingsorganisation in Kontakt"], "userAnswer": "Die Lernenden kommen untereinander, mit dem Trainierenden und der Trainingsorganisation in Kontakt", "pointsScored": 0, "isCorrect": false },
+    { "id": 62, "questionText": "Welche Perspektiven bildet die 'Stakeholder-Matrix' ab?", "options": ["Betroffenheit & Einfluss", "Alle Antworten sind korrekt", "Einfluss & Interesse", "Interesse & Betroffenheit"], "userAnswer": "Alle Antworten sind korrekt", "pointsScored": 0, "isCorrect": false },
+    { "id": 66, "questionText": "Wozu eignen sich Skalenfragen weniger?", "options": ["Um zu bestimmen, was ein nächster Schritt sein könnte", "Um herauszufinden, was einen Unterschied machen würde", "Um auf bestehende Ressourcen zuzugreifen", "Um zu sehen, wie der Coachee eine Situation einschätzt"], "userAnswer": "Um zu bestimmen, was ein nächster Schritt sein könnte", "pointsScored": 0, "isCorrect": false },
+    { "id": 67, "questionText": "Ab welcher Eskalationsstufe nach F. Glasl benötigen Konfliktparteien Hilfe von außen?", "options": ["1", "7", "4", "12"], "userAnswer": "7", "pointsScored": 0, "isCorrect": false },
+    { "id": 68, "questionText": "Wofür steht das SCARF-Modell?", "options": ["Status, Certainty, Autonomy, Relatedness, Fairness", "Status, Certainty, Autonomy, Relatedness, Fulfillment", "Safety, Certainty, Autonomy, Relatedness, Fairness", "Status, Control, Autonomy, Relatedness, Fairness"], "userAnswer": "Status, Certainty, Autonomy, Relatedness, Fulfillment", "pointsScored": 0, "isCorrect": false },
+    { "id": 69, "questionText": "Wo sollten Entscheidungen in einer agilen Organisation gefällt werden?", "options": ["Im agilen Führungskreis", "Alle Antworten sind falsch", "Ausschließlich in agilen Teams", "Gemeinschaftlich durch alle Stakeholder"], "userAnswer": "Gemeinschaftlich durch alle Stakeholder", "pointsScored": 0, "isCorrect": false },
+    { "id": 72, "questionText": "Welche systemische Ansicht hilft dem Agile Coach?", "options": ["Die Einflussnahme an einer Stelle des Systems hat immer auch Auswirkungen auf andere Stellen", "Das System ist immer nur so gut wie die Summe seiner Einzelteile", "Ein System sollte immer getrennt von seinem Umfeld betrachtet werden", "Die Effizienz eines Systems bestimmt über dessen Effektivität"], "userAnswer": "Das System ist immer nur so gut wie die Summe seiner Einzelteile", "pointsScored": 0, "isCorrect": false },
+    { "id": 76, "questionText": "Wozu eignen sich Skalenfragen nicht?", "options": ["Um auf bestehende Ressourcen zuzugreifen", "Um zu bestimmen, was ein nächster Schritt sein könnte", "Um zu sehen, wie der Coachee eine Situation einschätzt", "Um herauszufinden, was einen Unterschied machen würde"], "userAnswer": "Um herauszufinden, was einen Unterschied machen würde", "pointsScored": 0, "isCorrect": false },
+    { "id": 80, "questionText": "Was haben Schulung, Training und Moderation gemeinsam?", "options": ["Es gibt viel Raum für Diskussionen", "Die Veranstaltung wird durch eine Person geleitet", "Das Wissen wird in der Regel frontal vermittelt", "Im Vordergrund steht das Üben"], "userAnswer": "Es gibt viel Raum für Diskussionen", "pointsScored": 0, "isCorrect": false }
+  ]
+}
