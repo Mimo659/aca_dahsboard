@@ -1,10 +1,7 @@
-import { examData } from '../data/exam.js';
-import { glossarData } from '../data/glossary.js';
-import { moduleData } from '../data/modules.js';
-import { quizData } from '../data/quiz.js';
+import data from '../data/data_complete.json' assert { type: 'json' };
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    const { examResults: examData, modules: moduleData, quizQuestions: quizData, glossary: glossarData } = data;
     // --- DOM ELEMENT SELECTORS ---
     const mainNav = document.getElementById('main-nav');
     const burgerMenu = document.getElementById('burger-menu');
@@ -49,7 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- DASHBOARD RENDERING ---
     function renderDashboard() {
-        const sortedModules = [...examData.modules].sort((a, b) => a.score - b.score);
+        // examData is now examResults
+        const sortedModules = [...examData.moduleScores].sort((a, b) => a.score - b.score);
 
         let dashboardHTML = `
             <div id="dashboard-header">
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div class="card" id="module-performance">
                     <h3>Modul-Leistung</h3>
-                    ${examData.modules.map(mod => `
+                    ${examData.moduleScores.map(mod => `
                         <div>
                             <p>${mod.name}</p>
                             <div class="progress-bar-container">
@@ -102,17 +100,20 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderModulesOverview() {
         moduleContent.classList.add('hidden');
         moduleOverview.classList.remove('hidden');
-        moduleOverview.innerHTML = `<h2>Module</h2>` + examData.modules.map(mod => `
-            <div class="module-card" data-module-id="${mod.id}">
-                <h3>${mod.title}</h3>
-                <p>Klicken, um die Inhalte für Modul ${mod.id.slice(-1)} anzuzeigen.</p>
+        // examData.modules is now examData.moduleScores, and moduleData has the titles
+        moduleOverview.innerHTML = `<h2>Module</h2>` + examData.moduleScores.map(modScore => {
+            const modDetails = moduleData[modScore.id]; // Get details from moduleData
+            return `
+            <div class="module-card" data-module-id="${modScore.id}">
+                <h3>${modDetails ? modDetails.title : modScore.name}</h3>
+                <p>Klicken, um die Inhalte für Modul ${modScore.id.slice(-1)} anzuzeigen.</p>
                  <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: ${mod.score}%; background-color: ${getScoreColor(mod.score)};">
-                        ${mod.score}%
+                    <div class="progress-bar" style="width: ${modScore.score}%; background-color: ${getScoreColor(modScore.score)};">
+                        ${modScore.score}%
                     </div>
                 </div>
             </div>
-        `).join('');
+        `}).join('');
 
         document.querySelectorAll('.module-card').forEach(card => {
             card.addEventListener('click', (e) => {
@@ -267,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         options.sort(() => Math.random() - 0.5); // Shuffle options
 
         questionContainer.innerHTML = `
-            <h3>${question.question}</h3>
+            <h3>${question.questionText}</h3>
             <div class="answer-options">
                 ${options.map(option => `<button class="answer-btn">${option}</button>`).join('')}
             </div>
