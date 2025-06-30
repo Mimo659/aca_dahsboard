@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Coach Lern-Cockpit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-bg: #2c2f33;
+            --secondary-bg: #23272a;
+            --card-bg: #3a3e42;
+            --text-color: #ffffff;
+            --text-muted: #99aab5;
+            --accent-color-1: #00FFFF; /* Cyan */
+            --accent-color-2: #FF69B4; /* Pink */
+            --accent-color-3: #FFD700; /* Gelb */
+            --color-good: #4CAF50;
+            --color-medium: #FFC107;
+            --color-weak: #F44336;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary-bg);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent-color-1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-color);
+            border-bottom: 2px solid var(--accent-color-2);
+        }
+
+        .search-container input {
+            background: var(--primary-bg);
+            border: 1px solid var(--text-muted);
+            color: var(--text-color);
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin-left: 2rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: var(--accent-color-3);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--text-muted);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--accent-color-1);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color-1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            color: var(--accent-color-3);
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        /* Dashboard Styles */
+        #dashboard-header {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        #dashboard-header h2 {
+            border: none;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            background-color: var(--primary-bg);
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            text-align: right;
+            padding-right: 5px;
+            line-height: 20px;
+            color: var(--primary-bg);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .card a, button.action-btn, #back-to-modules {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--accent-color-2);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-family);
+            font-size: 1rem;
+        }
+
+        .card a:hover, button.action-btn:hover, #back-to-modules:hover {
+            background-color: #d84a96;
+        }
+
+        /* Module Styles */
+        #module-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .module-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+        }
+        .module-card h3 {
+            margin-top: 0;
+            color: var(--accent-color-3);
+        }
+
+        .module-content-container {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .module-content-container ul, .module-content-container ol {
+            margin-left: 20px;
+            margin-bottom: 1rem;
+        }
+        .module-content-container li {
+            margin-bottom: 0.5rem;
+        }
+
+        .module-content-container blockquote {
+            border-left: 4px solid var(--accent-color-1);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+        .module-content-container .exercise {
+            background-color: var(--primary-bg);
+            border: 1px dashed var(--accent-color-3);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+        .module-content-container .exercise h4 {
+            color: var(--accent-color-3);
+        }
+
+        .glossar-term {
+            color: var(--accent-color-1);
+            font-weight: bold;
+            border-bottom: 1px dotted var(--accent-color-1);
+            cursor: pointer;
+        }
+
+        #tooltip {
+            position: absolute;
+            background-color: #1a1c1e;
+            color: var(--text-color);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--accent-color-2);
+            max-width: 300px;
+            z-index: 1001;
+            font-size: 0.9rem;
+            pointer-events: none; /* Important */
+        }
+
+
+        /* Glossar Styles */
+        #glossar-filter {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            background-color: var(--card-bg);
+            border: 1px solid var(--text-muted);
+            color: var(--text-color);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #glossar-list li {
+            background-color: var(--card-bg);
+            margin-bottom: 0.5rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        #glossar-list strong {
+            color: var(--accent-color-3);
+            font-size: 1.2rem;
+        }
+
+        /* Quiz Styles */
+        #quiz-container {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #quiz-container button {
+            cursor: pointer;
+            background: var(--accent-color-2);
+            color: var(--text-color);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        #quiz-container button:hover {
+            background-color: #d84a96;
+        }
+
+        #question-container h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .answer-options {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .answer-options button {
+            width: 100%;
+            background: var(--primary-bg);
+            border: 1px solid var(--accent-color-1);
+            text-align: left;
+            padding: 1rem;
+        }
+        .answer-options button:hover {
+            background: var(--secondary-bg);
+        }
+
+        #quiz-feedback {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .feedback-correct {
+            background-color: var(--color-good);
+        }
+        .feedback-incorrect {
+            background-color: var(--color-weak);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--secondary-bg);
+        }
+
+        /* Responsive Design */
+        #burger-menu {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        #burger-menu span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-color);
+        }
+
+
+        @media (max-width: 992px) {
+            header {
+                flex-wrap: wrap;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                margin-top: 1rem;
+            }
+            nav.active {
+                display: block;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            .search-container {
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+            }
+            .search-container input {
+                margin-left: 0;
+                width: 80%;
+            }
+            #burger-menu {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            main {
+                padding: 1rem;
+            }
+            header {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <path d="M50 10 L90 90 L70 90 L50 45 L30 90 L10 90 Z" fill="none" stroke="#FFD700" stroke-width="8"/>
+                <path d="M50 10 L90 90 L70 90 L50 45 L30 90 L10 90 Z" transform="translate(5, 5) rotate(15 50 50)" fill="none" stroke="#FF69B4" stroke-width="8"/>
+                <path d="M50 10 L90 90 L70 90 L50 45 L30 90 L10 90 Z" transform="translate(-5, -5) rotate(-15 50 50)" fill="none" stroke="#00FFFF" stroke-width="8"/>
+            </svg>
+            <h1>Lern-Cockpit</h1>
+        </div>
+        <nav>
+            <ul id="main-nav">
+                <li><a href="#dashboard" class="nav-link active">Cockpit</a></li>
+                <li><a href="#module" class="nav-link">Module</a></li>
+                <li><a href="#glossar" class="nav-link">Glossar</a></li>
+                <li><a href="#quiz" class="nav-link">Lern-Challenge</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="search" id="main-search" placeholder="Durchsuche alle Inhalte...">
+            </div>
+        </nav>
+        <div id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" class="content-section active">
+            <!-- Dashboard content will be generated by JavaScript -->
+        </section>
+
+        <section id="module" class="content-section">
+            <div id="module-overview">
+                <!-- Module overview will be generated here -->
+            </div>
+            <div id="module-content" class="hidden">
+                 <!-- Module content will be loaded here -->
+            </div>
+        </section>
+
+        <section id="glossar" class="content-section">
+            <h2>Interaktives Glossar</h2>
+            <input type="text" id="glossar-filter" placeholder="Glossar durchsuchen...">
+            <ul id="glossar-list">
+                <!-- Glossary will be generated by JavaScript -->
+            </ul>
+        </section>
+
+        <section id="quiz" class="content-section">
+            <h2>Lern-Challenge</h2>
+            <div id="quiz-container">
+                <div id="quiz-start">
+                    <h3>Teste dein Wissen!</h3>
+                    <p>Das Quiz konzentriert sich auf deine schwächsten Bereiche, um dich optimal zu fördern.</p>
+                    <button id="start-quiz-btn">Challenge starten</button>
+                </div>
+                <div id="quiz-main" class="hidden">
+                    <div id="question-container"></div>
+                    <div id="quiz-feedback"></div>
+                    <button id="next-question-btn" class="hidden">Nächste Frage</button>
+                </div>
+                 <div id="quiz-end" class="hidden">
+                    <h3>Challenge beendet!</h3>
+                    <p id="quiz-score"></p>
+                    <button id="restart-quiz-btn">Nochmal versuchen</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="search-results" class="content-section">
+             <h2>Suchergebnisse</h2>
+             <div id="search-results-container"></div>
+        </section>
+    </main>
+
+    <div id="tooltip" class="hidden"></div>
+
+    <footer>
+        <p>© 2024 Agile Coach Lernplattform. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- MOCK DATA ---
+
+            const examData = {
+                totalScore: 65,
+                modules: [
+                    { name: "ACA - Modul 1: Agile Foundations", score: 83, id: "modul1", title: "Agile Fundamentals" },
+                    { name: "ACA - Modul 2: Agile Facilitation", score: 90, id: "modul2", title: "Agile Facilitation" },
+                    { name: "ACA - Modul 3: Agile Learning Guidance", score: 50, id: "modul3", title: "Agile Lernbegleitung" },
+                    { name: "ACA - Modul 4: Coaching Habit", score: 67, id: "modul4", title: "Coaching Habit" },
+                    { name: "ACA - Modul 5: Agile Transformation", score: 47, id: "modul5", title: "Agile Transformation" }
+                ]
+            };
+
+            const glossarData = {
+                "Hierarchische Struktur": "Eine Organisationsform mit klaren Befehlsketten von oben nach unten. Sie ist am weitesten von einer agilen Struktur entfernt, da sie langsam und wenig anpassungsfähig ist.",
+                "Liberating Structures": "Eine Sammlung von ca. 33 Mikrostrukturen (Methoden) zur Moderation, die darauf abzielen, alle Teilnehmer gleichzeitig und aktiv in die Lösungsfindung einzubinden.",
+                "SCARF-Modell": "Ein von David Rock entwickeltes neurowissenschaftliches Modell, das fünf soziale Domänen beschreibt, die im Gehirn starke Bedrohungs- oder Belohnungsreaktionen auslösen: Status, Certainty (Sicherheit), Autonomy (Autonomie), Relatedness (Zugehörigkeit), Fairness.",
+                "PDCA-Zyklus": "Ein iteratives Vier-Phasen-Modell zur kontinuierlichen Verbesserung: Plan, Do, Check, Act.",
+                "Open Space": "Eine Methode zur Großgruppenmoderation, bei der die Teilnehmer die Agenda selbst gestalten. Das 'Gesetz der zwei Füße' ist eine zentrale Regel.",
+                "Agiles Manifest": "Ein 2001 verfasstes Dokument, das vier zentrale Werte und zwölf Prinzipien für die agile Softwareentwicklung festlegt.",
+                "Kanban": "Eine Methode zur Steuerung von Produktionsprozessen, die auf Visualisierung des Arbeitsflusses, Begrenzung der parallelen Arbeit (WIP-Limits) und kontinuierlicher Verbesserung basiert.",
+                "Scrum": "Ein agiles Framework für die Entwicklung komplexer Produkte, das auf Sprints, festen Rollen (Product Owner, Scrum Master, Developer) und Events (Planning, Daily, Review, Retrospective) basiert.",
+                "SAFe": "Scaled Agile Framework; ein Set von Organisations- und Workflow-Mustern zur Implementierung agiler Praktiken auf Unternehmensebene.",
+                "VUCA": "Ein Akronym für Volatility (Volatilität), Uncertainty (Unsicherheit), Complexity (Komplexität) und Ambiguity (Mehrdeutigkeit) zur Beschreibung schwieriger Rahmenbedingungen.",
+                "OKR": "Objectives and Key Results; ein Framework zur Zielsetzung, das ambitionierte Ziele (Objectives) mit messbaren Schlüsselergebnissen (Key Results) verbindet."
+            };
+
+            const moduleData = {
+                modul1: {
+                    title: "Agile Fundamentals",
+                    chapters: [
+                        {
+                            title: "1.1 Soziometrisches Stellen",
+                            content: [
+                                { type: 'p', data: "Soziometrisches Stellen ist eine Methode, um bestimmte Eigenschaften, Verhältnisse oder Beziehungen innerhalb einer größeren Gruppe sichtbar zu machen. Als Coaches oder Moderatoren gebt ihr Fragen und Werte vor." },
+                                { type: 'h3', data: "Beispiele:" },
+                                { type: 'ul', data: [
+                                    "Wer hat die längste Firmenzugehörigkeit in Jahren?",
+                                    "Bist du Vegetarier? (auch ja/nein-Fragen lassen sich abbilden)",
+                                    "Wie hoch schätzt du deine Coaching-Expertise auf einer Skala von 1-10 ein?",
+                                    "Wo in Deutschland lebt ihr? Legt fest, wo Norden ist und bildet die Landkarte durch eure Positionen ab."
+                                ]},
+                                { type: 'p', data: "Eine Variante ist die Arbeit mit Bodenankern, z.B. die fünf Scrum-Werte Focus, Openness, Respect, Courage, Commitment - welcher Wert ist wem besonders wichtig? Stellt euch auf das jeweilige Papier." }
+                            ]
+                        },
+                        {
+                            title: "2.1 Wurzeln der Agilität (Taylorismus)",
+                            content: [
+                                { type: 'p', data: "Der Taylorismus ist eine wissenschaftliche Managementtheorie, die in den späten 1800er und frühen 1900er Jahren von Frederick Winslow Taylor entwickelt wurde. Sie zielt darauf ab, die Effizienz und Produktivität von Arbeitsprozessen zu maximieren. Agilität entstand als Antwort auf die Herausforderungen, die mit starren, hierarchischen Strukturen und unflexiblen Prozessen verbunden waren." },
+                                { type: 'p', data: "Beide Ansätze legen Wert auf kontinuierliche Verbesserung. Während der Taylorismus Prozesse durch wissenschaftliche Methoden analysiert, um Effizienz zu steigern, betont Agilität die kontinuierliche Anpassung durch Feedbackschleifen und iterative Entwicklung." }
+                            ]
+                        },
+                        {
+                            title: "2.2 VUCA- und BANI-Welt",
+                            content: [
+                                { type: 'h3', data: "VUCA: Volatility, Uncertainty, Complexity, Ambiguity" },
+                                { type: 'p', data: "Als Agile Coach ist es wichtig, den Begriff VUCA zu verstehen. Er beschreibt die Herausforderungen einer sich schnell verändernden und unvorhersehbaren Umwelt." },
+                                { type: 'h3', data: "Agile Antworten auf VUCA:" },
+                                { type: 'ul', data: [
+                                    "**Vision** entgegen der Volatilität.",
+                                    "**Understanding** (Verständnis) entgegen der Unsicherheit.",
+                                    "**Clarity** (Klarheit) entgegen der Komplexität.",
+                                    "**Agility** (Agilität) entgegen der Mehrdeutigkeit."
+                                ]},
+                                { type: 'h3', data: "BANI: Brittleness, Anxiety, Nonlinearity, Incomprehensibility" },
+                                { type: 'p', data: "BANI ist eine Weiterentwicklung von VUCA und reflektiert zunehmend komplexe und dynamische Rahmenbedingungen. Es beschreibt eine Welt, die brüchig, angsterfüllend, nichtlinear und unbegreiflich ist." }
+                            ]
+                        },
+                        {
+                            title: "2.4 Das agile Manifest und seine 12 Prinzipien",
+                            content: [
+                                { type: 'h3', data: "Die vier Wertepaare des Agilen Manifests" },
+                                { type: 'p', data: "Diese Werte stellen eine Priorisierung dar, nicht eine absolute Wahl. Die linke Seite wird über die rechte gestellt:" },
+                                { type: 'ul', data: [
+                                    "**Individuen und Interaktionen** über Prozesse und Werkzeuge",
+                                    "**Funktionierende Software** über umfassende Dokumentation",
+                                    "**Zusammenarbeit mit dem Kunden** über Vertragsverhandlung",
+                                    "**Reagieren auf Veränderung** über das Befolgen eines Plans"
+                                ]},
+                                { type: 'h3', data: "Die 12 Prinzipien" },
+                                { type: 'ol', data: [
+                                   "Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufriedenzustellen.",
+                                   "Heiße Anforderungsänderungen – selbst spät in der Entwicklung – willkommen.",
+                                   "Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate.",
+                                   "Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten.",
+                                   "Errichte Projekte rund um motivierte Individuen.",
+                                   "Die effizienteste und effektivste Methode, Informationen zu übermitteln, ist das Gespräch von Angesicht zu Angesicht.",
+                                   "Funktionierende Software ist das wichtigste Fortschrittsmaß.",
+                                   "Agile Prozesse fördern nachhaltige Entwicklung.",
+                                   "Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität.",
+                                   "Einfachheit – die Kunst, die Menge nicht getaner Arbeit zu maximieren – ist essenziell.",
+                                   "Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams.",
+                                   "In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an."
+                                ]}
+                            ]
+                        },
+                        {
+                            title: "3.4 Agile Coach Competency Framework",
+                            content: [
+                                { type: 'p', data: "Das von Lyssa Adkins und Michael Spayd entwickelte Modell dient als Referenz, um die verschiedenen Kompetenzbereiche eines Agile Coaches zu erkunden." },
+                                { type: 'h3', data: "Kernbereiche des Frameworks:" },
+                                { type: 'ul', data: [
+                                   "**Agile-Lean Practitioner:** Lebt agile Werte und Praktiken.",
+                                   "**Teaching (Lehren):** Fähigkeit, Wissen zur richtigen Zeit richtig zu vermitteln.",
+                                   "**Mentoring:** Eigene Erfahrungen teilen, um andere wachsen zu lassen.",
+                                   "**Professional Coaching:** Dem Klienten helfen, eigene Lösungen zu finden, ohne die Richtung vorzugeben.",
+                                   "**Facilitating (Moderieren):** Neutrale Prozessbegleitung zur Lösungsfindung.",
+                                   "**Technical Mastery:** Expertise in Software-Handwerkskunst.",
+                                   "**Business Mastery:** Expertise in wertgetriebener Produktentwicklung.",
+                                   "**Transformation Mastery:** Expertise in Organisationsentwicklung und Change Management."
+                                ]},
+                                { type: 'image_placeholder', data: "Diagramm: Agile Coach Competency Framework" }
+                            ]
+                        }
+                    ]
+                },
+                modul2: {
+                    title: "Agile Facilitation",
+                    chapters: [
+                        {
+                            title: "1.2 Arbeiten mit Workshop-Rollen",
+                            content: [
+                                { type: 'p', data: "Zur Förderung der Selbstwirksamkeit in Teams sind Workshop-Rollen ein probates Mittel, um Eigenverantwortung und Beteiligung zu fördern. Sie helfen, typische Hürden wie ausufernde Diskussionen oder fehlende Transparenz zu überwinden." },
+                                { type: 'h3', data: "Beispiele für agile Workshop-Rollen:" },
+                                { type: 'ul', data: [
+                                   "**Fokusbeschleuniger:** Achtet auf den vereinbarten Fokus und signalisiert, wenn eine Diskussion vom Ziel abweicht.",
+                                   "**Querdenker:** Nimmt bewusst andere Sichtweisen ein und hinterfragt die Gruppenmeinung, um Einseitigkeit zu vermeiden.",
+                                   "**Prinzipienwächter:** Achtet auf die Einhaltung der vereinbarten Werte und Arbeitsprinzipien.",
+                                   "**Time Keeper:** Achtet auf die Einhaltung der Zeit (Timeboxing) und fordert diese ein."
+                                ]}
+                            ]
+                        },
+                        {
+                            title: "2.1 Meta-Vereinbarungen",
+                            content: [
+                                { type: 'p', data: "Akzeptierte Regeln sichern die Workshop-Effizienz. Meta-Vereinbarungen sind allgemein-verbindliche Regeln, die für die gesamte Dauer der Zusammenarbeit gelten." },
+                                { type: 'h3', data: "Bekannte Meta-Vereinbarungen:" },
+                                { type: 'ul', data: [
+                                   "**VEGAS-Regel:** 'What happens in Vegas, stays in Vegas...' für Vertrauen und Verschwiegenheit.",
+                                   "**Die 'Oberste Direktive' (nach Norman L. Kerth):** 'Unabhängig davon, was wir herausfinden, müssen wir verstehen und wirklich glauben, dass jeder das Beste getan hat...'",
+                                   "**Workshop-Erfolg:** 'Wir sind alle im hier und jetzt, weil der Workshop Erfolg uns braucht!'"
+                                ]}
+                            ]
+                        },
+                        {
+                            title: "3.1 Auftragsklärung",
+                            content: [
+                                { type: 'p', data: "Eine saubere und gute Auftragsklärung ist das A & O für Agile Coaches. Sie sichert das Mandat zur Durchführung von Vorhaben." },
+                                { type: 'h3', data: "Wichtige Fragen im Fragenkatalog zur Auftragsklärung:" },
+                                { type: 'ul', data: [
+                                   "Welches ist das Ziel? Was möchten die Auftraggeber idealerweise erreichen?",
+                                   "Wer ist noch beteiligt und wie sind deren Ziele?",
+                                   "Woran werden Sie den Erfolg messen?",
+                                   "Welche verdeckten Ziele oder Anliegen sind denkbar?",
+                                   "Welches sind die feststehenden Rahmenbedingungen, die nicht verändert werden dürfen?",
+                                   "Worüber soll nicht diskutiert werden?"
+                                ]}
+                            ]
+                        },
+                         {
+                            title: "4.1 Konflikte im Workshop",
+                            content: [
+                                { type: 'p', data: "Agile Frameworks machen Spannungen und Dysfunktionen sichtbar, was zu Konflikten führen kann. Als Agile Coach ist es wichtig, diesen zu begegnen." },
+                                { type: 'h3', data: "Umgang mit Killerphrasen" },
+                                { type: 'p', data: "Killerphrasen sind pauschale, abwertende Aussagen, die Diskussionen beenden sollen. Teilnehmende nutzen sie oft aus Unsicherheit, Angst vor Veränderung oder um den eigenen Status zu sichern." },
+                                { type: 'h3', data: "Top 5 der agilen Facilitator-Fragen als Reaktion:" },
+                                { type: 'ul', data: [
+                                    "**Detail-konkretisierend:** 'Was genau meinen Sie damit?'",
+                                    "**Ergebnis-fokussierend:** 'Was wäre eine bessere Lösung?'",
+                                    "**Systemische Coaching-Fragen:** 'Was würde passieren, wenn wir es doch tun?'",
+                                    "**Zielhütend:** 'Wie hilft uns diese Aussage, unser Ziel zu erreichen?'",
+                                    "**Bedürfnis-orientiert:** 'Welches Bedürfnis steckt hinter dieser Aussage?'"
+                                ]}
+                            ]
+                        }
+                    ]
+                },
+                modul3: {
+                    title: "Agile Lernbegleitung",
+                    chapters: [
+                         {
+                            title: "1.2 Lernen in agilen Umgebungen",
+                            content: [
+                                { type: 'p', data: "Lernen im agilen Umfeld findet auf drei Ebenen statt, die sich gegenseitig beeinflussen:" },
+                                { type: 'ul', data: [
+                                    "**Person/Individuum:** Haltung, Fähigkeiten, Motivation, Kompetenzen.",
+                                    "**Organisation:** Lernkultur, Lernorganisation, Rollen.",
+                                    "**Umfeld:** Sozialstruktur, Institutionen."
+                                ]},
+                                { type: 'p', data: "Lernen ist besonders erfolgversprechend, wenn die Bedürfnisse des Lernenden, der Organisation und des Umfelds Überschneidungen aufweisen. Diesen Bereich nennen wir den 'Sweet Spot' des Lernens." }
+                            ]
+                        },
+                         {
+                            title: "1.3 Agile Lernkultur",
+                            content: [
+                                { type: 'p', data: "Eine agile Lernkultur fördert kontinuierliches Lernen und Anpassungsfähigkeit. Sie basiert auf Werten wie Flexibilität, Offenheit und Zusammenarbeit. Fehler werden als Lernchancen gesehen." },
+                                { type: 'h3', data: "Elemente eines Lernkulturinventars:" },
+                                { type: 'ul', data: [
+                                    "Lernen als Teil der Unternehmensphilosophie",
+                                    "Organisationale Rahmenbedingungen des Lernens",
+                                    "Lern- und Entwicklungsmöglichkeiten im Unternehmen",
+                                    "Information und Partizipation im Unternehmen",
+                                    "Lernatmosphäre und Unterstützung durch Kollegen"
+                                ]}
+                            ]
+                        },
+                        {
+                            title: "4. Agile Lernformate",
+                            content: [
+                                { type: 'p', data: "Agile Lernformate sind flexible und oft iterative Ansätze zum Lernen und zur Wissensvermittlung."},
+                                { type: 'ul', data: [
+                                    "**BarCamp:** Ein partizipatives Konferenzformat, bei dem die Teilnehmer selbst die Agenda gestalten.",
+                                    "**Brown Bag Meeting:** Informelle Meetings in der Mittagspause.",
+                                    "**Community of Practice (CoP):** Eine Gruppe, die ein gemeinsames Interesse teilt und sich regelmäßig austauscht.",
+                                    "**Fishbowl:** Ein diskussionsförderndes Format mit innerem und äußerem Kreis.",
+                                    "**Hackathons:** Veranstaltungen, bei denen Teams an spezifischen Problemen arbeiten und Prototypen entwickeln.",
+                                    "**Lean Coffee:** Ein strukturiertes, aber agenda-loses Meetingformat.",
+                                    "**OpenSpace:** Eine Methode zur Selbstorganisation von Großgruppen."
+                                ]}
+                            ]
+                        },
+                         {
+                            title: "5. Rolle des Lernbegleiters",
+                            content: [
+                                { type: 'p', data: "Die Führungskraft als agiler Lernbegleiter ist essenziell für den Erfolg. Sie ist nicht nur Manager, sondern Mentor und Unterstützer. Ein Agile Coach hilft der Führungskraft, diese Rolle zu entwickeln."},
+                                { type: 'h3', data: "Die Führungskraft als..."},
+                                { type: 'ul', data: [
+                                    "**Lernkulturbotschafter:** Schafft Freiräume und fördert lebenslanges Lernen.",
+                                    "**Teamentwickler:** Erkennt den Bedarf an Kompetenzen und fördert das Teamgefühl.",
+                                    "**Gestalter von Lernsituationen:** Schafft formelle und informelle Lernräume (CoP, Lean Coffee, etc.).",
+                                    "**Lernbegleiter:** Gibt Vertrauen, führt Vor- und Nachbesprechungen, feiert Entwicklung.",
+                                    "**Vorbild:** Zeigt eigene Lernbereitschaft und macht eigene Lernpfade transparent."
+                                ]}
+                            ]
+                        }
+                    ]
+                },
+                modul4: {
+                    title: "Coaching Habit",
+                    chapters: [
+                         {
+                            title: "Begriffsabgrenzung Coaching",
+                            content: [
+                                { type: 'p', data: "Coaching grenzt sich von anderen Formaten ab:" },
+                                { type: 'ul', data: [
+                                    "**Berater:** Gibt inhaltliche Lösungen und Empfehlungen; ist für Prozess und Inhalt verantwortlich.",
+                                    "**Trainer:** Vermittelt Wissen und Erfahrungen; verfolgt Lehrpläne.",
+                                    "**Mentor:** Agiert als Ratgeber und teilt eigene Erfahrungen.",
+                                    "**Therapeut:** Stellt Diagnosen und behandelt psychische Erkrankungen; fokussiert oft auf Defizite.",
+                                ]},
+                                { type: 'blockquote', data: "In Coaching, you follow the path of your dreams. In Therapy, you follow the path of your tears." }
+                            ]
+                        },
+                         {
+                            title: "Teamrollen (Belbin)",
+                            content: [
+                                { type: 'p', data: "Meredith Belbin entwickelte ein Modell unterschiedlicher Rollen, die in erfolgreichen Teams zu finden sind. Teams arbeiten effektiv, wenn sie aus einer Vielzahl heterogener Rollen bestehen." },
+                                { type: 'h3', data: "Einige der Belbin-Rollen:" },
+                                { type: 'ul', data: [
+                                    "**Koordinator:** Der Organisator, sorgt für den reibungslosen Ablauf.",
+                                    "**Teamer:** Der Diplomat, sorgt für guten Zusammenhalt.",
+                                    "**Pragmatiker/Umsetzer:** Setzt Ideen in die Tat um.",
+                                    "**Perfektionist/Finisher:** Sorgt für Qualität und feilt am Detail.",
+                                    "**Kreativer/Erfinder:** Bringt neue Ideen und Lösungsansätze ein.",
+                                    "**Spezialist:** Bringt tiefes Fachwissen ein.",
+                                    "**Macher:** Treibt das Team an und überwindet Hindernisse."
+                                ]}
+                            ]
+                        },
+                         {
+                            title: "Dysfunktionale Teams und die Arbeit mit dem Inneren Erwachsenen",
+                            content: [
+                                { type: 'p', data: "Merkmale dysfunktionaler Teams sind mangelndes Vertrauen, Angst vor Konflikten, fehlendes Engagement, Vermeidung von Rechenschaftspflicht und Unklarheit über Ergebnisse. Oft rutschen Mitglieder in Zustände, die in der Transaktionsanalyse als Eltern-Ich oder Kind-Ich bezeichnet werden." },
+                                { type: 'h3', data: "Die drei Ich-Zustände:" },
+                                { type: 'ul', data: [
+                                    "**Kind-Ich:** Gefühle von Ohnmacht, Trotz, Angst. Verhaltensweisen sind hilflos, gehorsam oder aggressiv.",
+                                    "**Eltern-Ich:** Gefühl von (All-)Macht. Verhaltensweisen sind fürsorglich, dominant, bewertend oder bestrafend.",
+                                    "**Erwachsenen-Ich:** Gefühl von Klarheit, Stabilität, Selbstwirksamkeit. In Balance von Gefühl und Verstand. Dies ist der Zustand, in dem wir handlungsfähig sind und unser volles Potenzial nutzen."
+                                ]},
+                                { type: 'blockquote', data: "Wichtig: In jeder Situation kannst du in jedem Zustand handeln! Doch das Erwachsenen-Ich ist der einzige Zustand, in dem du dein Leben wirklich in der Hand hast."}
+                            ]
+                        },
+                        {
+                            title: "Purpose entwickeln - Golden Circle",
+                            content: [
+                                { type: 'p', data: "Das Konzept vom 'Golden Circle' von Simon Sinek hilft, den Sinn und Zweck (Purpose) einer Organisation oder eines Teams zu entwickeln. Menschen engagieren sich für das, woran sie wirklich glauben." },
+                                { type: 'h3', data: "Die drei Kreise von innen nach außen:"},
+                                { type: 'ol', data: [
+                                    "**WHY (Warum):** Der Zweck, der Glaube, die Existenzberechtigung. Hier beginnt man.",
+                                    "**HOW (Wie):** Die spezifischen Aktionen, die Prozesse, die das WHY realisieren.",
+                                    "**WHAT (Was):** Das Ergebnis der Aktionen – die Produkte oder Dienstleistungen."
+                                ]},
+                                { type: 'blockquote', data: "People don't buy what you do; they buy why you do it."}
+                            ]
+                        }
+                    ]
+                },
+                modul5: {
+                    title: "Agile Transformation",
+                    chapters: [
+                        {
+                            title: "Agile Reifegrad Checks",
+                            content: [
+                                { type: 'p', data: "Um den Fortschritt einer agilen Transformation zu messen und zu steuern, gibt es verschiedene Modelle und web-basierte Werkzeuge." },
+                                { type: 'ul', data: [
+                                    "**Comparative Agility:** Eine umfassende Plattform zur Messung der Agilität in verschiedenen Dimensionen.",
+                                    "**Scrum Team Survey:** Ein wissenschaftlich fundiertes Modell, das Faktoren für die Effektivität von Scrum-Teams misst (z.B. psychologische Sicherheit, Stakeholder-Einbindung).",
+                                    "**SAFe Business Agility Assessment:** Ein spezifisches Tool innerhalb des SAFe-Frameworks zur Messung des agilen Reifegrads auf Organisationsebene.",
+                                    "**Spotify Squad Health Check:** Ein einfaches, visuelles Tool zur Selbstbewertung von Teams anhand von Kriterien wie 'Easy to release', 'Delivering Value' und 'Fun'."
+                                ]}
+                            ]
+                        },
+                        {
+                            title: "Methoden zur Scrum-Einführung",
+                            content: [
+                                { type: 'p', data: "Die Einführung von Scrum in einem Pilotprojekt umfasst mehrere methodische Schritte:" },
+                                { type: 'ol', data: [
+                                    "**Methodik-Verständnis schaffen:** Sicherstellen, dass alle Beteiligten den Scrum Guide und seine Prinzipien verstehen.",
+                                    "**Produktvision erstellen:** Kreative Methoden wie 'Design the Box' nutzen, um eine gemeinsame Vision zu entwickeln.",
+                                    "**Initiales Refinement:** Den Product Backlog mit ersten User Stories füllen und priorisieren. Methoden wie 'Magic Estimation' oder 'User Story Mapping' helfen dabei.",
+                                    "**Selbstorganisierte Teamzusammenstellung:** Den Rahmen vorgeben und das Team sich selbst zusammenstellen lassen.",
+                                    "**DoD & DoR erstellen:** Die Definition of Done (Qualitätsstandard) und Definition of Ready (Anforderung an Backlog Items) festlegen.",
+                                    "**Refinement & Sprint Planning:** Regelmäßige Verfeinerung des Backlogs und Planung des ersten Sprints."
+                                ]}
+                            ]
+                        },
+                        {
+                            title: "Flight Levels (nach Klaus Leopold)",
+                            content: [
+                                { type: 'p', data: "Das Flight Levels-Modell hilft, die verschiedenen Arbeitsebenen in einer Organisation zu verstehen und zu koordinieren." },
+                                { type: 'ul', data: [
+                                   "**Flight Level 1 – Operative Ebene:** Die Ebene der Umsetzungsteams, wo die eigentliche Arbeit stattfindet. Hier werden agile Methoden wie Scrum oder Kanban angewendet. Fokus liegt auf: Arbeit visualisieren, WIP-Limits, Feedbackschleifen.",
+                                   "**Flight Level 2 – Koordination:** Die Ebene der Koordination zwischen Teams. Hier wird sichergestellt, dass der Wertstrom von Anfang bis Ende funktioniert und Abhängigkeiten gemanagt werden. Fokus liegt auf: Abhängigkeiten sichtbar machen.",
+                                   "**Flight Level 3 – Strategische Ebene:** Die oberste Flughöhe, die sich mit der strategischen Ausrichtung der gesamten Organisation befasst. Hier werden Portfolio-Entscheidungen getroffen. Fokus liegt auf: Priorisierung von strategischen Initiativen, Visualisierung mit Strategieboards."
+                                ]}
+                            ]
+                        }
+                    ]
+                }
+            };
+            
+            const quizData = [
+                {
+                    question: "Welcher Zweck (Purpose) spricht NICHT für eine agile Transformation?",
+                    options: ["Agiles Arbeiten in einem dynamischen Arbeitsumfeld", "Ohne Agilität geht heute nichts mehr", "Mehr Kundenzentrierung durch agiles Arbeiten"],
+                    correctAnswer: "Ohne Agilität geht heute nichts mehr",
+                    explanation: "Die Aussage 'Ohne Agilität geht heute nichts mehr' ist eine pauschale Verallgemeinerung und kein strategischer Zweck (Purpose). Die anderen Optionen sind legitime Gründe. Siehe Modul 5."
+                },
+                {
+                    question: "Was ist KEIN Kernpunkt Agilen Lernens?",
+                    options: ["Lernen ist individualisiert und praxisnah", "Kollaboratives Lernen ist wichtig", "Lernziele, -formate und -settings werden vorgegeben"],
+                    correctAnswer: "Lernziele, -formate und -settings werden vorgegeben",
+                    explanation: "Im agilen Lernen stehen Selbstorganisation und Bedarfsorientierung im Vordergrund. Das Vorgeben von Zielen und Formaten widerspricht diesem Prinzip. Siehe Modul 3."
+                },
+                {
+                    question: "Welche Organisationsstruktur ist am weitesten von einer agilen Organisationsstruktur entfernt?",
+                    options: ["Hierarchische Struktur", "Netzwerk-Struktur", "Matrix-Struktur"],
+                    correctAnswer: "Hierarchische Struktur",
+                    explanation: "Die hierarchische Struktur mit ihren starren Befehlsketten ist das genaue Gegenteil der flexiblen und selbstorganisierten agilen Struktur."
+                },
+                {
+                    question: "In welcher Reihenfolge werden die Fragen im Visions-Modell 'Golden Circle' gestellt?",
+                    options: ["What? How? Why?", "Why? How? What?", "How? What? Why?"],
+                    correctAnswer: "Why? How? What?",
+                    explanation: "Simon Sinek's Golden Circle beginnt immer mit dem 'Warum' (dem Purpose), gefolgt vom 'Wie' (dem Prozess) und zuletzt dem 'Was' (dem Produkt)."
+                }
+            ];
+
+            // --- DOM ELEMENT SELECTORS ---
+            const mainNav = document.getElementById('main-nav');
+            const burgerMenu = document.getElementById('burger-menu');
+            const contentSections = document.querySelectorAll('.content-section');
+            const dashboardSection = document.getElementById('dashboard');
+            const moduleSection = document.getElementById('module');
+            const moduleOverview = document.getElementById('module-overview');
+            const moduleContent = document.getElementById('module-content');
+            const tooltip = document.getElementById('tooltip');
+
+            // --- NAVIGATION LOGIC ---
+            function showSection(targetId) {
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === targetId) {
+                        section.classList.add('active');
+                    }
+                });
+                document.querySelectorAll('#main-nav a').forEach(link => {
+                     link.classList.remove('active');
+                     if(link.getAttribute('href') === `#${targetId}`) {
+                         link.classList.add('active');
+                     }
+                });
+                if(window.innerWidth <= 992) mainNav.classList.remove('active');
+                if(targetId === 'module') {
+                    renderModulesOverview();
+                }
+            }
+
+            mainNav.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    e.preventDefault();
+                    const targetId = e.target.getAttribute('href').substring(1);
+                    showSection(targetId);
+                }
+            });
+            
+            burgerMenu.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+            });
+
+            // --- DASHBOARD RENDERING ---
+            function renderDashboard() {
+                const sortedModules = [...examData.modules].sort((a, b) => a.score - b.score);
+                
+                let dashboardHTML = `
+                    <div id="dashboard-header">
+                        <h2>Willkommen zurück!</h2>
+                        <p>Dein letztes Prüfungsergebnis war <strong>${examData.totalScore}%</strong>. Hier ist dein personalisierter Lernpfad.</p>
+                    </div>
+                    <div class="dashboard-grid">
+                        <div class="card" id="recommended-learning">
+                            <h3>Dein empfohlener Lernpfad</h3>
+                            <p>Konzentriere dich auf deine schwächsten Bereiche, um den größten Fortschritt zu erzielen.</p>
+                            <ul>
+                                <li><a href="#" data-module-id="${sortedModules[0].id}"><strong>Starte hier:</strong> ${sortedModules[0].name} (${sortedModules[0].score}%)</a></li>
+                                <li><a href="#" data-module-id="${sortedModules[1].id}"><strong>Nächster Schritt:</strong> ${sortedModules[1].name} (${sortedModules[1].score}%)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card" id="module-performance">
+                            <h3>Modul-Leistung</h3>
+                            ${examData.modules.map(mod => `
+                                <div>
+                                    <p>${mod.name}</p>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar" style="width: ${mod.score}%; background-color: ${getScoreColor(mod.score)};">
+                                            ${mod.score}%
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>`;
+                dashboardSection.innerHTML = dashboardHTML;
+                
+                document.querySelectorAll('#recommended-learning a').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const moduleId = e.currentTarget.dataset.moduleId;
+                        renderModuleContent(moduleId);
+                        showSection('module');
+                    });
+                });
+            }
+            
+            function getScoreColor(score) {
+                if (score > 80) return 'var(--color-good)';
+                if (score > 60) return 'var(--color-medium)';
+                return 'var(--color-weak)';
+            }
+
+            // --- MODULE RENDERING ---
+            function renderModulesOverview() {
+                moduleContent.classList.add('hidden');
+                moduleOverview.classList.remove('hidden');
+                moduleOverview.innerHTML = `<h2>Module</h2>` + examData.modules.map(mod => `
+                    <div class="module-card" data-module-id="${mod.id}">
+                        <h3>${mod.title}</h3>
+                        <p>Klicken, um die Inhalte für Modul ${mod.id.slice(-1)} anzuzeigen.</p>
+                         <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: ${mod.score}%; background-color: ${getScoreColor(mod.score)};">
+                                ${mod.score}%
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                document.querySelectorAll('.module-card').forEach(card => {
+                    card.addEventListener('click', (e) => {
+                        renderModuleContent(e.currentTarget.dataset.moduleId);
+                    });
+                });
+            }
+
+            function renderModuleContent(moduleId) {
+                moduleOverview.classList.add('hidden');
+                moduleContent.classList.remove('hidden');
+                
+                const mod = moduleData[moduleId];
+                if (!mod) {
+                    moduleContent.innerHTML = `<p>Inhalt nicht gefunden.</p>`;
+                    return;
+                }
+
+                let contentHTML = `
+                    <button id="back-to-modules">← Zurück zur Modulübersicht</button>
+                    <h2>${mod.title}</h2>
+                    <div class="module-content-container">
+                `;
+
+                mod.chapters.forEach(chapter => {
+                    contentHTML += `<div class="chapter"><h3>${chapter.title}</h3>`;
+                    chapter.content.forEach(item => {
+                        switch(item.type) {
+                            case 'p':
+                                contentHTML += `<p>${item.data}</p>`;
+                                break;
+                            case 'h3':
+                                contentHTML += `<h4>${item.data}</h4>`;
+                                break;
+                            case 'ul':
+                                contentHTML += `<ul>${item.data.map(li => `<li>${li}</li>`).join('')}</ul>`;
+                                break;
+                            case 'ol':
+                                contentHTML += `<ol>${item.data.map(li => `<li>${li}</li>`).join('')}</ol>`;
+                                break;
+                            case 'blockquote':
+                                contentHTML += `<blockquote>${item.data}</blockquote>`;
+                                break;
+                            case 'image_placeholder':
+                                contentHTML += `<div class="card" style="text-align: center; border-color: var(--accent-color-3);">${item.data}</div>`;
+                                break;
+                            case 'exercise':
+                                contentHTML += `<div class="exercise"><h4>${item.data.title}</h4><p>${item.data.text}</p></div>`;
+                                break;
+                        }
+                    });
+                    contentHTML += `</div>`;
+                });
+
+                contentHTML += `</div>`;
+                moduleContent.innerHTML = contentHTML;
+
+                document.getElementById('back-to-modules').addEventListener('click', renderModulesOverview);
+                linkGlossarTerms();
+            }
+            
+            function linkGlossarTerms() {
+                const contentContainer = moduleContent.querySelector('.module-content-container');
+                if (!contentContainer) return;
+
+                const glossarKeys = Object.keys(glossarData);
+                glossarKeys.sort((a, b) => b.length - a.length);
+                const regex = new RegExp(`\\b(${glossarKeys.join('|')})\\b`, 'gi');
+
+                contentContainer.querySelectorAll('p, li, h3, h4').forEach(el => {
+                    el.innerHTML = el.innerHTML.replace(regex, (match) => {
+                         const termKey = glossarKeys.find(key => key.toLowerCase() === match.toLowerCase());
+                         if(termKey) {
+                           return `<span class="glossar-term" data-term="${termKey}">${match}</span>`;
+                         }
+                         return match;
+                    });
+                });
+
+                document.querySelectorAll('.glossar-term').forEach(termEl => {
+                    termEl.addEventListener('mouseenter', showTooltip);
+                    termEl.addEventListener('mouseleave', hideTooltip);
+                });
+            }
+
+            function showTooltip(e) {
+                const term = e.target.dataset.term;
+                tooltip.textContent = glossarData[term];
+                tooltip.style.left = `${e.pageX + 10}px`;
+                tooltip.style.top = `${e.pageY + 10}px`;
+                tooltip.classList.remove('hidden');
+            }
+
+            function hideTooltip() {
+                tooltip.classList.add('hidden');
+            }
+
+
+            // --- GLOSSAR LOGIC ---
+            const glossarList = document.getElementById('glossar-list');
+            const glossarFilter = document.getElementById('glossar-filter');
+
+            function renderGlossar() {
+                glossarList.innerHTML = Object.entries(glossarData).map(([term, definition]) => `
+                    <li data-term="${term.toLowerCase()}">
+                        <strong>${term}</strong>
+                        <p>${definition}</p>
+                    </li>
+                `).join('');
+            }
+
+            glossarFilter.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                document.querySelectorAll('#glossar-list li').forEach(li => {
+                    if (li.dataset.term.includes(searchTerm)) {
+                        li.classList.remove('hidden');
+                    } else {
+                        li.classList.add('hidden');
+                    }
+                });
+            });
+            
+            // --- QUIZ LOGIC ---
+            const quizContainer = document.getElementById('quiz-container');
+            const quizStart = document.getElementById('quiz-start');
+            const quizMain = document.getElementById('quiz-main');
+            const quizEnd = document.getElementById('quiz-end');
+            const startQuizBtn = document.getElementById('start-quiz-btn');
+            const questionContainer = document.getElementById('question-container');
+            const quizFeedback = document.getElementById('quiz-feedback');
+            const nextQuestionBtn = document.getElementById('next-question-btn');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const restartQuizBtn = document.getElementById('restart-quiz-btn');
+
+            let currentQuestionIndex = 0;
+            let score = 0;
+            
+            function startQuiz() {
+                currentQuestionIndex = 0;
+                score = 0;
+                quizStart.classList.add('hidden');
+                quizEnd.classList.add('hidden');
+                quizMain.classList.remove('hidden');
+                nextQuestionBtn.classList.add('hidden');
+                quizFeedback.innerHTML = '';
+                renderQuestion();
+            }
+            
+            function renderQuestion() {
+                const question = quizData[currentQuestionIndex];
+                let options = [...question.options, question.correctAnswer];
+                options.sort(() => Math.random() - 0.5); // Shuffle options
+                
+                questionContainer.innerHTML = `
+                    <h3>${question.question}</h3>
+                    <div class="answer-options">
+                        ${options.map(option => `<button class="answer-btn">${option}</button>`).join('')}
+                    </div>
+                `;
+
+                document.querySelectorAll('.answer-btn').forEach(button => {
+                    button.addEventListener('click', handleAnswer);
+                });
+            }
+
+            function handleAnswer(e) {
+                const selectedAnswer = e.target.textContent;
+                const correctAnswer = quizData[currentQuestionIndex].correctAnswer;
+                
+                quizFeedback.classList.remove('hidden', 'feedback-correct', 'feedback-incorrect');
+                if (selectedAnswer === correctAnswer) {
+                    score++;
+                    quizFeedback.innerHTML = "<strong>Korrekt!</strong>";
+                    quizFeedback.classList.add('feedback-correct');
+                } else {
+                    quizFeedback.innerHTML = `<strong>Falsch.</strong> Richtig wäre: <em>${correctAnswer}</em>. <br><small>${quizData[currentQuestionIndex].explanation}</small>`;
+                    quizFeedback.classList.add('feedback-incorrect');
+                }
+                
+                document.querySelectorAll('.answer-btn').forEach(button => {
+                    button.disabled = true;
+                    if (button.textContent === correctAnswer) {
+                        button.style.border = "2px solid var(--color-good)";
+                    } else if (button.textContent === selectedAnswer) {
+                        button.style.border = "2px solid var(--color-weak)";
+                    }
+                });
+                nextQuestionBtn.classList.remove('hidden');
+            }
+            
+            function showNextQuestion() {
+                currentQuestionIndex++;
+                if (currentQuestionIndex < quizData.length) {
+                    quizFeedback.innerHTML = '';
+                    quizFeedback.classList.add('hidden');
+                    nextQuestionBtn.classList.add('hidden');
+                    renderQuestion();
+                } else {
+                    endQuiz();
+                }
+            }
+
+            function endQuiz() {
+                quizMain.classList.add('hidden');
+                quizEnd.classList.remove('hidden');
+                quizScoreEl.textContent = `Du hast ${score} von ${quizData.length} Fragen richtig beantwortet.`;
+            }
+
+            startQuizBtn.addEventListener('click', startQuiz);
+            nextQuestionBtn.addEventListener('click', showNextQuestion);
+            restartQuizBtn.addEventListener('click', startQuiz);
+            
+            // --- SEARCH LOGIC ---
+            const searchInput = document.getElementById('main-search');
+            const searchResultsContainer = document.getElementById('search-results-container');
+            
+            function performSearch(query) {
+                if (!query) return;
+
+                let resultsHTML = '';
+                const lowerCaseQuery = query.toLowerCase();
+
+                // Search in Glossar
+                for (const [key, value] of Object.entries(glossarData)) {
+                    if (key.toLowerCase().includes(lowerCaseQuery) || value.toLowerCase().includes(lowerCaseQuery)) {
+                        resultsHTML += `
+                            <div class="card">
+                                <h3>Treffer im Glossar: ${key}</h3>
+                                <p>${value}</p>
+                            </div>`;
+                    }
+                }
+                // Search in Modules
+                for (const [modId, modData] of Object.entries(moduleData)) {
+                    let foundInModule = false;
+                    let chapterHits = '';
+                    modData.chapters.forEach(chapter => {
+                        let chapterHit = false;
+                        chapter.content.forEach(item => {
+                            const itemText = (typeof item.data === 'string') ? item.data : (item.data.text || (Array.isArray(item.data) ? item.data.join(' ') : ''));
+                            if(itemText.toLowerCase().includes(lowerCaseQuery)) {
+                                chapterHit = true;
+                            }
+                        });
+                        if(chapterHit) {
+                            chapterHits += `<li>${chapter.title}</li>`;
+                            foundInModule = true;
+                        }
+                    });
+
+                    if(foundInModule) {
+                         resultsHTML += `
+                            <div class="card">
+                                <h3>Treffer in Modul: ${modData.title}</h3>
+                                <p>In folgenden Kapiteln wurde '${query}' gefunden:</p>
+                                <ul>${chapterHits}</ul>
+                                <a href="#" class="nav-to-module action-btn" data-module-id="${modId}">Zum Modul</a>
+                            </div>`;
+                    }
+                }
+
+                searchResultsContainer.innerHTML = resultsHTML || '<p>Keine Ergebnisse gefunden.</p>';
+                document.querySelectorAll('.nav-to-module').forEach(link => {
+                    link.addEventListener('click', e => {
+                        e.preventDefault();
+                        renderModuleContent(e.currentTarget.dataset.moduleId);
+                        showSection('module');
+                    });
+                });
+                showSection('search-results');
+            }
+
+            searchInput.addEventListener('search', (e) => performSearch(e.target.value));
+
+            // --- INITIALIZATION ---
+            renderDashboard();
+            renderGlossar();
+            showSection('dashboard');
+        });
+    </script>
+</body>
+</html>
