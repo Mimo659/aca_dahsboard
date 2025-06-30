@@ -90,7 +90,7 @@
             ]},
             { "type": "blockquote", "data": "Bitte beachte: Natürlich brauchen wir Prozesse und Werkzeuge, Dokumentation und Verträge und eine Form von Planung: die rechte Seite bleibt wichtig! Lediglich in Konfliktsituationen bzw. wenn Entscheidungen zu treffen sind, wird die linke Seite bevorzugt." },
             { "type": "h3", "data": "Die 12 Prinzipien" },
-            { "type": "ol", data: [
+            { "type": "ol", "data": [
                "Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufriedenzustellen.",
                "Heiße Anforderungsänderungen – selbst spät in der Entwicklung – willkommen. Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden.",
                "Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne.",
