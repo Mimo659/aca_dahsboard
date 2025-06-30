@@ -1,7 +1,22 @@
-import data from '../data/data_complete.json' assert { type: 'json' };
+import examResults from '../data/exam_results.json' assert { type: 'json' };
+import modul1 from '../data/modul1.json' assert { type: 'json' };
+import modul2 from '../data/modul2.json' assert { type: 'json' };
+import modul3 from '../data/modul3.json' assert { type: 'json' };
+import modul4 from '../data/modul4.json' assert { type: 'json' };
+import modul5 from '../data/modul5.json' assert { type: 'json' };
+import quizQuestions from '../data/quiz_questions.json' assert { type: 'json' };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const { examResults: examData, modules: moduleData, quizQuestions: quizData, glossary: glossarData } = data;
+    const examData = examResults;
+    const moduleData = {
+        modul1: modul1,
+        modul2: modul2,
+        modul3: modul3,
+        modul4: modul4,
+        modul5: modul5
+    };
+    const quizData = quizQuestions;
+    const glossarData = {}; // Assuming no separate glossary file for now
     // --- DOM ELEMENT SELECTORS ---
     const mainNav = document.getElementById('main-nav');
     const burgerMenu = document.getElementById('burger-menu');
