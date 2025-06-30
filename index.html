@@ -40,11 +40,22 @@
         </section>
 
         <section id="module" class="content-section">
-            <div id="module-overview">
-                <!-- Module overview will be generated here -->
+            <div id="module-overview" class="cards-container">
+                <!-- Module cards will be generated here by JavaScript -->
             </div>
             <div id="module-content" class="hidden">
-                 <!-- Module content will be loaded here -->
+                 <!-- Detailed module content will be loaded here, possibly after modal interaction -->
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="moduleModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2 id="modalTitle"></h2>
+                    <div id="modalBody">
+                        <!-- Module details will be loaded here -->
+                    </div>
+                </div>
             </div>
         </section>
 

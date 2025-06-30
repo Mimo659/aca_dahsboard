@@ -1,0 +1,260 @@
+{
+  "title": "Agile Fundamentals",
+  "chapters": [
+    {
+      "title": "1.1 Soziometrisches Stellen",
+      "content": [
+        { "type": "p", "data": "Soziometrisches Stellen ist eine Methode, um bestimmte Eigenschaften, Verhältnisse oder Beziehungen innerhalb einer größeren Gruppe sichtbar zu machen. Als Coaches oder Moderatoren gebt ihr Fragen und Werte vor." },
+        { "type": "h3", "data": "Beispiele:" },
+        { "type": "ul", "data": [
+          "Wer hat die längste Firmenzugehörigkeit in Jahren?",
+          "Bist du Vegetarier? (auch ja/nein-Fragen lassen sich abbilden)",
+          "Wie hoch schätzt du deine Coaching-Expertise auf einer Skala von 1-10 ein?",
+          "Wo in Deutschland lebt ihr? Legt fest, wo Norden ist und bildet die Landkarte durch eure Positionen ab."
+        ]},
+        { "type": "p", "data": "Eine Variante ist die Arbeit mit Bodenankern, z.B. die fünf Scrum-Werte Focus, Openness, Respect, Courage, Commitment - welcher Wert ist wem besonders wichtig? Stellt euch auf das jeweilige Papier. Der Phantasie sind hier kaum Grenzen gesetzt." },
+        { "type": "p", "data": "Soziometrisches Stellen fördert im agilen Sinne Selbstorganisation und Eigenverantwortlichkeit: Du stellst die Frage und lasst die Gruppe selbst festlegen, wie sie die Aufstellung organisiert. Außerdem kann das Stellen helfen, die Gruppendynamik besser zu verstehen und eventuelle Konflikte oder Bedürfnisse zu erkennen."}
+      ]
+    },
+    {
+        "title": "2.1 Wurzeln der Agilität (Taylorismus)",
+        "content": [
+          { "type": "p", "data": "Der Taylorismus ist eine wissenschaftliche Managementtheorie, die in den späten 1800er und frühen 1900er Jahren von Frederick Winslow Taylor entwickelt wurde. Sie ist nach ihm benannt und auch als „wissenschaftliche Betriebsführung“ bekannt. Der Taylorismus zielt darauf ab, die Effizienz und Produktivität von Arbeitsprozessen zu maximieren, indem er eine systematische Methode der Arbeitsorganisation und Kontrolle einführt." },
+          { "type": "p", "data": "Obwohl der Taylorismus und die Agilität als Ansätze zur Arbeitsorganisation und -führung unterschiedliche Philosophien und Ziele haben, gibt es einige Zusammenhänge zwischen ihnen. Hier sind einige Punkte, die die Verbindung zwischen dem Taylorismus und der Entstehung von Agilität verdeutlichen:" },
+          { "type": "ul", "data": [
+            "Kritik am traditionellen Managementansatz: Sowohl der Taylorismus als auch die Agilität sind als Reaktion auf die Unzulänglichkeiten und Einschränkungen traditioneller Managementansätze entstanden. Der Taylorismus wurde kritisiert, weil er die Arbeit in mechanistische und standardisierte Abläufe zerlegt hat, was zu Entfremdung, geringer Motivation und mangelnder Flexibilität führte. Agilität entstand als Antwort auf die Herausforderungen, die mit starren, hierarchischen Strukturen und unflexiblen Prozessen verbunden waren.",
+            "Fokus auf kontinuierliche Verbesserung: Beide Ansätze legen Wert auf kontinuierliche Verbesserung. Im Taylorismus werden Arbeitsabläufe und Prozesse durch wissenschaftliche Methoden analysiert und optimiert, um die Effizienz zu steigern. Agilität betont die kontinuierliche Anpassung und Verbesserung durch den Einsatz von Feedbackschleifen, retrospektiven Bewertungen und iterativer Entwicklung.",
+            "Menschenzentrierter Ansatz: Obwohl der Taylorismus in erster Linie auf die Steigerung der Effizienz und Produktivität abzielt, besitzen sowohl der Taylorismus als auch die Agilität eine Menschenzentrierung. Der Taylorismus setzt hier jedoch auf eine Steigerung der Arbeitsleistung durch möglichst kleinschrittige Aufgaben. Dem gegenüber steht in der Agilität die Wertschätzung der individuellen Fähigkeiten und die Förderung von Selbstorganisation und Teamarbeit als zentrale Prinzipien.",
+            "Flexibilität und Anpassungsfähigkeit: Sowohl der Taylorismus als auch die Agilität haben die Notwendigkeit erkannt, auf Veränderungen zu reagieren. Der Taylorismus konzentrierte sich auf die Effizienzsteigerung in stabilen und vorhersehbaren Umgebungen, während die Agilität eine flexible und anpassungsfähige Herangehensweise an Veränderungen betont, um Wert für Kunden zu schaffen."
+          ]}
+        ]
+    },
+    {
+      "title": "2.2 VUCA- und BANI-Welt",
+      "content": [
+        { "type": "h3", "data": "VUCA: Volatility, Uncertainty, Complexity, Ambiguity" },
+        { "type": "p", "data": "Der Begriff VUCA steht für Volatilität (Volatility), Unsicherheit (Uncertainty), Komplexität (Complexity) und Mehrdeutigkeit (Ambiguity). Er wurde in den 1990er Jahren vom US-amerikanischen Militär geprägt und beschreibt die Herausforderungen einer sich schnell verändernden und unvorhersehbaren Umwelt." },
+        { "type": "p", "data": "Als Agile Coach ist es wichtig, den Begriff VUCA zu verstehen und sich mit den damit verbundenen Konzepten auseinanderzusetzen, da er die Grundlage für die Notwendigkeit agiler Ansätze und Methoden schafft. Hier sind einige Gründe, warum VUCA für deine Arbeit als Agile Coach wichtig ist:"},
+        { "type": "ul", "data": [
+          "Bewusstsein für die Herausforderungen: VUCA verdeutlicht, dass wir in einer Welt leben, die von Unsicherheit und Veränderungen geprägt ist.",
+          "Agilität als Antwort auf VUCA: Die Agilität ist ein Ansatz, der entwickelt wurde, um mit den Herausforderungen von VUCA umzugehen.",
+          "Flexibilität und Anpassungsfähigkeit fördern: VUCA erfordert eine flexible und anpassungsfähige Herangehensweise.",
+          "Chancen in der Veränderung erkennen: VUCA bringt nicht nur Herausforderungen, sondern auch Chancen mit sich.",
+          "Strategische Ausrichtung: Die Kenntnis von VUCA ermöglicht es dir, Strategien zu entwickeln, die den sich ändernden Anforderungen gerecht werden."
+        ]},
+        { "type": "h3", "data": "Agile Antworten auf VUCA:" },
+        { "type": "ul", "data": [
+            "**Vision** entgegen der Volatilität.",
+            "**Understanding** (Verständnis) entgegen der Unsicherheit.",
+            "**Clarity** (Klarheit) entgegen der Komplexität.",
+            "**Agility** (Agilität) entgegen der Mehrdeutigkeit."
+        ]},
+        { "type": "h3", "data": "BANI: Brittleness, Anxiety, Nonlinearity, Incomprehensibility" },
+        { "type": "p", "data": "Das BANI-Modell reflektiert die zunehmend komplexen und dynamischen Rahmenbedingungen, unter denen heutige Projekte durchgeführt werden. Es spricht die Zerbrechlichkeit (Brittleness) von Systemen an, die emotionale Reaktion (Angst), die Nichtlinearität von Ursache und Wirkung und die Unbegreiflichkeit (Incomprehensibility) komplexer Systeme." }
+      ]
+    },
+    {
+      "title": "2.3 Was ist Agilität?",
+      "content": [
+        { "type": "p", "data": "Agilität ist ein Ansatz, der es Organisationen ermöglicht, sich an eine schnelllebige und sich verändernde Umgebung anzupassen. Sie betont die Flexibilität, die Zusammenarbeit und die Fähigkeit, rasch auf Veränderungen zu reagieren, um Wert für Kunden zu schaffen. Agilität wird in verschiedenen Bereichen wie Softwareentwicklung, Projektmanagement und Organisationsentwicklung angewendet." },
+        { "type": "p", "data": "Agilität hat ihre Wurzeln in der Softwareentwicklung der 1990er Jahre. Als Reaktion auf unflexible, planungsgesteuerte Ansätze entstanden alternative Methoden wie Extreme Programming (XP) und Scrum. Diese setzten auf iterative Entwicklung, Selbstorganisation und intensive Kundenzusammenarbeit." },
+        { "type": "p", "data": "Im Jahr 2001 wurde mit dem Agilen Manifest ein Meilenstein gesetzt. Es legte die grundlegenden Prinzipien fest und betonte Werte wie individuelle Personen, funktionierende Software, Zusammenarbeit mit dem Kunden und Reaktion auf Veränderungen." },
+        { "type": "p", "data": "Als Agile Coach ist es wichtig, den Begriff Agilität definieren zu können, da er das Fundament der Arbeit bildet. Eine klare Definition hilft, eine gemeinsame Sprache zu etablieren und Missverständnisse zu vermeiden."}
+      ]
+    },
+    {
+      "title": "2.4 Das agile Manifest und seine 12 Prinzipien",
+      "content": [
+        { "type": "h3", "data": "Die vier Wertepaare des Agilen Manifests" },
+        { "type": "p", "data": "Das Agile Manifest ist eine grundlegende Erklärung, die die Werte und Prinzipien des agilen Arbeitens festlegt. Es wurde im Jahr 2001 von einer Gruppe von Softwareentwicklern erstellt. Diese Werte stellen eine Priorisierung dar:" },
+        { "type": "ul", "data": [
+            "**Individuen und Interaktionen** MEHR ALS Prozesse und Werkzeuge",
+            "**Funktionierende Software** MEHR ALS umfassende Dokumentation",
+            "**Zusammenarbeit mit dem Kunden** MEHR ALS Vertragsverhandlung",
+            "**Reagieren auf Veränderung** MEHR ALS das Befolgen eines Plans"
+        ]},
+        { "type": "blockquote", "data": "Bitte beachte: Natürlich brauchen wir Prozesse und Werkzeuge, Dokumentation und Verträge und eine Form von Planung: die rechte Seite bleibt wichtig! Lediglich in Konfliktsituationen bzw. wenn Entscheidungen zu treffen sind, wird die linke Seite bevorzugt." },
+        { "type": "h3", "data": "Die 12 Prinzipien" },
+        { "type": "ol", "data": [
+           "Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufriedenzustellen.",
+           "Heiße Anforderungsänderungen – selbst spät in der Entwicklung – willkommen. Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden.",
+           "Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne.",
+           "Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten.",
+           "Errichte Projekte rund um motivierte Individuen. Gib ihnen das Umfeld und die Unterstützung, die sie benötigen und vertraue darauf, dass sie die Aufgabe erledigen.",
+           "Die effizienteste und effektivste Methode, Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht.",
+           "Funktionierende Software ist das wichtigste Fortschrittsmaß.",
+           "Agile Prozesse fördern nachhaltige Entwicklung.",
+           "Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität.",
+           "Einfachheit – die Kunst, die Menge nicht getaner Arbeit zu maximieren – ist essenziell.",
+           "Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams.",
+           "In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an."
+        ]}
+      ]
+    },
+    {
+        "title": "2.5 Klassisches Projektmanagement (Wasserfall)",
+        "content": [
+            { "type": "p", "data": "Das klassische Projektmanagement, oft als 'Wasserfall' bezeichnet, ist eine traditionelle, planungsorientierte Herangehensweise. Es basiert auf strukturierten und vordefinierten Prozessen." },
+            { "type": "h3", "data": "Merkmale:"},
+            { "type": "ul", "data": [
+                "**Phasenorientierte Struktur:** Projekte werden sequenziell in Phasen unterteilt (Initiierung, Planung, Ausführung, Überwachung, Abschluss).",
+                "**Umfangs- und Terminplanung:** Der Umfang wird zu Beginn detailliert geplant.",
+                "**Hierarchische Struktur:** Das Team ist hierarchisch organisiert mit klar definierten Rollen.",
+                "**Dokumentation:** Es wird großer Wert auf umfassende Dokumentation gelegt.",
+                "**Change Control:** Änderungen werden sorgfältig geprüft und formell genehmigt.",
+                "**Risikomanagement:** Risiken werden identifiziert, analysiert und bewertet."
+            ]},
+            { "type": "p", "data": "Dieser Ansatz eignet sich gut für Projekte mit stabilen Anforderungen und hoher Vorhersagbarkeit, z.B. im Bauwesen oder Ingenieurwesen."}
+        ]
+    },
+    {
+        "title": "2.6 Agiles Projektmanagement",
+        "content": [
+            { "type": "p", "data": "Agiles Projektmanagement basiert auf den Prinzipien und Werten des Agilen Manifests und legt den Fokus auf Flexibilität, Zusammenarbeit und iterative Entwicklung." },
+            { "type": "h3", "data": "Merkmale:"},
+            { "type": "ul", "data": [
+                "**Iterative und inkrementelle Entwicklung:** Projekte werden in kurzen Zyklen (Iterationen oder Sprints) durchgeführt.",
+                "**Selbstorganisierte Teams:** Teams sind eigenverantwortlich und teilen sich die Verantwortung.",
+                "**Kundenzentrierung:** Kundenfeedback wird aktiv eingeholt und in die Entwicklung einbezogen.",
+                "**Anpassungsfähigkeit und Flexibilität:** Pläne werden flexibel an veränderte Anforderungen angepasst.",
+                "**Kontinuierliches Lernen und Verbessern:** Nach jeder Iteration werden Rückmeldungen genutzt, um den Prozess zu verbessern.",
+                "**Transparente Kommunikation:** Regelmäßige Events wie das Daily Scrum fördern den Austausch."
+            ]},
+            { "type": "p", "data": "Agiles Projektmanagement wird häufig in Umgebungen eingesetzt, in denen Anforderungen und Rahmenbedingungen unsicher sind oder sich häufig ändern."}
+        ]
+    },
+    {
+        "title": "2.7 Hybrides Projektmanagement",
+        "content": [
+            { "type": "p", "data": "Viele Projekte, die nach dem klassischen Wasserfall-Modell gemanagt werden, verwenden Elemente von Scrum. Dagegen ist grundsätzlich nichts einzuwenden. Hybrides Projektmanagement kombiniert Elemente aus klassischen und agilen Ansätzen." },
+            { "type": "p", "data": "Ein Beispiel ist PRINCE2 Agile, das die strukturierte Steuerung von PRINCE2 mit der Flexibilität von agilen Frameworks wie Scrum und Kanban verbindet." },
+            { "type": "p", "data": "Die Entscheidung für ein Modell (Wasserfall, Agil, Hybrid) hängt von den Projektmerkmalen ab, wie der Eindeutigkeit des Endprodukts (Vagueness), der Wahrscheinlichkeit von Anforderungsänderungen, der Möglichkeit zur Aufteilung des Produkts, dem Zeitdruck und dem transformationalen Einfluss."}
+        ]
+    },
+    {
+        "title": "2.8 Hyperwettbewerb",
+        "content": [
+            { "type": "p", "data": "Der Begriff „Hyperwettbewerb“, geprägt von Richard A. D'Aveni, bezieht sich auf eine extrem intensive und dynamische Wettbewerbssituation. Diese ist gekennzeichnet durch hohe Geschwindigkeit, zunehmende Komplexität und ständigen Innovationsdruck." },
+            { "type": "h3", "data": "Merkmale des Hyperwettbewerbs:"},
+            { "type": "ul", "data": [
+                "**Hohe Geschwindigkeit:** Veränderungen treten schnell und in immer kürzeren Intervallen auf.",
+                "**Technologischer Fortschritt:** Neue Technologien verändern Geschäftsmodelle und Marktdynamik grundlegend.",
+                "**Globalisierung:** Unternehmen konkurrieren mit Wettbewerbern aus verschiedenen Ländern und Regionen.",
+                "**Kundenorientierung:** Kundenanforderungen ändern sich schnell und müssen kontinuierlich bedient werden.",
+                "**Innovationsdruck:** Unternehmen müssen kontinuierlich innovativ sein, um sich von der Konkurrenz abzuheben.",
+                "**Kurze Produktlebenszyklen:** Produkte müssen schnell auf den Markt gebracht werden."
+            ]}
+        ]
+    },
+    {
+        "title": "2.9 Wertearbeit und Kultur",
+        "content": [
+            { "type": "p", "data": "Wertearbeit spielt für Agile Coaches und Teams eine entscheidende Rolle, da sie Klarheit, Ausrichtung und eine positive Teamkultur fördert." },
+            { "type": "h3", "data": "Bedeutung von Werten:"},
+            { "type": "ul", "data": [
+                "**Klarheit und Ausrichtung:** Werte dienen als Leitlinien für Verhalten und Entscheidungen.",
+                "**Teamkultur und Zusammenarbeit:** Werte formen die Kultur und beeinflussen, wie Teammitglieder miteinander umgehen.",
+                "**Entscheidungsfindung:** Werte dienen als Grundlage für fundierte Entscheidungen.",
+                "**Selbstreflexion und kontinuierliche Verbesserung:** Werte ermöglichen eine kontinuierliche Reflexion der Zusammenarbeit.",
+                "**Motivation und Engagement:** Eine wertebasierte Arbeitsumgebung fördert die intrinsische Motivation.",
+                "**Identitätsbildung und Selbstorganisation:** Werte fördern eine gemeinsame Identität und Selbstverantwortung."
+            ]},
+            { "type": "h3", "data": "Das Eisberg-Modell von Edgar Schein"},
+            { "type": "p", "data": "Dieses Modell visualisiert die verschiedenen Ebenen der Organisationskultur. Wie bei einem Eisberg ist nur ein kleiner Teil sichtbar, während der größte Teil verborgen ist:"},
+            { "type": "ul", "data": [
+                "**Sichtbare Ebene (Spitze des Eisbergs):** Beobachtbares Verhalten, Kennzahlen, offizielle Leitsätze, Gestaltung von Räumlichkeiten.",
+                "**Normative Ebene (direkt unter der Wasseroberfläche):** Implizite Spielregeln, Verhaltensmuster, Werte und Normen, Strukturen und Strategien.",
+                "**Unsichtbare Ebene (tief unter Wasser):** Grundannahmen, unbewusste Überzeugungen und mentale Modelle. Diese tiefsten Schichten sind die eigentlichen Treiber der Kultur."
+            ]}
+        ]
+    },
+    {
+        "title": "2.10 Die 5 Scrum Werte",
+        "content": [
+            { "type": "p", "data": "Die Scrum-Werte sind fünf grundlegende Prinzipien, die im Scrum-Framework eine zentrale Rolle spielen. Sie wurden von Ken Schwaber und Jeff Sutherland, den Begründern von Scrum, festgelegt und sind Teil des Scrum Guide." },
+            { "type": "ol", "data": [
+                "**Commitment (Verpflichtung):** Teammitglieder verpflichten sich gemeinsam zu den Zielen des Sprints und arbeiten aktiv an deren Umsetzung.",
+                "**Courage (Mut):** Mut ist erforderlich, um Hindernisse zu überwinden, Risiken einzugehen und ehrliches Feedback zu geben und anzunehmen.",
+                "**Focus (Fokus):** Das Team konzentriert sich auf die Arbeit, die während eines Sprints zu erledigen ist, und stellt sicher, dass die vereinbarten Ziele erreicht werden.",
+                "**Openness (Offenheit):** Offene Kommunikation und Transparenz sind essentiell. Teammitglieder teilen ihr Wissen und ihre Erfahrungen und sprechen Herausforderungen offen an.",
+                "**Respect (Respekt):** Respektvolles Miteinander ist grundlegend. Jeder im Team wird wertgeschätzt und respektiert, unabhängig von Position oder Hintergrund."
+            ]},
+            { "type": "h3", "data": "Wie Agile Coaches die Scrum-Werte fördern können:" },
+            { "type": "ul", "data": [
+                "**Vorbild sein:** Die Werte selbst leben und vorleben.",
+                "**Teamübungen durchführen:** Das Bewusstsein für die Werte durch Übungen und Aktivitäten schärfen.",
+                "**Wertekonflikte ansprechen:** Das Team dabei unterstützen, Konflikte zwischen den Werten zu erkennen und zu lösen.",
+                "**Feedbackkultur fördern:** Eine offene Feedbackkultur ist eng mit den Scrum-Werten verbunden."
+            ]}
+        ]
+    },
+    {
+      "title": "3.1 Definition eines Agile Coachs",
+      "content": [
+        { "type": "p", "data": "Es gibt gefühlt genauso viele Definitionen der Rolle „Agile Coach“ wie es auch Bücher dazu gibt. Das liegt auch daran, dass die Rolle je nach Kontext und Organisation unterschiedliche Schwerpunkte haben kann. Deshalb müsste es eigentlich „Agile eierlegende Wollmilchsau“ heißen." },
+        { "type": "blockquote", "data": "Unsere Definition lautet: Ein Agile Coach ist eine Person, die Teams und Organisationen dabei unterstützt, agile Praktiken und Prinzipien zu verstehen, zu implementieren und kontinuierlich zu verbessern. Der Agile Coach fungiert als Mentor, Trainer, Berater, Coach und Change Agent und trägt dazu bei, eine agile Kultur und Arbeitsweise in der Organisation zu etablieren."},
+        { "type": "p", "data": "Der Agile Coach arbeitet eng mit verschiedenen Teams, Führungskräften und anderen Stakeholdern zusammen, um sicherzustellen, dass agile Praktiken effektiv angewendet werden. Dazu gehört oft die Unterstützung bei der Einführung agiler Methoden wie Scrum, Kanban oder Extreme Programming sowie die Förderung von agilen Werten wie Zusammenarbeit, Transparenz, Anpassungsfähigkeit und kontinuierliche Verbesserung."}
+      ]
+    },
+    {
+        "title": "3.2 Rollen als Agile Coach",
+        "content": [
+            { "type": "p", "data": "Als Agile Coach kannst du verschiedene Rollen einnehmen, abhängig von den Bedürfnissen deiner Organisation und deiner Teams. Hier sind einige gängige Rollen:" },
+            { "type": "ol", "data": [
+                "**Team- und Business-Coach:** Bietet Einzelcoaching für die persönliche Weiterentwicklung oder arbeitet mit agilen Teams zur Verbesserung der Dynamik.",
+                "**Scrum Master:** Übernimmt (zeitweilig) die Rolle des Scrum Masters, um das Framework zu implementieren und Hindernisse zu beseitigen.",
+                "**Agiler Organisationsberater:** Unterstützt die gesamte Organisation bei der agilen Transformation und arbeitet eng mit dem Management zusammen.",
+                "**Agile Leadership Coach:** Arbeitet mit Führungskräften, um deren Führungsrolle im agilen Kontext zu stärken.",
+                "**Agiler Trainer:** Führt Schulungen und Trainings zu agilen Methoden und Praktiken durch."
+            ]},
+            { "type": "p", "data": "Eine klare Rollenklärung ist entscheidend, um Missverständnisse zu vermeiden, Erwartungen zu definieren und effektiv arbeiten zu können."}
+        ]
+    },
+    {
+        "title": "3.4 Agile Coach Competency Framework",
+        "content": [
+          { "type": "p", "data": "Das von Lyssa Adkins und Michael Spayd entwickelte Modell dient als Referenz, um die verschiedenen Kompetenzbereiche eines Agile Coaches zu erkunden." },
+          { "type": "h3", "data": "Kernbereiche des Frameworks:" },
+          { "type": "ul", "data": [
+             "**Agile-Lean Practitioner:** Lebt agile Werte und Praktiken.",
+             "**Teaching (Lehren):** Fähigkeit, Wissen zur richtigen Zeit richtig zu vermitteln.",
+             "**Mentoring:** Eigene Erfahrungen teilen, um andere wachsen zu lassen.",
+             "**Professional Coaching:** Dem Klienten helfen, eigene Lösungen zu finden, ohne die Richtung vorzugeben.",
+             "**Facilitating (Moderieren):** Neutrale Prozessbegleitung zur Lösungsfindung.",
+             "**Technical Mastery:** Expertise in Software-Handwerkskunst.",
+             "**Business Mastery:** Expertise in wertgetriebener Produktentwicklung.",
+             "**Transformation Mastery:** Expertise in Organisationsentwicklung und Change Management."
+          ]},
+          { "type": "image_placeholder", "data": "Diagramm: Agile Coach Competency Framework" }
+        ]
+    },
+    {
+        "title": "4.1 Cynefin-Framework",
+        "content": [
+            { "type": "p", "data": "Das Cynefin-Framework (sprich: „Ke'ne'win“) ist ein Modell, das zur Analyse von Problemen und zur Entscheidungsfindung in komplexen Situationen verwendet wird. Es wurde von Dave Snowden entwickelt." },
+            { "type": "h3", "data": "Die fünf Domänen:"},
+            { "type": "ul", "data": [
+                "**Einfach (Simple):** Klare Ursache-Wirkungs-Beziehungen. Lösung ist offensichtlich. Vorgehen: Sense-Categorise-Respond (Wahrnehmen, Kategorisieren, Reagieren).",
+                "**Kompliziert (Complicated):** Klare Ursache-Wirkungs-Beziehung, aber nicht sofort offensichtlich. Expertenwissen ist erforderlich. Vorgehen: Sense-Analyse-Respond.",
+                "**Komplex (Complex):** Ursache und Wirkung sind nicht vorhersehbar. Muster müssen erforscht werden. Vorgehen: Probe-Sense-Respond (Experimentieren, Wahrnehmen, Reagieren).",
+                "**Chaotisch (Chaotic):** Keine klaren Zusammenhänge. Schnelles Handeln ist erforderlich. Vorgehen: Act-Sense-Respond.",
+                "**Unbekannt (Disorder):** Unklarheit, in welcher Domäne sich das Problem befindet. Ziel ist, das Problem zu analysieren und einer Domäne zuzuordnen."
+            ]},
+            { "type": "blockquote", "data": "Merke: Echte Innovation liegt an der Grenze zum Chaos!"}
+        ]
+    },
+    {
+        "title": "4.2 Stacey-Matrix",
+        "content": [
+            { "type": "p", "data": "Die Stacey-Matrix ist ein Modell von Ralph Douglas Stacey zur Analyse der Komplexität von Problemen. Sie berücksichtigt die Unsicherheit/Klarheit der Anforderungen (WAS?) und die Sicherheit/Klarheit des Vorgehens (WIE?)."},
+            { "type": "ul", "data": [
+                "**Einfach:** Anforderungen und Vorgehen sind klar. (z.B. WASSERFALL)",
+                "**Kompliziert:** Anforderungen oder Vorgehen sind unklarer, erfordern Analyse und Expertise. (z.B. KANBAN)",
+                "**Komplex:** Anforderungen und Vorgehen sind beide unklar und weit von der Sicherheit entfernt. Experimente und iterative Ansätze sind nötig. (z.B. SCRUM)",
+                "**Chaotisch:** Weder Anforderungen noch Vorgehen sind bekannt. Es herrscht Instabilität. (z.B. DESIGN THINKING)"
+            ]},
+            { "type": "p", "data": "Die Matrix hilft bei der Problemanalyse und der Auswahl geeigneter Frameworks." }
+        ]
+    }
+  ]
+}

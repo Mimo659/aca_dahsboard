@@ -1,0 +1,171 @@
+{
+  "title": "Agile Facilitation",
+  "chapters": [
+    {
+        "title": "1.1 Vorstellung als Agile Coach",
+        "content": [
+            { "type": "p", "data": "Für eine vertrauensvolle Zusammenarbeit mit Teams und Individuen braucht es Offenheit und Transparenz. Dazu gehört, dass wir Agile Coaches uns und unsere Arbeit vorstellen und unsere Motivation klären. Eine gekonnte Vorstellung legitimiert uns, schafft Vertrauen und schärft das eigene Profil." },
+            { "type": "h3", "data": "Hilfreich bei einer Vorstellung:" },
+            { "type": "ul", "data": [
+                "Wurde visualisiert? Wurden mehr Bilder und Zeichnungen eingesetzt?",
+                "Wurde die eigene Körpersprache bewusst eingesetzt? War sie lebendig?",
+                "Wurde mit der Stimme gespielt? War die Sprechgeschwindigkeit passend?",
+                "War die Präsentation kurz und knackig?"
+            ]}
+        ]
+    },
+    {
+        "title": "1.2 Arbeiten mit Workshop-Rollen",
+        "content": [
+            { "type": "p", "data": "Als Agile Coach führen wir Organisationen, Teams und Individuen in die Selbstorganisation. Zur Förderung der Selbstwirksamkeit in Teams sind Workshop-Rollen ein probates Mittel, um Eigenverantwortung und Beteiligung zu fördern. Sie helfen, typische Hürden zu überwinden:" },
+            { "type": "ul", "data": [
+                "Ausufernde Diskussionen",
+                "Langweilige Beiträge",
+                "Einseitige Sichtweisen",
+                "Mangelnde Konfliktbereitschaft",
+                "Zeiten nicht einhalten",
+                "Fehlende Transparenz"
+            ]},
+            { "type": "h3", "data": "Beispiele für agile Workshop-Rollen:" },
+            { "type": "ul", "data": [
+               "**Fokusbeschleuniger:** Achtet auf den vereinbarten Fokus und signalisiert, wenn eine Diskussion vom Ziel abweicht.",
+               "**Querdenker:** Nimmt bewusst andere Sichtweisen ein und hinterfragt die Gruppenmeinung, um Einseitigkeit zu vermeiden.",
+               "**Prinzipienwächter:** Achtet auf die Einhaltung der vereinbarten Werte und Arbeitsprinzipien.",
+               "**Time Keeper:** Achtet auf die Einhaltung der Zeit (Timeboxing) und fordert diese ein."
+            ]}
+        ]
+    },
+    {
+        "title": "1.3 Abgrenzung von Moderation",
+        "content": [
+            { "type": "p", "data": "Moderation und Facilitation sind wesentliche Skills für Agile Coaches. Die Aktivitäten Moderation, Präsentation und Training haben unterschiedliche Aktivierungsgrade der Teilnehmer und verschiedene Ziele. Als Agile Coach wechselt man häufig zwischen diesen Rollen." },
+            { "type": "h3", "data": "Was zeichnet eine gelungene Business-Moderation aus?" },
+            { "type": "ul", "data": [
+                "Ein motivierender Einstieg",
+                "Klare Ziele, Aufgaben, Fragen und Themen",
+                "Benötigte Zusatzinfos",
+                "Klare Zeiteinteilungen und -anweisungen",
+                "Klare TN-Zuordnung bei Übungen",
+                "Ein nachhaltiger Ausstieg",
+                "Eine ansprechende Visualisierung"
+            ]}
+        ]
+    },
+    {
+        "title": "1.4 Moderatorenhaltung und -stile",
+        "content": [
+            { "type": "p", "data": "Ähnlich wie sich unsere Arbeitswelt verändert, so verändert sich auch die Moderation an sich. Sie kann stark direktiver Natur sein oder auch viel Freiraum für die Teilnehmenden bieten. Mit der Freiheit im Agilen Arbeiten passt sich auch die Moderation von einem direktiven Stil zu einer freien Begleitung an (heute bekannt als „Facilitation”)." },
+            { "type": "p", "data": "Business-Moderatoren unterstützen ein Team durch Dialog und das Streben nach Klarheit. Sie ermöglichen aktive Beteiligung, gewährleisten eine geeignete Teamstruktur und bieten einen sicheren Rahmen. Sie sind inhaltlich neutral (allparteilich) und besitzen hohe methodische Kompetenz."}
+        ]
+    },
+    {
+        "title": "2.1 Meta-Vereinbarungen",
+        "content": [
+            { "type": "p", "data": "Akzeptierte Regeln sichern die Workshop-Effizienz. Meta-Vereinbarungen sind allgemein-verbindliche Regeln, die für die gesamte Dauer der Zusammenarbeit gelten." },
+            { "type": "h3", "data": "Bekannte Meta-Vereinbarungen:" },
+            { "type": "ul", "data": [
+               "**VEGAS-Regel:** 'What happens in Vegas, stays in Vegas...' für Vertrauen und Verschwiegenheit.",
+               "**Die 'Oberste Direktive' (nach Norman L. Kerth):** 'Unabhängig davon, was wir herausfinden, müssen wir verstehen und wirklich glauben, dass jeder das Beste getan hat, was er mit seinem damaligen Wissen, seinen Fähigkeiten und Fertigkeiten, den verfügbaren Ressourcen und der gegebenen Situation tun konnte.'",
+               "**Workshop-Erfolg:** 'Wir sind alle im hier und jetzt, weil der Workshop Erfolg uns braucht!'"
+            ]},
+            { "type": "p", "data": "Meta-Vereinbarungen können vom Moderator vorgegeben, vorgeschlagen oder von der Gruppe selbst erarbeitet werden. Sie sollten sichtbar sein und leben, d.h. sich auch verändern dürfen." }
+        ]
+    },
+    {
+        "title": "2.2 Adhoc-Absprachen",
+        "content": [
+            { "type": "p", "data": "Ad-Hoc-Absprachen fördern die Selbstorganisation der Gruppe. Sie skizzieren das Vorgehen und werden am Anfang einer Aufgabe bzw. eines Meetings mit der Gruppe gemeinsam – meist nur mündlich – geklärt." },
+            { "type": "h3", "data": "Beispiele für Adhoc-Fragen:" },
+            { "type": "ul", "data": [
+                "Wie gehen wir jetzt bei dieser Aufgabe vor?",
+                "Wer moderiert und visualisiert jetzt? Wer hat jetzt welche Rolle?",
+                "Wie viel Zeit wollen wir uns jetzt wofür nehmen? Wann enden wir?",
+                "Was ist jetzt unser Ziel? Woran wollen wir jetzt arbeiten?",
+                "Wie treffen wir jetzt diese Entscheidung?"
+            ]}
+        ]
+    },
+    {
+        "title": "2.3 Anlässe für agile Moderation",
+        "content": [
+            { "type": "p", "data": "Als Agile Coach gibt es neben den Events aus den Frameworks noch weitere Anlässe, um moderierend aktiv zu werden:" },
+            { "type": "ul", "data": [
+                "Kick-Offs für Transformations-Vorhaben",
+                "Agile Workshops, wie: Team-Set-Ups, Rollen-Set-Ups, Ausgestaltung eines agilen Mindsets, etc.",
+                "Schulungen zu agilen Frameworks und Praktiken",
+                "Agile Lernbegleitung",
+                "Die agilen Events der Frameworks, hier nach dem Beispiel Scrum: Planning, Daily, Review, Retrospektive"
+            ]}
+        ]
+    },
+    {
+        "title": "2.4 Phasen eines agilen Events",
+        "content": [
+            { "type": "p", "data": "Analog einer Retrospektive besitzen viele agile Events Phasen, die aufeinander aufbauen. Mit dem „Meetingboard Canvas“ kann man agile Meetings strukturiert planen:"},
+            { "type": "ol", "data": [
+                "**Phase 1 - Vorbereitung:** Anlass und Ziele, Teilnehmende, Rollen, Zeit, Ort, Ausstattung klären.",
+                "**Phase 2 - Check-In:** Jede Besprechung beginnt mit dem Einloggen. Der Moderator stellt sich vor, die Teilnehmer kommen emotional an (z.B. durch Ice Breaker).",
+                "**Phase 3 - Themen bearbeiten:** Themen erheben (sammeln, priorisieren), bewerten (Soll/Ist, gut/schlecht) und Lösungen entwickeln.",
+                "**Phase 4 - Entscheiden und planen:** Ideen und Vorschläge priorisieren und Entscheidungen treffen. Selbstorganisation hängt eng mit Entscheidungskompetenz zusammen.",
+                "**Phase 5 - Check-out:** Wie beim Einloggen erfolgt auch ein Ausloggen. Offene Fragen klären, offene Themen zuordnen, Feedback zur Moderation geben."
+            ]}
+        ]
+    },
+    {
+        "title": "3.1 Auftragsklärung",
+        "content": [
+            { "type": "p", "data": "Eine saubere und gute Auftragsklärung ist das A & O für uns Agile Coaches. Über diese erhalten wir ein Mandat zur Durchführung der oben genannten Vorhaben, da wir keine „Führungsmacht”, also keine direktive Führung ausüben können." },
+            { "type": "p", "data": "Ein vorbereiteter Fragenkatalog hilft, in einem ca. 30-45 minütigen Termin die wichtigsten Punkte zu klären." },
+            { "type": "h3", "data": "Beispiele aus dem Fragenkatalog:" },
+            { "type": "ul", "data": [
+                "Welches ist das Ziel? Was möchten die Auftraggeber idealerweise erreichen?",
+                "Wer ist noch beteiligt und wie sind deren Ziele?",
+                "In welchem Zeitraum wollen Sie das Ziel erreichen?",
+                "Woran werden Sie den Erfolg messen?",
+                "Welche verdeckten Ziele oder Anliegen sind denkbar?",
+                "Welches sind die vorgegebenen und feststehenden Rahmenbedingungen, die im Workshop nicht verändert werden dürfen?",
+                "Welchen Spielraum haben wir im Workshop? Was darf neu entschieden oder gestaltet werden?",
+                "Welche Art der Dokumentation wird vereinbart?"
+            ]}
+        ]
+    },
+    {
+        "title": "3.2 Moderationsmethoden",
+        "content": [
+            { "type": "p", "data": "Folgend eine Übersicht zu gängigen Moderationsmethoden, mit denen Du Teilnehmende abholen, Themen sicht- und bearbeitbar machst und das Team bei Entscheidungsfindung unterstützt." },
+            { "type": "h3", "data": "Methoden für Check-In" },
+            { "type": "ul", "data": ["**Gefühls-Check:** Teilnehmer auf emotionaler Ebene abholen, z.B. mit Bildkarten oder Smileys.", "**Skalierungen (soziometrische Aufstellungen):** Tendenzen und Meinungen in einer Gruppe sichtbar machen, indem sich Teilnehmer auf einer Skala positionieren."] },
+            { "type": "h3", "data": "Methoden zum Bearbeiten von Themen" },
+            { "type": "ul", "data": ["**Englische Debatte:** Lädt zum Perspektivwechsel ein, indem Teilnehmer Argumente für eine zugewiesene Position finden müssen.", "**Kopfstandmethode:** Fördert kreatives Denken, indem eine Aufgabe umgekehrt wird (z.B. 'Was können wir tun, um das Projekt garantiert scheitern zu lassen?').", "**Disney-Strategie:** Betrachtet ein Thema aus drei Perspektiven: dem Träumer, dem Realisten und dem Kritiker."] },
+            { "type": "h3", "data": "Methoden zum Entscheiden und planen" },
+            { "type": "ul", "data": ["**Punkteabfragen (Voting):** Macht Stimmungsbilder sichtbar, indem Teilnehmer Klebepunkte auf Themen oder Argumente verteilen.", "**Aufwand-Wirkung-Diagramm:** Priorisiert Themen, indem die Gruppe gemeinsam den erwarteten Aufwand und die Wirkung bewertet."] },
+            { "type": "h3", "data": "Methoden zum Check-out" },
+            { "type": "ul", "data": ["**Hashtag-Feedback:** Gibt einen schnellen Überblick zur Zufriedenheit mittels kurzer, prägnanter Hashtags (#wertvoll).", "**Keep-Drop-Try:** Benennt konkrete Themen, die beibehalten (Keep), verworfen (Drop) oder ausprobiert (Try) werden sollen.", "**Baum der Erkenntnis:** Reflektiert das Meeting mittels vorgegebener Fragen (z.B. 'Was war der Gewinn des Meetings?')."] }
+        ]
+    },
+    {
+        "title": "4.1 Konflikte im Workshop",
+        "content": [
+            { "type": "p", "data": "Agile Frameworks machen verschiedene Spannungen und Dysfunktionen innerhalb von Organisationen sichtbar. Nicht selten führt dies zu Konflikten, versteckten wie offenen." },
+            { "type": "h3", "data": "Umgang mit Killerphrasen" },
+            { "type": "p", "data": "Killerphrasen sind verallgemeinernde, abwertende Äußerungen, die eine Diskussion im Keim ersticken sollen. Sie werden oft aus Unsicherheit, Angst oder zur Statusverteidigung genutzt." },
+            { "type": "h3", "data": "Top 5 der agilen Facilitator-Fragen als Reaktion:" },
+            { "type": "ul", "data": [
+                "**Detail-konkretisierend:** 'Was genau meinen Sie damit?'",
+                "**Ergebnis-fokussierend:** 'Was wäre eine bessere Lösung?'",
+                "**Systemische Coaching-Fragen:** 'Was würde passieren, wenn wir es doch täten?'",
+                "**Zielhütend:** 'Wie hilft uns diese Aussage, unser gemeinsames Ziel zu erreichen?'",
+                "**Bedürfnis-orientiert:** 'Welches Bedürfnis oder welche Sorge steckt hinter dieser Aussage?'"
+            ]},
+            { "type": "h3", "data": "Umgang mit Emotionen im Workshop"},
+            { "type": "p", "data": "Wenn Emotionen hochkochen, ist es wichtig, als Moderator handlungsfähig zu bleiben. Eine verbale Attacke sollte nie ignoriert werden. "},
+            { "type": "h3", "data": "Top-Tipps bei verbalen Angriffen"},
+            { "type": "ul", "data": [
+                "**Einatmen und bis 3 zählen:** Schafft eine kurze Pause, um nicht impulsiv zu reagieren.",
+                "**Auf die Person zugehen:** Körperliche Nähe kann deeskalierend wirken (im respektvollen Rahmen).",
+                "**Fragen 'Was genau meinst Du damit?':** Führt die Diskussion zurück auf eine sachliche Ebene und zwingt den Angreifer zur Konkretisierung."
+            ]}
+        ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "title": "Coaching Habit",
+  "chapters": [
+    {
+        "title": "Systemtheorie bzw. systemischer Gedanke im Coaching",
+        "content": [
+            { "type": "p", "data": "Die Systemtheorie betrachtet Individuen nicht isoliert, sondern als Teil größerer Systeme (z.B. Teams, Organisationen, Familien). Alles ist miteinander verbunden und beeinflusst sich gegenseitig. Veränderungen in einem Teil des Systems wirken sich auf das gesamte System aus. Im systemischen Coaching geht es darum, diese Verbindungen und Wechselwirkungen zu erkennen und zu nutzen, um nachhaltige Veränderungen zu bewirken. Statt Probleme isoliert zu betrachten, werden sie im Kontext des gesamten Systems verstanden und angegangen." },
+            { "type": "blockquote", "data": "Heißt auch: Wenn der Coachee beginnt, sich zu verändern, verändert er sein Umfeld automatisch in weiten Teilen mit. Das Bild vom Haufen Kieselsteine ist hier eine beliebte Metapher."}
+        ]
+    },
+    {
+        "title": "Begriffsklärung & Abgrenzung Coaching",
+        "content": [
+            { "type": "p", "data": "Ebenso wie das Wort „Agil“ wird der Begriff „Coaching“ vielfach unterschiedlich verwendet. Hier kann es helfen, vorher ein allgemeines Verständnis zu schaffen. Coaching grenzt sich von anderen Formaten ab:" },
+            { "type": "ul", "data": [
+                "**Berater:** gibt inhaltliche Lösungen und Empfehlungen an die Hand und ist sowohl für den Prozess als auch für den Inhalt verantwortlich.",
+                "**Trainer:** verfolgen Lehrpläne, definieren Lehrziele und vermitteln Wissen und Erfahrungen.",
+                "**Mentor:** agiert als Ratgeber, arbeitet in einem ähnlichen Beruf und teilt seine Erfahrungen und sein Wissen.",
+                "**Therapeuten:** stellen Diagnosen, behandeln psychische Erkrankungen und fokussieren (klassisch) auf Defizite und Probleme."
+            ]},
+            { "type": "blockquote", "data": "Definition gemäß der International Coaching Federation (ICF): Coaching ist „ein partnerschaftlicher und zum Nachdenken anregender Prozess, der Menschen und Organisationen kreativ dabei unterstützt, ihr persönliches und professionelles Potential zu steigern.“" }
+        ]
+    },
+    {
+        "title": "Konstruktivismus",
+        "content": [
+            { "type": "p", "data": "Die Theorie des Kontruktivismus unterstützt uns Agile Coaches in der Zusammenarbeit mit verschiedenen Schnittstellen und Menschen. Es bietet als Menschenbild eine Grundhaltung, mit der wir anderen gegenüber treten." },
+            { "type": "p", "data": "Der Konstruktivismus beschreibt die Wahrnehmung der Menschen als aktiven Konstruktionsprozess. Sie nehmen also nicht die objektive Wirklichkeit wahr, sondern erschaffen sich aus dieser ihre eigene Realität. Daraus folgt, dass es „die eine Wahrheit“ nicht gibt - jeder Mensch konstruiert sich seine eigene Wahrheit. Die Chance in diesem Modell liegt darin, dass wir uns eine gemeinsame „Wahrheit” oder Wirklichkeit gemeinsam konstruieren können." },
+            { "type": "h3", "data": "Oberste Direktive"},
+            { "type": "p", "data": "Da agiles Arbeiten bedeutet, immer wieder mutig Neues auszuprobieren und Erfahrungen zu machen – auch Fehler –, um dann gemeinsam zu reflektieren, was das Team und jeder Einzelne verbessern kann, gilt es ein Mindset zu entwickeln, das davon ausgeht, dass jeder immer sein Bestes gibt und dass es nicht um Schuldzuweisungen geht, wenn etwas schiefgelaufen ist, sondern darum, daraus zu lernen und Verbesserungen zu initiieren." },
+            { "type": "blockquote", "data": "Unabhängig davon, was wir entdecken, verstehen wir und glauben wahrhaft daran, dass jeder das Beste gegeben hat, was er konnte, basierend auf seinem Wissen zu dem Zeitpunkt, seinen Fähigkeiten und Fertigkeiten, den vorhandenen Ressourcen und der gegebenen Situation." }
+        ]
+    },
+    {
+        "title": "Veränderungsprozesse coachen",
+        "content": [
+            { "type": "p", "data": "Veränderung ist eine Konstante im Leben und in der Geschäftswelt. Ein Coach kann hierbei unterstützen, diese Prozesse bewusst und effektiv zu gestalten. Jegliche Form von Coaching adressiert einen Veränderungsprozess: Menschen wollen von etwas weg und/oder zu etwas hin." },
+            { "type": "p", "data": "Kunden suchen sich einen Coach, wenn sie alleine nicht weiterkommen. Auf dem Scheitelpunkt des Berges (Moment der höchsten Unsicherheit) fällt die Entscheidung: rollen wir zurück oder geht es weiter ins neue Unbekannte? Dieser Punkt ist der Moment größter Instabilität." },
+            { "type": "h3", "data": "Die sieben Phasen der Veränderung:" },
+            { "type": "ol", "data": [
+                "**Schock:** Die erste Reaktion auf eine unerwartete Veränderung.",
+                "**Ablehnung/Verneinung:** Weigerung, die Realität der Veränderung zu akzeptieren.",
+                "**Tal der Tränen (Wendepunkt):** Emotionale Akzeptanz beginnt, Ressourcen werden wichtig.",
+                "**Rationale Einsicht:** Verstandesmäßige Akzeptanz.",
+                "**Emotionale Akzeptanz:** Die Veränderung wird auch gefühlsmäßig angenommen.",
+                "**Ausprobieren/Lernen:** Neue Verhaltensweisen werden getestet.",
+                "**Integration:** Neue Verhaltensweisen werden Teil des Alltags."
+            ]}
+        ]
+    },
+    {
+        "title": "Das Herdplattenmodell",
+        "content": [
+            { "type": "p", "data": "Eine bewährte Coaching-Anleitung für Einsteiger, die den Prozess in vier Phasen (Herdplatten) aufteilt:" },
+            { "type": "ol", "data": [
+                "**Problem/Thema (P/T):** In Kontakt kommen, Rapport aufbauen, Thema verstehen. Übergang mit Fragen wie 'Wie wäre es denn schön?'.",
+                "**Ziel (Z):** Das Ziel so konkret wie möglich gestalten. Was ist daran attraktiv? Das Ziel muss vom Coachee selbst kommen (selbstinitiiert).",
+                "**Ressourcen (R):** Was ist schon da? Was braucht es noch? (Geld, Zeit, Fähigkeiten, Hilfe, Stärken). Wer kann helfen?",
+                "**Strategie (S):** Die Marschroute, das Wie. Hier darf auf Wunsch des Coachees auch Expertenwissen einfließen. Selbstwirksamkeit des Coachees fördern."
+            ]}
+        ]
+    },
+    {
+        "title": "Systemisches Fragen",
+        "content": [
+            { "type": "p", "data": "Bei systemischen Fragen fragt der Coach den Coachee nach etwas, was der Coachee selbst und zumindest unbewusst noch nicht weiß. Systemische Fragen haben die Funktion, neue Informationen zu entwickeln, indem sie zum Nachdenken anregen." },
+            { "type": "h3", "data": "Beispiele für systemische Fragetypen:" },
+            { "type": "ul", "data": [
+                "**Reality Check:** 'Ist das überhaupt ein Thema, was Du aus eigener Kraft lösen kannst?'",
+                "**Zirkuläre Frage:** 'Was denken andere aus Deinem Umfeld über dieses Thema?'",
+                "**Ausnahme-Frage:** 'Lief es schon mal besser als jetzt? Was war da anders (bei Dir)?'",
+                "**Driver's Question:** 'Stell Dir vor, ich würde das Problem auch haben wollen, was müsste ich dafür tun?'",
+                "**Reframing-Frage:** 'Was ist das Gute an dem Problem?'",
+                "**Auswirkungs-Frage:** 'Welche Auswirkungen hat es, wenn Du an dem Thema nicht arbeitest?'",
+                "**Hypothetische Frage:** 'Angenommen, Du wärst frei von allen Einschränkungen, wie würdest Du das Thema lösen?'",
+                "**Paradoxe Frage:** 'Wie könntest Du Dein Thema noch viel schlimmer machen?'",
+                "**Unterschiedsbildende Frage:** Nutzung von Skalenfragen ('Auf einer Skala von 1-10, wo stehst du?')."
+            ]}
+        ]
+    },
+    {
+        "title": "Team-Coaching & Psychologische Sicherheit",
+        "content": [
+            { "type": "p", "data": "Ein Team ist eine kleine Gruppe von Menschen (ca. neun Personen), die sich ergänzen und aufeinander bezogen zusammenarbeiten, um ein gemeinsames Ziel zu erreichen. Ob aus einem Team ein erfolgreiches Team wird, hängt von der Zusammensetzung, der Interaktion, der Führung und Entwicklung ab." },
+            { "type": "h3", "data": "Psychologische Sicherheit als agiler Coach aufbauen:"},
+            { "type": "p", "data": "Psychologische Sicherheit in Teams ist ein entscheidendes Element. Sie bezieht sich darauf, ob Teammitglieder sich sicher fühlen, ihre Gedanken, Meinungen und Ideen frei zu äußern, ohne Angst vor negativen Konsequenzen oder sozialem Urteil."},
+            { "type": "ul", "data": [
+                "**Vertrauensvolle Atmosphäre schaffen:** Zeige Empathie, Verständnis und Wertschätzung.",
+                "**Offene Kommunikation fördern:** Ermutige zum Ausdruck von Meinungen ohne Angst.",
+                "**Fehlerkultur entwickeln:** Betone, dass Fehler Lernchancen und nicht Versagen sind.",
+                "**Schutz bieten:** Stehe dem Team bei Konflikten oder externem Druck bei."
+            ]}
+        ]
+    },
+    {
+        "title": "SCARF-Modell",
+        "content": [
+            { "type": "p", "data": "Das SCARF-Modell von Dave Rock beschreibt basierend auf den Erkenntnissen der modernen Hirnforschung elementare Grundbedürfnisse des Menschen. Werden diese Grundbedürfnisse erfüllt, können Menschen kooperativ und vertrauensvoll miteinander arbeiten." },
+            { "type": "ol", "data": [
+                "**Status:** Wenn Führungskräfte den Status eines Mitarbeiters erheblich senken, aktiviert das unser Schmerzzentrum wie bei körperlichen Schmerzen.",
+                "**Certainty (Sicherheit):** Unser Gehirn sucht nach Sicherheit. Wenn wir uns sicher fühlen, steigt unser Serotonin-Spiegel.",
+                "**Autonomy (Autonomie):** Wenn wir erleben, dass wir Dinge selbst entscheiden können, sind wir motiviert und unser Gehirn schüttet Dopamin aus.",
+                "**Relatedness (Zugehörigkeit):** Teil einer Gruppe zu sein, dazuzugehören und geschätzt zu werden, ist einer unserer stärksten Motivatoren.",
+                "**Fairness:** Ob Mitarbeiter eine Führungskraft gut oder schlecht finden, hängt häufig damit zusammen, ob sie deren Verhalten als fair empfinden."
+            ]}
+        ]
+    },
+    {
+        "title": "Teamphasen (Tuckman)",
+        "content": [
+            { "type": "p", "data": "Ein bekanntes Modell der Teamentwicklung von Bruce Tuckmann beschreibt den Prozess in Phasen:" },
+            { "type": "ol", "data": [
+                "**Forming (Einstiegs- und Findungsphase):** Suche nach Orientierung, Abchecken. Unterstützung: Rollen und Werte offenlegen, Vereinbarungen treffen.",
+                "**Storming (Auseinandersetzungsphase):** Unstimmigkeiten, Unterschiede werden sichtbar, Konflikte entstehen. Unterstützung: Rollendefinitionen überprüfen, Konflikte lösungsorientiert moderieren.",
+                "**Norming (Regelungs- und Vereinbarungsphase):** Normen und Regeln werden diskutiert und definiert. Unterstützung: Wertearbeit, gezielte Retrospektiven.",
+                "**Performing (Arbeits- und Leistungsphase):** Hohes Leistungsniveau, Atmosphäre der Akzeptanz. Unterstützung: Regelmäßige Retrospektiven, mittels Facilitation zügig zu Lösungen führen.",
+                "**Adjourning (Auflösungsphase):** Auflösung des Teams nach Abschluss des Auftrags. Unterstützung: Erfolge würdigen, Lessons Learned anbieten."
+            ]}
+        ]
+    },
+    {
+        "title": "Teamrollen (Belbin)",
+        "content": [
+            { "type": "p", "data": "Der Psychologe Meredith Belbin entwickelte ein Modell unterschiedlicher Rollen, die in erfolgreichen Teams zu finden sind. Teams arbeiten dann effektiv, wenn sie aus einer Vielzahl heterogener Rollen bestehen. Das Team sollte immer wieder reflektieren, ob alle nötigen Rollen vorhanden sind." },
+            { "type": "h3", "data": "Einige der Belbin-Rollen:"},
+            { "type": "ul", "data": [
+                "**Koordinator:** Sorgt für Organisation.",
+                "**Teamer:** Fördert den Zusammenhalt.",
+                "**Pragmatiker:** Setzt Ideen praktisch um.",
+                "**Perfektionist:** Achtet auf Details und Qualität.",
+                "**Kreativer:** Bringt neue Ideen ein.",
+                "**Spezialist:** Bringt Fachexpertise ein.",
+                "**Macher:** Treibt das Team an.",
+                "**Warner/Beobachter:** Analysiert kritisch und bewahrt vor Fehlern."
+            ]}
+        ]
+    },
+    {
+        "title": "Methode „RE-gnose“ nach Matthias Horx",
+        "content": [
+            { "type": "p", "data": "Diese Methode ist ähnlich der Kopfstandmethode und eine Weiterentwicklung der systemischen Fragen. Bei der RE-gnose schauen wir im Gegensatz zur PROgnose nicht in die Zukunft, sondern von der Zukunft aus zurück ins Heute." },
+            { "type": "ol", "data": [
+                "**1. Wir stellen uns einen konkreten Zeitpunkt in der Zukunft vor:** Beispielsweise heute in einem Jahr, nach dem großen Change-Prozess. Wir stellen uns vor, wie es sein wird, wenn wir an diesem Tag als Team zusammenkommen.",
+                "**2. Wir staunen rückwärts:** Wie haben wir das geschafft? Welche Kompetenzen, Eigenschaften, Beziehungen, Besonderheiten etc. haben uns dabei geholfen?",
+                "**3. Wir betrachten rückblickend:** Was war uns dabei besonders wichtig?"
+            ]},
+            { "type": "p", "data": "Daraus können wir für das Heute Werte und Richtungen sowie Kompetenzen ableiten. RE-Gnosen bilden eine Erkenntnis-Schleife, die unseren inneren Wandel einbezieht und eine Brücke zwischen Heute und Morgen schafft."}
+        ]
+    },
+    {
+        "title": "Agil Führen",
+        "content": [
+            { "type": "h3", "data": "Agiles Führen – die Definition"},
+            { "type": "p", "data": "Agiles Führen bedeutet, Rahmen zu schaffen, in denen Führungskräfte und Mitarbeiter so verantwortungsvoll, selbstorganisiert und motiviert zusammenarbeiten können, dass sie ihre Fähigkeiten entwickeln und ihr Bestes für innovative Lösungen einbringen können."},
+            { "type": "h3", "data": "Beim agilen Führen geht es um:"},
+            { "type": "ol", "data": [
+                "Die Selbstführung als Voraussetzung.",
+                "Kundenorientierung und die Fähigkeit, unmittelbar auf die Bedürfnisse der Kunden einzugehen.",
+                "Die Einbindung der Mitarbeiter, um deren individuelle Fähigkeiten, Motivationen und Ideen zu nutzen.",
+                "Die Entwicklung der Organisation, also der Strukturen und der Kultur."
+            ]}
+        ]
+    },
+    {
+        "title": "Dysfunktionale Teams und die Arbeit mit dem inneren Erwachsenen",
+        "content": [
+            { "type": "p", "data": "Merkmale dysfunktionaler Teams: Mangelndes Vertrauen, Angst vor Konflikten, fehlendes Engagement, Vermeidung von Rechenschaftspflicht, Unklarheit über Ergebnisse. In solchen Situationen rutschen Menschen oft in Zustände, die in der Transaktionsanalyse als Kind-Ich oder Eltern-Ich bezeichnet werden." },
+            { "type": "h3", "data": "Die drei Ich-Zustände:" },
+            { "type": "ul", "data": [
+                "**Kind-Ich:** Gefühle von Ohnmacht, Verlust der Würde und des Selbstwerts. Verhaltensweisen: a) hilflos, überfordert, schreit nach Mama, b) gehorsam, funktioniert, macht sich klein, c) trotzig, frech, aggressiv.",
+                "**Eltern-Ich:** Gefühl von (All-)Macht, Quelle unserer inneren Antreiber. Verhaltensweisen: a) fürsorglich, b) bestrafend-belehrend (dominant, bewertend, beschuldigend).",
+                "**Erwachsenen-Ich:** Gefühl von Klarheit, Stabilität, Selbstwirksamkeit. In Balance von Gefühl und Verstand. Es bildet den Gipfel, die Spitze, denn da wollen wir hin!"
+            ]},
+            { "type": "blockquote", "data": "Wichtig: In jeder Situation kannst du in jedem Zustand handeln! Doch das Erwachsenen-Ich ist der einzige Zustand, in dem du dein Leben wirklich in der Hand hast."}
+        ]
+    },
+    {
+        "title": "Glaubenssätze & Antreiber",
+        "content": [
+            { "type": "p", "data": "Glaubenssätze sind Verallgemeinerungen, die wir über uns selbst, über andere Menschen und unsere Umwelt in prägenden Lebenssituationen treffen. Sie entstehen oft in der frühen Kindheit und werden unbewusst als „Wahrheit“ akzeptiert." },
+            { "type": "h3", "data": "Typische Glaubenssätze:"},
+            { "type": "ul", "data": [ "Man hat im Leben eh keine Wahl", "Frauen sind keine guten Chefs", "Alle Männer sind unzuverlässig", "Ich kann nicht gut mit Geld umgehen", "Ich bin es nicht wert, geliebt zu werden" ]},
+            { "type": "h3", "data": "Typische Antreiber in unserer Kultur:"},
+            { "type": "ul", "data": [ "Gib dir Mühe!", "Streng dich an!", "Beeile dich!", "Mach es jedem Recht! Sei stark!", "Mach keinen Fehler! Sei perfekt!" ]},
+            { "type": "p", "data": "Die Antreiber sind einerseits von außen eingegeben und verinnerlicht (Eltern-Ich), andererseits sind sie wie die Antwort auf unsere Glaubenssätze."}
+        ]
+    }
+  ]
+}
