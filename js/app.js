@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log('Attempting to load all JSON data...');
         try {
             const results = await Promise.all([
-                fetchData('../data/exam_results.json'),
-                fetchData('../data/modul1.json'),
-                fetchData('../data/modul2.json'),
-                fetchData('../data/modul3.json'),
-                fetchData('../data/modul4.json'),
-                fetchData('../data/modul5.json'),
-                fetchData('../data/quiz_questions.json')
+                fetchData('/aca_dahsboard/data/exam_results.json'),
+                fetchData('/aca_dahsboard/data/modul1.json'),
+                fetchData('/aca_dahsboard/data/modul2.json'),
+                fetchData('/aca_dahsboard/data/modul3.json'),
+                fetchData('/aca_dahsboard/data/modul4.json'),
+                fetchData('/aca_dahsboard/data/modul5.json'),
+                fetchData('/aca_dahsboard/data/quiz_questions.json')
                 // Add fetch for glossar.json here if it exists, then adjust indices below
             ]);
 
