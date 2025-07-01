@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const searchInput = document.getElementById('main-search');
     const searchResultsContainer = document.getElementById('search-results-container');
 
+    // Modal DOM elements
+    const moduleModal = document.getElementById('moduleModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+    const closeModalButton = document.querySelector('#moduleModal .close-button');
+
 
     async function fetchData(url) {
         const response = await fetch(url);
@@ -193,8 +199,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
                         const moduleId = e.currentTarget.dataset.moduleId;
-                        renderModuleContent(moduleId);
-                        showSection('module');
+                        // renderModuleContent(moduleId); // Old behavior
+                        // showSection('module');         // Old behavior
+                        displayModuleInModal(moduleId); // New behavior: open in modal
                     });
                 });
 
@@ -248,8 +255,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             moduleOverview.querySelectorAll('.module-card').forEach(card => {
                 card.addEventListener('click', (e) => {
-                    renderModuleContent(e.currentTarget.dataset.moduleId);
-                    showSection('module');
+                    // renderModuleContent(e.currentTarget.dataset.moduleId); // Original call
+                    // showSection('module'); // Original call
+                    displayModuleInModal(e.currentTarget.dataset.moduleId);
                 });
             });
         }
@@ -282,8 +290,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 dashboardModuleCardsContainer.querySelectorAll('.module-card').forEach(card => {
                     card.addEventListener('click', (e) => {
-                        renderModuleContent(e.currentTarget.dataset.moduleId);
-                        showSection('module');
+                        // renderModuleContent(e.currentTarget.dataset.moduleId); // Original call
+                        // showSection('module'); // Original call
+                        displayModuleInModal(e.currentTarget.dataset.moduleId);
                     });
                 });
             } catch (error) {
@@ -294,7 +303,77 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
 
+        // Function to generate HTML for module content (can be used by both modal and original section if needed)
+        function generateModuleContentHTML(moduleId) {
+            const mod = moduleData[moduleId];
+            if (!mod) {
+                return `<p>Inhalt für Modul ${moduleId} nicht gefunden.</p>`;
+            }
+
+            let contentHTML = ''; // No back button or main title for modal body initially
+            if (mod.chapters && Array.isArray(mod.chapters)) {
+                mod.chapters.forEach(chapter => {
+                    contentHTML += `<div class="chapter"><h3>${chapter.title}</h3>`;
+                    if (chapter.content && Array.isArray(chapter.content)) {
+                        chapter.content.forEach(item => {
+                            switch(item.type) {
+                                case 'p': contentHTML += `<p>${item.data}</p>`; break;
+                                case 'h3': contentHTML += `<h4>${item.data}</h4>`; break; // Changed to h4 for modal hierarchy
+                                case 'ul': contentHTML += `<ul>${item.data.map(li => `<li>${li}</li>`).join('')}</ul>`; break;
+                                case 'ol': contentHTML += `<ol>${item.data.map(li => `<li>${li}</li>`).join('')}</ol>`; break;
+                                case 'blockquote': contentHTML += `<blockquote>${item.data}</blockquote>`; break;
+                                case 'image_placeholder': contentHTML += `<div class="card image_placeholder" style="text-align: center; border-color: var(--accent-color-3);">${item.data}</div>`; break;
+                                case 'exercise': if(item.data) contentHTML += `<div class="exercise"><h4>${item.data.title}</h4><p>${item.data.text}</p></div>`; break;
+                            }
+                        });
+                    }
+                    contentHTML += `</div>`;
+                });
+            }
+            return contentHTML;
+        }
+
+        function displayModuleInModal(moduleId) {
+            if (!moduleModal || !modalTitle || !modalBody || !moduleData) {
+                console.error("Modal elements or moduleData not found for displayModuleInModal");
+                return;
+            }
+
+            const mod = moduleData[moduleId];
+            if (!mod) {
+                console.error(`Module data for ${moduleId} not found.`);
+                modalTitle.textContent = 'Fehler';
+                modalBody.innerHTML = '<p>Moduldetails konnten nicht geladen werden.</p>';
+                moduleModal.style.display = 'block';
+                return;
+            }
+
+            modalTitle.textContent = mod.title;
+            modalBody.innerHTML = generateModuleContentHTML(moduleId);
+            moduleModal.style.display = 'block';
+            // linkGlossarTermsInModal(); // If glossar terms should be linked in modal too
+        }
+
+        // Close modal functionality
+        if (closeModalButton) {
+            closeModalButton.addEventListener('click', () => {
+                if (moduleModal) moduleModal.style.display = 'none';
+            });
+        }
+
+        // Optional: Close modal when clicking outside of modal-content
+        if (moduleModal) {
+            moduleModal.addEventListener('click', (event) => {
+                if (event.target === moduleModal) { // Check if the click is on the modal backdrop itself
+                    moduleModal.style.display = 'none';
+                }
+            });
+        }
+
+
         function renderModuleContent(moduleId) {
+            // This function might be deprecated or modified if all content goes to modal.
+            // For now, let's keep its original behavior but it's not directly called by card clicks anymore.
             if (!moduleOverview || !moduleContent || !moduleData) { console.error("Required elements/data missing for renderModuleContent"); return; }
             moduleOverview.classList.add('hidden');
             moduleContent.classList.remove('hidden');
@@ -310,26 +389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h2>${mod.title}</h2>
                 <div class="module-content-container">
             `;
-
-            if (mod.chapters && Array.isArray(mod.chapters)) {
-                mod.chapters.forEach(chapter => {
-                    contentHTML += `<div class="chapter"><h3>${chapter.title}</h3>`;
-                    if (chapter.content && Array.isArray(chapter.content)) {
-                        chapter.content.forEach(item => {
-                            switch(item.type) {
-                                case 'p': contentHTML += `<p>${item.data}</p>`; break;
-                                case 'h3': contentHTML += `<h4>${item.data}</h4>`; break;
-                                case 'ul': contentHTML += `<ul>${item.data.map(li => `<li>${li}</li>`).join('')}</ul>`; break;
-                                case 'ol': contentHTML += `<ol>${item.data.map(li => `<li>${li}</li>`).join('')}</ol>`; break;
-                                case 'blockquote': contentHTML += `<blockquote>${item.data}</blockquote>`; break;
-                                case 'image_placeholder': contentHTML += `<div class="card" style="text-align: center; border-color: var(--accent-color-3);">${item.data}</div>`; break;
-                                case 'exercise': if(item.data) contentHTML += `<div class="exercise"><h4>${item.data.title}</h4><p>${item.data.text}</p></div>`; break;
-                            }
-                        });
-                    }
-                    contentHTML += `</div>`;
-                });
-            }
+            contentHTML += generateModuleContentHTML(moduleId); // Use the helper
             contentHTML += `</div>`;
             moduleContent.innerHTML = contentHTML;
 
@@ -337,7 +397,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (backButton) {
                 backButton.addEventListener('click', renderModulesOverview);
             }
-            linkGlossarTerms();
+            linkGlossarTerms(); // This links terms in the main #module-content, not the modal
         }
 
         function linkGlossarTerms() {
