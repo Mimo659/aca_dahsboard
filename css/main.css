@@ -348,6 +348,13 @@ footer {
     border-top: 1px solid var(--secondary-bg);
 }
 
+.footer-ai-text {
+    color: var(--accent-color-2);
+    font-size: 0.8em;
+    display: block;
+    margin-top: 0.5em;
+}
+
 /* Responsive Design */
 #burger-menu {
     display: none;
