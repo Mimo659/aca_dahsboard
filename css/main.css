@@ -1,16 +1,20 @@
 :root {
-    --primary-bg: #2c2f33;
-    --secondary-bg: #23272a;
-    --card-bg: #3a3e42;
-    --text-color: #ffffff;
-    --text-muted: #99aab5;
-    --accent-color-1: #00FFFF; /* Cyan */
-    --accent-color-2: #FF69B4; /* Pink */
-    --accent-color-3: #FFD700; /* Gelb */
-    --color-good: #4CAF50;
-    --color-medium: #FFC107;
-    --color-weak: #F44336;
-    --font-family: 'Poppins', sans-serif;
+    --primary-bg: #FFFFFF; /* White */
+    --secondary-bg: #F0F0F0; /* Light Gray */
+    --card-bg: #FFFFFF; /* White */
+    --text-color: #333333; /* Dark Gray */
+    --text-muted: #777777; /* Medium Gray */
+    --accent-color-1: #FF0000; /* Red */
+    --accent-color-2: #FFA500; /* Orange */
+    --accent-color-3: #FFFF00; /* Yellow */
+    --accent-color-4: #00FF00; /* Green */
+    --accent-color-5: #0000FF; /* Blue */
+    --accent-color-6: #4B0082; /* Indigo */
+    --accent-color-7: #EE82EE; /* Violet */
+    --color-good: #28a745; /* Vibrant Green */
+    --color-medium: #fd7e14; /* Vibrant Orange */
+    --color-weak: #dc3545; /* Vibrant Red */
+    --font-family: 'Rubik', sans-serif;
 }
 
 * {
@@ -36,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid var(--accent-color-1);
+    border-bottom: 2px solid var(--accent-color-4); /* Green border for header */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -64,7 +68,7 @@ nav a {
 
 nav a:hover, nav a.active {
     color: var(--text-color);
-    border-bottom: 2px solid var(--accent-color-2);
+    border-bottom: 2px solid var(--accent-color-5); /* Blue for active nav link */
 }
 
 .search-container input {
@@ -89,14 +93,14 @@ main {
 }
 
 h2 {
-    color: var(--accent-color-3);
+    color: var(--accent-color-6); /* Indigo for h2 */
     margin-bottom: 1rem;
     border-bottom: 1px solid var(--text-muted);
     padding-bottom: 0.5rem;
 }
 
 h3 {
-    color: var(--accent-color-1);
+    color: var(--accent-color-1); /* Red for h3 */
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -105,17 +109,18 @@ h3 {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 5px solid var(--accent-color-1);
+    border-left: 5px solid var(--accent-color-2); /* Orange border for cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08); /* Adjusted subtle shadow for light theme */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12); /* Adjusted hover shadow for light theme */
 }
 
 .card h3 {
-    color: var(--accent-color-3);
+    color: var(--accent-color-6); /* Indigo for card titles (h3 inside card) */
     margin-bottom: 1rem;
     margin-top: 0;
 }
@@ -141,9 +146,10 @@ h3 {
 
 .progress-bar-container {
     width: 100%;
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg); /* Light gray background for container */
     border-radius: 5px;
     margin-top: 0.5rem;
+    border: 1px solid #e0e0e0; /* Subtle border */
 }
 
 .progress-bar {
@@ -152,17 +158,18 @@ h3 {
     text-align: right;
     padding-right: 5px;
     line-height: 20px;
-    color: var(--primary-bg);
+    color: #FFFFFF; /* White text on progress bar */
     font-weight: bold;
     font-size: 0.8rem;
+    background-image: linear-gradient(45deg, var(--accent-color-4), var(--accent-color-5)); /* Green to Blue gradient */
 }
 
 .card a, button.action-btn, #back-to-modules {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background: var(--accent-color-2);
-    color: var(--text-color);
+    background: var(--accent-color-5); /* Blue for buttons */
+    color: #FFFFFF; /* White text for buttons for contrast */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -173,7 +180,7 @@ h3 {
 }
 
 .card a:hover, button.action-btn:hover, #back-to-modules:hover {
-    background-color: #d84a96;
+    background-color: var(--accent-color-6); /* Darker shade (Indigo) for hover */
 }
 
 /* Module Styles */
@@ -195,7 +202,7 @@ h3 {
 }
 .module-card h3 {
     margin-top: 0;
-    color: var(--accent-color-3);
+    color: var(--accent-color-6); /* Indigo for module card titles */
 }
 
 .module-content-container {
@@ -213,7 +220,7 @@ h3 {
 }
 
 .module-content-container blockquote {
-    border-left: 4px solid var(--accent-color-1);
+    border-left: 4px solid var(--accent-color-2); /* Orange for blockquote border */
     padding-left: 1rem;
     margin: 1rem 0;
     font-style: italic;
@@ -221,17 +228,17 @@ h3 {
 }
 .module-content-container .exercise {
     background-color: var(--primary-bg);
-    border: 1px dashed var(--accent-color-3);
+    border: 1px dashed var(--accent-color-4); /* Green for exercise box border */
     padding: 1rem;
     margin: 1.5rem 0;
     border-radius: 5px;
 }
 .module-content-container .exercise h4 {
-    color: var(--accent-color-3);
+    color: var(--accent-color-4); /* Green for exercise titles */
 }
 
 .glossar-term {
-    color: var(--accent-color-1);
+    color: var(--accent-color-5); /* Blue for glossar terms */
     font-weight: bold;
     border-bottom: 1px dotted var(--accent-color-1);
     cursor: pointer;
@@ -239,15 +246,16 @@ h3 {
 
 #tooltip {
     position: absolute;
-    background-color: #1a1c1e;
+    background-color: var(--card-bg); /* Changed to white for consistency with cards */
     color: var(--text-color);
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid var(--accent-color-2);
+    border: 1px solid var(--accent-color-7); /* Violet for tooltip border */
     max-width: 300px;
     z-index: 1001;
     font-size: 0.9rem;
     pointer-events: none; /* Important */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Add shadow to tooltip */
 }
 
 
@@ -256,22 +264,32 @@ h3 {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
-    background-color: var(--card-bg);
-    border: 1px solid var(--text-muted);
+    background-color: var(--primary-bg); /* Ensure it's on the main background */
+    border: 1px solid #ced4da; /* Standard light border */
     color: var(--text-color);
     border-radius: 5px;
     font-size: 1rem;
 }
+#glossar-filter:focus {
+    border-color: var(--accent-color-5); /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Standard focus glow */
+}
+
 
 #glossar-list li {
-    background-color: var(--card-bg);
+    background-color: var(--card-bg); /* White background for list items */
     margin-bottom: 0.5rem;
     padding: 1rem;
     border-radius: 5px;
+    border: 1px solid #eee; /* Light border for list items */
+}
+#glossar-list li:hover {
+    border-left: 3px solid var(--accent-color-4); /* Green left border on hover */
 }
 
+
 #glossar-list strong {
-    color: var(--accent-color-3);
+    color: var(--accent-color-6); /* Indigo for glossar list strong text */
     font-size: 1.2rem;
 }
 
@@ -287,8 +305,8 @@ h3 {
 
 #quiz-container button {
     cursor: pointer;
-    background: var(--accent-color-2);
-    color: var(--text-color);
+    background: var(--accent-color-5); /* Blue for quiz buttons */
+    color: #FFFFFF; /* White text for quiz buttons */
     border: none;
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -297,7 +315,7 @@ h3 {
     transition: background-color 0.3s;
 }
 #quiz-container button:hover {
-    background-color: #d84a96;
+    background-color: var(--accent-color-6); /* Darker shade (Indigo) for hover */
 }
 
 #question-container h3 {
@@ -315,12 +333,15 @@ h3 {
 .answer-options button {
     width: 100%;
     background: var(--primary-bg);
-    border: 1px solid var(--accent-color-1);
+    border: 1px solid var(--accent-color-7); /* Violet for answer options border */
     text-align: left;
     padding: 1rem;
+    color: var(--text-color); /* Ensure text is readable */
+    transition: background-color 0.2s ease, border-color 0.2s ease; /* Smooth transition */
 }
 .answer-options button:hover {
-    background: var(--secondary-bg);
+    background: #e9ecef; /* Slightly darker background on hover */
+    border-color: var(--accent-color-5); /* Blue border on hover */
 }
 
 #quiz-feedback {
@@ -328,6 +349,7 @@ h3 {
     padding: 1rem;
     border-radius: 5px;
     font-weight: bold;
+    color: #FFFFFF; /* White text for feedback messages for better contrast */
 }
 .feedback-correct {
     background-color: var(--color-good);
@@ -349,7 +371,7 @@ footer {
 }
 
 .footer-ai-text {
-    color: var(--accent-color-2);
+    color: var(--accent-color-4); /* Green for footer AI text */
     font-size: 0.8em;
     display: block;
     margin-top: 0.5em;
@@ -425,18 +447,19 @@ footer {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 5px solid var(--accent-color-1);
+    border-left: 5px solid var(--accent-color-2); /* Orange border for cards - already changed but good to double check */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer; /* Make it look clickable */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ensure this is consistent */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Slightly more pronounced shadow on hover */
 }
 
 .card h3 { /* Specific for card titles if they are h3 */
-    color: var(--accent-color-3);
+    color: var(--accent-color-6); /* Indigo for card titles - already changed */
     margin-bottom: 1rem;
     margin-top: 0;
 }
@@ -464,7 +487,7 @@ footer {
     background-color: var(--secondary-bg);
     margin: 10% auto; /* 10% from the top and centered */
     padding: 25px;
-    border: 1px solid var(--accent-color-1);
+    border: 1px solid var(--accent-color-4); /* Green border for modal */
     border-radius: 8px;
     width: 80%; /* Could be more or less, depending on screen size */
     max-width: 700px; /* Maximum width */
@@ -496,20 +519,20 @@ footer {
 
 .close-button:hover,
 .close-button:focus {
-    color: var(--accent-color-2);
+    color: var(--accent-color-1); /* Red for close button hover/focus */
     text-decoration: none;
     cursor: pointer;
 }
 
 #modalTitle {
-    color: var(--accent-color-3);
+    color: var(--accent-color-6); /* Indigo for modal title */
     margin-bottom: 1rem;
     border-bottom: 1px solid var(--text-muted);
     padding-bottom: 0.5rem;
 }
 
 #modalBody h3 { /* Chapter titles in modal */
-    color: var(--accent-color-1);
+    color: var(--accent-color-1); /* Red for modal body h3 */
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -525,7 +548,7 @@ footer {
 }
 
 #modalBody blockquote {
-    border-left: 4px solid var(--accent-color-1);
+    border-left: 4px solid var(--accent-color-2); /* Orange for modal blockquote border */
     padding-left: 1rem;
     margin: 1rem 0;
     font-style: italic;
